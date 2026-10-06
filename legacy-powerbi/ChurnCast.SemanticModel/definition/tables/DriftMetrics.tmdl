@@ -1,0 +1,56 @@
+/// One Kolmogorov-Smirnov drift check per monitored feature.
+table DriftMetrics
+	lineageTag: 768f666e-770c-4628-a3e7-0fd13299f3ec
+
+	column feature_name
+		dataType: string
+		lineageTag: 7fbc0d70-d5c2-41fd-904e-13205a7906d0
+		summarizeBy: none
+		sourceColumn: feature_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column ks_statistic
+		dataType: double
+		formatString: 0.000
+		lineageTag: bcc9d543-d670-4203-a93f-0f4177125db9
+		summarizeBy: none
+		sourceColumn: ks_statistic
+
+		annotation SummarizationSetBy = Automatic
+
+	column drift_flag
+		dataType: int64
+		lineageTag: 7dc43f5d-52a9-4fa4-b8ff-678fe9a3899a
+		summarizeBy: none
+		sourceColumn: drift_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column baseline_mean
+		dataType: double
+		formatString: 0.00
+		lineageTag: c4dfc279-2eee-45c0-a76e-190e8421fa29
+		summarizeBy: none
+		sourceColumn: baseline_mean
+
+		annotation SummarizationSetBy = Automatic
+
+	column recent_mean
+		dataType: double
+		formatString: 0.00
+		lineageTag: fa5740ba-4c0a-4fc0-8db3-5591cf2eeed8
+		summarizeBy: none
+		sourceColumn: recent_mean
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DriftMetrics = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolderPath & "drift_metrics.csv"), [Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"feature_name", type text}, {"ks_statistic", type number}, {"drift_flag", Int64.Type}, {"baseline_mean", type number}, {"recent_mean", type number}})
+				in
+				    #"Changed Type"

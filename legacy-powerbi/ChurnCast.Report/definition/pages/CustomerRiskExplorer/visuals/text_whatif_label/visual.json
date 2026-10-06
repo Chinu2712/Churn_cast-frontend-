@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "text_whatif_label",
+  "position": {
+    "x": 1220,
+    "y": 440,
+    "z": 0,
+    "width": 676,
+    "height": 30,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "What if usage drops further? (client-side simulation)",
+                    "textStyle": {
+                      "fontSize": "13px",
+                      "fontWeight": "normal",
+                      "color": "#605E5C"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

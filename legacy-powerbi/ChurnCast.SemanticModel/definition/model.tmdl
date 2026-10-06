@@ -1,0 +1,29 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup Parameters
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation PBI_QueryOrder = ["Customers", "FeatureContributions", "RevenueHistory", "MonthlyRevenue", "CohortRetention", "BacktestMetrics", "Calibration", "DriftMetrics", "DriftDistributions", "LeakageChecklist", "ModelMeta", "UsageDropPercent", "_Measures"]
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+ref table Customers
+ref table FeatureContributions
+ref table RevenueHistory
+ref table MonthlyRevenue
+ref table CohortRetention
+ref table BacktestMetrics
+ref table Calibration
+ref table DriftMetrics
+ref table DriftDistributions
+ref table LeakageChecklist
+ref table ModelMeta
+ref table UsageDropPercent
+ref table _Measures

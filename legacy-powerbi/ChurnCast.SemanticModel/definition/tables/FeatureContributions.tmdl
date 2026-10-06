@@ -1,0 +1,46 @@
+/// Explains each customer's churn score as 5 signed contributions (see Customer Risk Explorer).
+table FeatureContributions
+	lineageTag: 07573cf8-bf24-4fc3-918a-568588c55f05
+
+	column customer_id
+		dataType: string
+		lineageTag: 3e3160f7-c058-472d-bcbc-0f8d37b2a13d
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column feature_name
+		dataType: string
+		lineageTag: 424d0265-c7df-49d3-96d5-3a77e0e38615
+		summarizeBy: none
+		sourceColumn: feature_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column contribution
+		dataType: double
+		formatString: 0.000
+		lineageTag: 289d3130-2100-4eb7-b76d-370134053129
+		summarizeBy: none
+		sourceColumn: contribution
+
+		annotation SummarizationSetBy = Automatic
+
+	column rank
+		dataType: int64
+		lineageTag: 0a91ab77-7b83-43a1-9d7f-1c412d4fd2c1
+		summarizeBy: none
+		sourceColumn: rank
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FeatureContributions = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolderPath & "feature_contributions.csv"), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"customer_id", type text}, {"feature_name", type text}, {"contribution", type number}, {"rank", Int64.Type}})
+				in
+				    #"Changed Type"

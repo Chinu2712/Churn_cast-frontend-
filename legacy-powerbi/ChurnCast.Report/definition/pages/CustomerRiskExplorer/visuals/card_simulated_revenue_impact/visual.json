@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "card_simulated_revenue_impact",
+  "position": {
+    "x": 1566,
+    "y": 580,
+    "z": 0,
+    "width": 330,
+    "height": 138,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Simulated Revenue Impact"
+                }
+              },
+              "queryRef": "_Measures.Simulated Revenue Impact",
+              "nativeQueryRef": "Simulated Revenue Impact",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "bar_explainability",
+  "position": {
+    "x": 1220,
+    "y": 158,
+    "z": 0,
+    "width": 676,
+    "height": 270,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "barChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FeatureContributions"
+                    }
+                  },
+                  "Property": "feature_name"
+                }
+              },
+              "queryRef": "FeatureContributions.feature_name",
+              "nativeQueryRef": "feature_name",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FeatureContributions"
+                    }
+                  },
+                  "Property": "contribution"
+                }
+              },
+              "queryRef": "FeatureContributions.contribution",
+              "nativeQueryRef": "contribution"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "FeatureContributions"
+                  }
+                },
+                "Property": "contribution"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,7 @@
+relationship aa17ab30-fec6-4723-a582-93907fdf23b3
+	fromColumn: FeatureContributions.customer_id
+	toColumn: Customers.customer_id
+
+relationship 6197694a-eeb4-4f95-b113-7b94a0d3fb99
+	fromColumn: RevenueHistory.customer_id
+	toColumn: Customers.customer_id

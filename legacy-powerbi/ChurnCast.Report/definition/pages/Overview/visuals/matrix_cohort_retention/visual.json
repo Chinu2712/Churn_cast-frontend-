@@ -1,0 +1,96 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "matrix_cohort_retention",
+  "position": {
+    "x": 24,
+    "y": 594,
+    "z": 0,
+    "width": 940,
+    "height": 460,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CohortRetention"
+                    }
+                  },
+                  "Property": "signup_month"
+                }
+              },
+              "queryRef": "CohortRetention.signup_month",
+              "nativeQueryRef": "signup_month",
+              "active": true
+            }
+          ]
+        },
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CohortRetention"
+                    }
+                  },
+                  "Property": "months_since_signup"
+                }
+              },
+              "queryRef": "CohortRetention.months_since_signup",
+              "nativeQueryRef": "months_since_signup",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CohortRetention"
+                        }
+                      },
+                      "Property": "retention_rate"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(CohortRetention.retention_rate)",
+              "nativeQueryRef": "Average of retention_rate"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

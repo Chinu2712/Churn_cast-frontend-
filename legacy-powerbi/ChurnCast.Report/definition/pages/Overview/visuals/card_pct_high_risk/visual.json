@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "card_pct_high_risk",
+  "position": {
+    "x": 1576,
+    "y": 398,
+    "z": 0,
+    "width": 320,
+    "height": 180,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "% High Risk Customers"
+                }
+              },
+              "queryRef": "_Measures.% High Risk Customers",
+              "nativeQueryRef": "% High Risk Customers",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

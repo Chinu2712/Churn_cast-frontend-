@@ -1,0 +1,58 @@
+[
+  {
+    "bucket_label": "0-10%",
+    "predicted_avg": 0.056,
+    "actual_rate": 1.0,
+    "customer_count": 1,
+    "bucket_order": 0
+  },
+  {
+    "bucket_label": "10-20%",
+    "predicted_avg": 0.171,
+    "actual_rate": 0.2,
+    "customer_count": 15,
+    "bucket_order": 1
+  },
+  {
+    "bucket_label": "20-30%",
+    "predicted_avg": 0.259,
+    "actual_rate": 0.224,
+    "customer_count": 58,
+    "bucket_order": 2
+  },
+  {
+    "bucket_label": "30-40%",
+    "predicted_avg": 0.353,
+    "actual_rate": 0.32,
+    "customer_count": 128,
+    "bucket_order": 3
+  },
+  {
+    "bucket_label": "40-50%",
+    "predicted_avg": 0.45,
+    "actual_rate": 0.423,
+    "customer_count": 149,
+    "bucket_order": 4
+  },
+  {
+    "bucket_label": "50-60%",
+    "predicted_avg": 0.543,
+    "actual_rate": 0.569,
+    "customer_count": 102,
+    "bucket_order": 5
+  },
+  {
+    "bucket_label": "60-70%",
+    "predicted_avg": 0.633,
+    "actual_rate": 0.629,
+    "customer_count": 35,
+    "bucket_order": 6
+  },
+  {
+    "bucket_label": "70-80%",
+    "predicted_avg": 0.746,
+    "actual_rate": 0.917,
+    "customer_count": 12,
+    "bucket_order": 7
+  }
+]

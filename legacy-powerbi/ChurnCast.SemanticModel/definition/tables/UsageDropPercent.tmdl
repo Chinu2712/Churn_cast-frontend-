@@ -1,0 +1,17 @@
+/// Disconnected slider table (0-100, step 5) behind the "usage drop %" what-if simulation.
+table UsageDropPercent
+	lineageTag: 3e5bad0e-2808-4ffb-854e-2f03ab19db72
+
+	column 'Usage Drop %'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: ec47bde9-bbd4-4a51-8c1a-bb8e58a0988e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Usage Drop %]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition UsageDropPercent = calculated
+		mode: import
+		source = SELECTCOLUMNS(GENERATESERIES(0, 100, 5), "Usage Drop %", [Value])

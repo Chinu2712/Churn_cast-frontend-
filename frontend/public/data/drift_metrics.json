@@ -1,0 +1,30 @@
+[
+  {
+    "feature_name": "usage_score",
+    "ks_statistic": 0.398,
+    "drift_flag": 1,
+    "baseline_mean": 66.78,
+    "recent_mean": 52.37
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "ks_statistic": 0.315,
+    "drift_flag": 1,
+    "baseline_mean": 0.95,
+    "recent_mean": 1.86
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "ks_statistic": 0.059,
+    "drift_flag": 0,
+    "baseline_mean": 46.26,
+    "recent_mean": 48.48
+  },
+  {
+    "feature_name": "days_since_active",
+    "ks_statistic": 0.34,
+    "drift_flag": 1,
+    "baseline_mean": 26.63,
+    "recent_mean": 36.82
+  }
+]

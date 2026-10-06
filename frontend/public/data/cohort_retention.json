@@ -1,0 +1,877 @@
+[
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 0,
+    "retention_rate": 100.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 1,
+    "retention_rate": 91.3,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 2,
+    "retention_rate": 88.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 3,
+    "retention_rate": 85.1,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 4,
+    "retention_rate": 77.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 5,
+    "retention_rate": 73.3,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 6,
+    "retention_rate": 67.9,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 7,
+    "retention_rate": 63.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 8,
+    "retention_rate": 58.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 9,
+    "retention_rate": 56.5,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 10,
+    "retention_rate": 52.5,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-06",
+    "cohort_order": 0,
+    "months_since_signup": 11,
+    "retention_rate": 51.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 0,
+    "retention_rate": 99.3,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 1,
+    "retention_rate": 94.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 2,
+    "retention_rate": 90.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 3,
+    "retention_rate": 85.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 4,
+    "retention_rate": 80.9,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 5,
+    "retention_rate": 78.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 6,
+    "retention_rate": 76.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 7,
+    "retention_rate": 71.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 8,
+    "retention_rate": 67.2,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 9,
+    "retention_rate": 64.7,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 10,
+    "retention_rate": 58.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-07",
+    "cohort_order": 1,
+    "months_since_signup": 11,
+    "retention_rate": 58.7,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 0,
+    "retention_rate": 98.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 1,
+    "retention_rate": 93.2,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 2,
+    "retention_rate": 88.3,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 3,
+    "retention_rate": 85.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 4,
+    "retention_rate": 80.7,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 5,
+    "retention_rate": 73.2,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 6,
+    "retention_rate": 69.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 7,
+    "retention_rate": 65.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 8,
+    "retention_rate": 63.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 9,
+    "retention_rate": 59.2,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 10,
+    "retention_rate": 55.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-08",
+    "cohort_order": 2,
+    "months_since_signup": 11,
+    "retention_rate": 53.3,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 0,
+    "retention_rate": 100.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 1,
+    "retention_rate": 93.7,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 2,
+    "retention_rate": 86.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 3,
+    "retention_rate": 82.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 4,
+    "retention_rate": 79.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 5,
+    "retention_rate": 71.7,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 6,
+    "retention_rate": 69.2,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 7,
+    "retention_rate": 62.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 8,
+    "retention_rate": 58.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 9,
+    "retention_rate": 56.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 10,
+    "retention_rate": 51.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-09",
+    "cohort_order": 3,
+    "months_since_signup": 11,
+    "retention_rate": 50.2,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 0,
+    "retention_rate": 98.7,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 1,
+    "retention_rate": 95.1,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 2,
+    "retention_rate": 89.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 3,
+    "retention_rate": 86.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 4,
+    "retention_rate": 84.9,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 5,
+    "retention_rate": 77.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 6,
+    "retention_rate": 75.2,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 7,
+    "retention_rate": 70.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 8,
+    "retention_rate": 67.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 9,
+    "retention_rate": 63.9,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 10,
+    "retention_rate": 59.7,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-10",
+    "cohort_order": 4,
+    "months_since_signup": 11,
+    "retention_rate": 58.6,
+    "is_forecast": 1
+  },
+  {
+    "signup_month": "2025-11",
+    "cohort_order": 5,
+    "months_since_signup": 0,
+    "retention_rate": 98.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-11",
+    "cohort_order": 5,
+    "months_since_signup": 1,
+    "retention_rate": 94.9,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-11",
+    "cohort_order": 5,
+    "months_since_signup": 2,
+    "retention_rate": 87.3,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-11",
+    "cohort_order": 5,
+    "months_since_signup": 3,
+    "retention_rate": 81.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-11",
+    "cohort_order": 5,
+    "months_since_signup": 4,
+    "retention_rate": 77.9,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-11",
+    "cohort_order": 5,
+    "months_since_signup": 5,
+    "retention_rate": 68.1,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-11",
+    "cohort_order": 5,
+    "months_since_signup": 6,
+    "retention_rate": 68.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-11",
+    "cohort_order": 5,
+    "months_since_signup": 7,
+    "retention_rate": 60.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-11",
+    "cohort_order": 5,
+    "months_since_signup": 8,
+    "retention_rate": 57.9,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-11",
+    "cohort_order": 5,
+    "months_since_signup": 9,
+    "retention_rate": 52.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-11",
+    "cohort_order": 5,
+    "months_since_signup": 10,
+    "retention_rate": 48.8,
+    "is_forecast": 1
+  },
+  {
+    "signup_month": "2025-12",
+    "cohort_order": 6,
+    "months_since_signup": 0,
+    "retention_rate": 100.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-12",
+    "cohort_order": 6,
+    "months_since_signup": 1,
+    "retention_rate": 96.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-12",
+    "cohort_order": 6,
+    "months_since_signup": 2,
+    "retention_rate": 94.5,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-12",
+    "cohort_order": 6,
+    "months_since_signup": 3,
+    "retention_rate": 91.2,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-12",
+    "cohort_order": 6,
+    "months_since_signup": 4,
+    "retention_rate": 91.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-12",
+    "cohort_order": 6,
+    "months_since_signup": 5,
+    "retention_rate": 82.5,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-12",
+    "cohort_order": 6,
+    "months_since_signup": 6,
+    "retention_rate": 83.7,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-12",
+    "cohort_order": 6,
+    "months_since_signup": 7,
+    "retention_rate": 79.5,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-12",
+    "cohort_order": 6,
+    "months_since_signup": 8,
+    "retention_rate": 74.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2025-12",
+    "cohort_order": 6,
+    "months_since_signup": 9,
+    "retention_rate": 75.2,
+    "is_forecast": 1
+  },
+  {
+    "signup_month": "2026-01",
+    "cohort_order": 7,
+    "months_since_signup": 0,
+    "retention_rate": 99.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-01",
+    "cohort_order": 7,
+    "months_since_signup": 1,
+    "retention_rate": 96.1,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-01",
+    "cohort_order": 7,
+    "months_since_signup": 2,
+    "retention_rate": 91.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-01",
+    "cohort_order": 7,
+    "months_since_signup": 3,
+    "retention_rate": 85.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-01",
+    "cohort_order": 7,
+    "months_since_signup": 4,
+    "retention_rate": 81.2,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-01",
+    "cohort_order": 7,
+    "months_since_signup": 5,
+    "retention_rate": 74.3,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-01",
+    "cohort_order": 7,
+    "months_since_signup": 6,
+    "retention_rate": 71.9,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-01",
+    "cohort_order": 7,
+    "months_since_signup": 7,
+    "retention_rate": 70.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-01",
+    "cohort_order": 7,
+    "months_since_signup": 8,
+    "retention_rate": 65.7,
+    "is_forecast": 1
+  },
+  {
+    "signup_month": "2026-02",
+    "cohort_order": 8,
+    "months_since_signup": 0,
+    "retention_rate": 100.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-02",
+    "cohort_order": 8,
+    "months_since_signup": 1,
+    "retention_rate": 99.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-02",
+    "cohort_order": 8,
+    "months_since_signup": 2,
+    "retention_rate": 91.7,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-02",
+    "cohort_order": 8,
+    "months_since_signup": 3,
+    "retention_rate": 91.1,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-02",
+    "cohort_order": 8,
+    "months_since_signup": 4,
+    "retention_rate": 85.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-02",
+    "cohort_order": 8,
+    "months_since_signup": 5,
+    "retention_rate": 84.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-02",
+    "cohort_order": 8,
+    "months_since_signup": 6,
+    "retention_rate": 76.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-02",
+    "cohort_order": 8,
+    "months_since_signup": 7,
+    "retention_rate": 75.9,
+    "is_forecast": 1
+  },
+  {
+    "signup_month": "2026-03",
+    "cohort_order": 9,
+    "months_since_signup": 0,
+    "retention_rate": 100.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-03",
+    "cohort_order": 9,
+    "months_since_signup": 1,
+    "retention_rate": 97.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-03",
+    "cohort_order": 9,
+    "months_since_signup": 2,
+    "retention_rate": 91.9,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-03",
+    "cohort_order": 9,
+    "months_since_signup": 3,
+    "retention_rate": 89.2,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-03",
+    "cohort_order": 9,
+    "months_since_signup": 4,
+    "retention_rate": 82.5,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-03",
+    "cohort_order": 9,
+    "months_since_signup": 5,
+    "retention_rate": 78.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-03",
+    "cohort_order": 9,
+    "months_since_signup": 6,
+    "retention_rate": 76.3,
+    "is_forecast": 1
+  },
+  {
+    "signup_month": "2026-04",
+    "cohort_order": 10,
+    "months_since_signup": 0,
+    "retention_rate": 99.7,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-04",
+    "cohort_order": 10,
+    "months_since_signup": 1,
+    "retention_rate": 94.1,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-04",
+    "cohort_order": 10,
+    "months_since_signup": 2,
+    "retention_rate": 93.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-04",
+    "cohort_order": 10,
+    "months_since_signup": 3,
+    "retention_rate": 86.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-04",
+    "cohort_order": 10,
+    "months_since_signup": 4,
+    "retention_rate": 85.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-04",
+    "cohort_order": 10,
+    "months_since_signup": 5,
+    "retention_rate": 79.6,
+    "is_forecast": 1
+  },
+  {
+    "signup_month": "2026-05",
+    "cohort_order": 11,
+    "months_since_signup": 0,
+    "retention_rate": 100.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-05",
+    "cohort_order": 11,
+    "months_since_signup": 1,
+    "retention_rate": 94.6,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-05",
+    "cohort_order": 11,
+    "months_since_signup": 2,
+    "retention_rate": 92.3,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-05",
+    "cohort_order": 11,
+    "months_since_signup": 3,
+    "retention_rate": 90.8,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-05",
+    "cohort_order": 11,
+    "months_since_signup": 4,
+    "retention_rate": 84.6,
+    "is_forecast": 1
+  },
+  {
+    "signup_month": "2026-06",
+    "cohort_order": 12,
+    "months_since_signup": 0,
+    "retention_rate": 100.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-06",
+    "cohort_order": 12,
+    "months_since_signup": 1,
+    "retention_rate": 97.4,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-06",
+    "cohort_order": 12,
+    "months_since_signup": 2,
+    "retention_rate": 94.2,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-06",
+    "cohort_order": 12,
+    "months_since_signup": 3,
+    "retention_rate": 91.9,
+    "is_forecast": 1
+  },
+  {
+    "signup_month": "2026-07",
+    "cohort_order": 13,
+    "months_since_signup": 0,
+    "retention_rate": 98.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-07",
+    "cohort_order": 13,
+    "months_since_signup": 1,
+    "retention_rate": 97.1,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-07",
+    "cohort_order": 13,
+    "months_since_signup": 2,
+    "retention_rate": 93.3,
+    "is_forecast": 1
+  },
+  {
+    "signup_month": "2026-08",
+    "cohort_order": 14,
+    "months_since_signup": 0,
+    "retention_rate": 100.0,
+    "is_forecast": 0
+  },
+  {
+    "signup_month": "2026-08",
+    "cohort_order": 14,
+    "months_since_signup": 1,
+    "retention_rate": 93.0,
+    "is_forecast": 1
+  }
+]

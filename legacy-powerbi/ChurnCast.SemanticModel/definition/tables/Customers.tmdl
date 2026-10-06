@@ -1,0 +1,193 @@
+/// One row per customer -- the core dimension the rest of the report hangs off.
+table Customers
+	lineageTag: 2338bdd4-f968-4f1a-b7b1-531f23ada878
+
+	/// Unique customer identifier, e.g. CUST-0001.
+	column customer_id
+		dataType: string
+		displayFolder: 1. Identity
+		lineageTag: 30574070-3abf-49fe-917d-5d6a37be5720
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_name
+		dataType: string
+		displayFolder: 1. Identity
+		lineageTag: d04f85e7-1573-40a8-a270-db124d0646dd
+		summarizeBy: none
+		sourceColumn: customer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column signup_date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		displayFolder: 1. Identity
+		lineageTag: f8ec66c9-d65e-4ff8-905a-c932fc9aca52
+		summarizeBy: none
+		sourceColumn: signup_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_active_date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		displayFolder: 1. Identity
+		lineageTag: b6aa72b2-6554-4006-b096-d1ab75e622c5
+		summarizeBy: none
+		sourceColumn: last_active_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column contract_type
+		dataType: string
+		displayFolder: 2. Segment
+		lineageTag: 96e25448-7a0e-42b1-b19b-516ef83e8467
+		summarizeBy: none
+		sourceColumn: contract_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column plan
+		dataType: string
+		displayFolder: 2. Segment
+		lineageTag: c8b28f80-a15e-43a1-a759-2aae6863ec53
+		summarizeBy: none
+		sourceColumn: plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		displayFolder: 2. Segment
+		lineageTag: ec1932a7-5c12-4c1b-9f7d-3828e9591c10
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column tenure_months
+		dataType: int64
+		displayFolder: 2. Segment
+		lineageTag: 2f1581d7-258e-4036-bec5-3b78d6784062
+		summarizeBy: none
+		sourceColumn: tenure_months
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_revenue
+		dataType: double
+		formatString: $#,##0.00
+		displayFolder: 3. Usage & Revenue
+		lineageTag: 11b025bd-7c75-42bd-854b-4989465af010
+		summarizeBy: sum
+		sourceColumn: monthly_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+	/// 0-100 product engagement score; lower means less active.
+	column usage_score
+		dataType: double
+		formatString: 0.0
+		displayFolder: 3. Usage & Revenue
+		lineageTag: 7c1563f7-b272-440b-adbc-7decb1524dcf
+		summarizeBy: none
+		sourceColumn: usage_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column support_tickets_90d
+		dataType: int64
+		displayFolder: 3. Usage & Revenue
+		lineageTag: 1ff4839f-bbcd-4425-b166-36fdc1547777
+		summarizeBy: none
+		sourceColumn: support_tickets_90d
+
+		annotation SummarizationSetBy = Automatic
+
+	column days_since_active
+		dataType: int64
+		displayFolder: 3. Usage & Revenue
+		lineageTag: 102a0357-f540-4b3f-a04c-1c7955b8a266
+		summarizeBy: none
+		sourceColumn: days_since_active
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Mock model output standing in for a trained scikit-learn/Fabric model.
+	column churn_probability
+		dataType: double
+		formatString: 0.0%
+		displayFolder: 4. Model Output
+		lineageTag: 171f6463-5c8a-4d73-a5d0-82a17342ed09
+		summarizeBy: none
+		sourceColumn: churn_probability
+
+		annotation SummarizationSetBy = Automatic
+
+	column churn_flag_thresholded
+		dataType: int64
+		displayFolder: 4. Model Output
+		lineageTag: f73035ea-ae64-4254-a93b-9c2989a0e8d7
+		summarizeBy: none
+		sourceColumn: churn_flag_thresholded
+
+		annotation SummarizationSetBy = Automatic
+
+	column predicted_revenue_loss
+		dataType: double
+		formatString: $#,##0.00
+		displayFolder: 4. Model Output
+		lineageTag: e4a8fd45-d65c-4e4a-b978-21f9629989c8
+		summarizeBy: sum
+		sourceColumn: predicted_revenue_loss
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Synthetic 'what actually happened' outcome, used only to grade the mock model.
+	column did_churn_last_month
+		dataType: int64
+		displayFolder: 5. Backtest Ground Truth
+		lineageTag: 2a76f725-f4a9-4d70-9314-ed891b99cded
+		summarizeBy: none
+		sourceColumn: did_churn_last_month
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Deliberately leaky demo column -- see the Data Leakage Checklist on Model Diagnostics.
+	column retention_call_flag
+		dataType: int64
+		displayFolder: 5. Backtest Ground Truth
+		lineageTag: 4c28cbb6-d92e-4154-a15d-de02f083a4dc
+		summarizeBy: none
+		sourceColumn: retention_call_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Buckets churn_probability into High / Medium / Low for the donut chart and slicers.
+	column 'Risk Bucket' = SWITCH(TRUE(), Customers[churn_probability] >= 0.6, "High", Customers[churn_probability] >= 0.3, "Medium", "Low")
+		dataType: string
+		lineageTag: 21b5fd72-3b44-4af8-be5b-5ad2fd728c43
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Groups tenure_months into readable ranges for the segment filters.
+	column 'Tenure Bucket' = SWITCH(TRUE(), Customers[tenure_months] < 6, "0-6 months", Customers[tenure_months] < 12, "6-12 months", Customers[tenure_months] < 24, "12-24 months", "24+ months")
+		dataType: string
+		lineageTag: 90a1ef18-ec7a-4241-972b-48dc996d5313
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Customers = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolderPath & "customers.csv"), [Delimiter=",", Columns=17, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"customer_id", type text}, {"customer_name", type text}, {"signup_date", type date}, {"last_active_date", type date}, {"contract_type", type text}, {"plan", type text}, {"region", type text}, {"tenure_months", Int64.Type}, {"monthly_revenue", type number}, {"usage_score", type number}, {"support_tickets_90d", Int64.Type}, {"days_since_active", Int64.Type}, {"churn_probability", type number}, {"churn_flag_thresholded", Int64.Type}, {"predicted_revenue_loss", type number}, {"did_churn_last_month", Int64.Type}, {"retention_call_flag", Int64.Type}})
+				in
+				    #"Changed Type"

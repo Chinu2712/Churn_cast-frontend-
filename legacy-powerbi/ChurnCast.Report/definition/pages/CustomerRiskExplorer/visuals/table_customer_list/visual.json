@@ -1,0 +1,140 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "table_customer_list",
+  "position": {
+    "x": 24,
+    "y": 158,
+    "z": 0,
+    "width": 1180,
+    "height": 560,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customers"
+                    }
+                  },
+                  "Property": "customer_id"
+                }
+              },
+              "queryRef": "Customers.customer_id",
+              "nativeQueryRef": "customer_id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customers"
+                    }
+                  },
+                  "Property": "customer_name"
+                }
+              },
+              "queryRef": "Customers.customer_name",
+              "nativeQueryRef": "customer_name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customers"
+                    }
+                  },
+                  "Property": "Risk Bucket"
+                }
+              },
+              "queryRef": "Customers.Risk Bucket",
+              "nativeQueryRef": "Risk Bucket"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customers"
+                    }
+                  },
+                  "Property": "churn_probability"
+                }
+              },
+              "queryRef": "Customers.churn_probability",
+              "nativeQueryRef": "churn_probability"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customers"
+                    }
+                  },
+                  "Property": "tenure_months"
+                }
+              },
+              "queryRef": "Customers.tenure_months",
+              "nativeQueryRef": "tenure_months"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customers"
+                    }
+                  },
+                  "Property": "last_active_date"
+                }
+              },
+              "queryRef": "Customers.last_active_date",
+              "nativeQueryRef": "last_active_date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customers"
+                    }
+                  },
+                  "Property": "predicted_revenue_loss"
+                }
+              },
+              "queryRef": "Customers.predicted_revenue_loss",
+              "nativeQueryRef": "predicted_revenue_loss"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Customers"
+                  }
+                },
+                "Property": "churn_probability"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

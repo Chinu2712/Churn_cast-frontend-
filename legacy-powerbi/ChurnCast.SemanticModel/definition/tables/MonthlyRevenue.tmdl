@@ -1,0 +1,76 @@
+/// Company-level actual vs. forecast revenue -- the Overview page's headline chart.
+table MonthlyRevenue
+	lineageTag: d4defe3b-7bb7-4117-921f-1f4fbd0a7333
+
+	column month
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: db043c9d-e53f-4346-9e2d-d2d4edfc269f
+		summarizeBy: none
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column actual_revenue
+		dataType: double
+		formatString: $#,##0
+		lineageTag: ede8bbaf-a144-4e1c-adcf-499bacd96607
+		summarizeBy: sum
+		sourceColumn: actual_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+	column forecast_revenue
+		dataType: double
+		formatString: $#,##0
+		lineageTag: d086f805-fe14-46ed-a38e-07a679a2f45f
+		summarizeBy: sum
+		sourceColumn: forecast_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+	column forecast_low
+		dataType: double
+		formatString: $#,##0
+		lineageTag: 03baa850-1f64-429a-857b-19164cb50756
+		summarizeBy: sum
+		sourceColumn: forecast_low
+
+		annotation SummarizationSetBy = Automatic
+
+	column forecast_high
+		dataType: double
+		formatString: $#,##0
+		lineageTag: 5b4d5df0-c094-4e77-81a9-38d7f25c8734
+		summarizeBy: sum
+		sourceColumn: forecast_high
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_forecast_month
+		dataType: int64
+		lineageTag: ee78308c-a6f1-49d5-ac86-f58fa41c83b0
+		summarizeBy: none
+		sourceColumn: is_forecast_month
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Walk-forward MAPE (%) for that month; feeds the KPI sparkline.
+	column mape_trend
+		dataType: double
+		formatString: 0.00
+		lineageTag: cd725a32-e8cb-409c-9be7-bc6025812b31
+		summarizeBy: none
+		sourceColumn: mape_trend
+
+		annotation SummarizationSetBy = Automatic
+
+	partition MonthlyRevenue = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolderPath & "monthly_revenue.csv"), [Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"month", type date}, {"actual_revenue", type number}, {"forecast_revenue", type number}, {"forecast_low", type number}, {"forecast_high", type number}, {"is_forecast_month", Int64.Type}, {"mape_trend", type number}})
+				in
+				    #"Changed Type"

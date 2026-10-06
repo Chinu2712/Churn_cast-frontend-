@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "line_mape_trend",
+  "position": {
+    "x": 880,
+    "y": 72,
+    "z": 0,
+    "width": 260,
+    "height": 110,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MonthlyRevenue"
+                    }
+                  },
+                  "Property": "month"
+                }
+              },
+              "queryRef": "MonthlyRevenue.month",
+              "nativeQueryRef": "month",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MonthlyRevenue"
+                    }
+                  },
+                  "Property": "mape_trend"
+                }
+              },
+              "queryRef": "MonthlyRevenue.mape_trend",
+              "nativeQueryRef": "mape_trend"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

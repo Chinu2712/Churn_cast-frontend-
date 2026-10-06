@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "ChurnCast"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "82e7e627-aea1-4e17-a765-83fe78c4bd46"
+  }
+}

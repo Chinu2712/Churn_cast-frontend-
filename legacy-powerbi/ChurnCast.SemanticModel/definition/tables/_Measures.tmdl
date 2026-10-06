@@ -1,0 +1,145 @@
+table _Measures
+	lineageTag: 74dd2512-96cd-418e-907c-98fcffe59ef5
+
+	/// Point forecast for next month's company-wide revenue.
+	measure 'Next Month Revenue' = CALCULATE(SUM(MonthlyRevenue[forecast_revenue]), MonthlyRevenue[is_forecast_month] = 1)
+		formatString: $#,##0
+		displayFolder: 01. Forecast
+		lineageTag: 56ff43ba-a84c-439c-b53a-69b46f6fd0d9
+
+	/// Lower bound of the 95%-style prediction interval.
+	measure 'Forecast Low' = CALCULATE(SUM(MonthlyRevenue[forecast_low]), MonthlyRevenue[is_forecast_month] = 1)
+		formatString: $#,##0
+		displayFolder: 01. Forecast
+		lineageTag: 14173e7d-f1ca-47af-a7e5-49c00418d7ad
+
+	/// Upper bound of the 95%-style prediction interval.
+	measure 'Forecast High' = CALCULATE(SUM(MonthlyRevenue[forecast_high]), MonthlyRevenue[is_forecast_month] = 1)
+		formatString: $#,##0
+		displayFolder: 01. Forecast
+		lineageTag: 0a8f95c9-97d5-45d6-a44e-1c85bef2f4af
+
+	/// Actual revenue for the most recent completed month.
+	measure 'Actual Revenue MTD' = VAR LatestActualMonth = CALCULATE(MAX(MonthlyRevenue[month]), NOT ISBLANK(MonthlyRevenue[actual_revenue])) RETURN CALCULATE(SUM(MonthlyRevenue[actual_revenue]), MonthlyRevenue[month] = LatestActualMonth)
+		formatString: $#,##0
+		displayFolder: 01. Forecast
+		lineageTag: 69c79e7d-23b5-40e5-9829-42e2a4f279ca
+
+	/// Walk-forward backtest MAPE for the revenue trend line.
+	measure 'Forecast MAPE %' = DIVIDE(CALCULATE(SUM(BacktestMetrics[metric_value]), BacktestMetrics[metric_name] = "Revenue MAPE"), 100)
+		formatString: 0.0%
+		displayFolder: 01. Forecast
+		lineageTag: 81282b34-f045-4e36-b945-759c289cfec0
+
+	/// Walk-forward backtest RMSE for the revenue trend line.
+	measure 'Forecast RMSE' = CALCULATE(SUM(BacktestMetrics[metric_value]), BacktestMetrics[metric_name] = "Revenue RMSE")
+		formatString: $#,##0
+		displayFolder: 01. Forecast
+		lineageTag: 8f0baa9d-5d4c-4a46-86d1-2cd48a6c80e6
+
+	measure 'Total Customers' = COUNTROWS(Customers)
+		formatString: #,##0
+		displayFolder: 02. Churn Risk
+		lineageTag: cc6ffd1c-3b6c-4117-9d37-d794e51e13e3
+
+	measure 'High Risk Customers' = CALCULATE(COUNTROWS(Customers), Customers[Risk Bucket] = "High")
+		formatString: #,##0
+		displayFolder: 02. Churn Risk
+		lineageTag: 5e82374e-07a2-4975-ad47-b7f4e2bdee9a
+
+	measure 'Medium Risk Customers' = CALCULATE(COUNTROWS(Customers), Customers[Risk Bucket] = "Medium")
+		formatString: #,##0
+		displayFolder: 02. Churn Risk
+		lineageTag: 2ec2ff40-021c-47a3-b489-e9fa7a700d2c
+
+	measure 'Low Risk Customers' = CALCULATE(COUNTROWS(Customers), Customers[Risk Bucket] = "Low")
+		formatString: #,##0
+		displayFolder: 02. Churn Risk
+		lineageTag: b35ad9aa-3d9b-482f-adab-581f504bea76
+
+	measure '% High Risk Customers' = DIVIDE([High Risk Customers], [Total Customers])
+		formatString: 0.0%
+		displayFolder: 02. Churn Risk
+		lineageTag: dac41e35-a00f-43dc-9cf6-54930cb55cb8
+
+	/// Expected revenue lost to churn: monthly_revenue x churn_probability, summed.
+	measure 'Revenue at Risk' = SUM(Customers[predicted_revenue_loss])
+		formatString: $#,##0
+		displayFolder: 02. Churn Risk
+		lineageTag: c6bd304a-dce1-42d9-af00-dd1a9496b388
+
+	measure 'Average Churn Probability' = AVERAGE(Customers[churn_probability])
+		formatString: 0.0%
+		displayFolder: 02. Churn Risk
+		lineageTag: 689668db-8ad4-4bab-9b78-b4856cb6a1f2
+
+	measure 'Usage Drop % (Selected)' = SELECTEDVALUE(UsageDropPercent[Usage Drop %], 0)
+		formatString: #,##0
+		displayFolder: 03. What-If
+		lineageTag: 2a8a5c46-a54b-4cac-b18e-48373764bbb1
+
+	/// Client-side what-if: nudges a selected customer's risk up as usage drops further.
+	measure 'Simulated Churn Probability' = VAR BaseProbability = SELECTEDVALUE(Customers[churn_probability]) VAR Bump = ([Usage Drop % (Selected)] / 100) * 0.4 RETURN IF(ISBLANK(BaseProbability), BLANK(), MIN(1, MAX(0, BaseProbability + Bump)))
+		formatString: 0.0%
+		displayFolder: 03. What-If
+		lineageTag: cc582ac4-18f0-45b5-b928-3763bead13ba
+
+	/// Extra expected revenue at risk implied by the what-if slider.
+	measure 'Simulated Revenue Impact' = VAR BaseRevenue = SELECTEDVALUE(Customers[monthly_revenue]) VAR BaseProbability = SELECTEDVALUE(Customers[churn_probability]) RETURN IF(ISBLANK(BaseRevenue), BLANK(), BaseRevenue * ([Simulated Churn Probability] - BaseProbability))
+		formatString: $#,##0.00
+		displayFolder: 03. What-If
+		lineageTag: 864d1acf-63ea-4947-a051-27dbd1a01be7
+
+	measure 'Holdout AUC' = CALCULATE(SUM(BacktestMetrics[metric_value]), BacktestMetrics[metric_name] = "Churn AUC")
+		formatString: 0.00
+		displayFolder: 04. Diagnostics
+		lineageTag: c679808f-41bc-4182-9fa9-452ff82e46ec
+
+	measure 'Holdout Precision' = CALCULATE(SUM(BacktestMetrics[metric_value]), BacktestMetrics[metric_name] = "Churn Precision")
+		formatString: 0.0%
+		displayFolder: 04. Diagnostics
+		lineageTag: 5b953669-2385-4cd3-afe8-b773b8295316
+
+	measure 'Holdout Recall' = CALCULATE(SUM(BacktestMetrics[metric_value]), BacktestMetrics[metric_name] = "Churn Recall")
+		formatString: 0.0%
+		displayFolder: 04. Diagnostics
+		lineageTag: 486f58cf-7a82-4f1e-829e-a4eb31e384d8
+
+	/// Of the 10 customers we'd call first, the share who actually churned.
+	measure 'Precision at Top 10' = CALCULATE(SUM(BacktestMetrics[metric_value]), BacktestMetrics[metric_name] = "Precision @ Top 10")
+		formatString: 0.0%
+		displayFolder: 04. Diagnostics
+		lineageTag: 7bb6f271-ef56-42c6-acc5-dfe081a97f31
+
+	measure 'Drift Flag Count' = CALCULATE(COUNTROWS(DriftMetrics), DriftMetrics[drift_flag] = 1)
+		formatString: #,##0
+		displayFolder: 04. Diagnostics
+		lineageTag: f7f70ade-346a-4539-8ee7-4dde3d5bba99
+
+	measure 'Leakage Flag Count' = CALCULATE(COUNTROWS(LeakageChecklist), LeakageChecklist[leakage_flag] = 1)
+		formatString: #,##0
+		displayFolder: 04. Diagnostics
+		lineageTag: 9243082d-18b5-428c-ae2b-df3783543206
+
+	measure 'Last Trained Date (Text)' = FORMAT(SELECTEDVALUE(ModelMeta[last_trained_date]), "mmmm d, yyyy")
+		displayFolder: 04. Diagnostics
+		lineageTag: cff14479-8dab-4b14-b6cf-56d19d940523
+
+	measure 'Next Retrain Date (Text)' = FORMAT(SELECTEDVALUE(ModelMeta[next_scheduled_retrain]), "mmmm d, yyyy")
+		displayFolder: 04. Diagnostics
+		lineageTag: f01087a2-0cbc-4202-9a4c-625a14ecd47a
+
+	/// The Overview page honesty note -- built from data, not hardcoded text.
+	measure 'Accuracy Note' = VAR StartDate = FORMAT(SELECTEDVALUE(ModelMeta[holdout_start]), "mmm yyyy") VAR EndDate = FORMAT(SELECTEDVALUE(ModelMeta[holdout_end]), "mmm yyyy") VAR MapeText = FORMAT([Forecast MAPE %], "0.0%") VAR AucText = FORMAT([Holdout AUC], "0.00") RETURN "Model trained on data from " & StartDate & " to " & EndDate & ". Holdout MAPE = " & MapeText & ", AUC = " & AucText & ". Use predictions as decision support; validate before high-cost actions."
+		displayFolder: 04. Diagnostics
+		lineageTag: 6a92ec6d-786f-430b-abe6-d4f8cfcfbdfe
+
+	column Value
+		isHidden
+		lineageTag: 2b53dfb1-aa50-4f7d-860a-20bd65137fd2
+		isNameInferred
+		sourceColumn: [Value]
+
+	partition _Measures = calculated
+		mode: import
+		source = {1}

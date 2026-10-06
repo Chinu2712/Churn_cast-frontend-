@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/main/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.141.json",
+  "name": "ChurnCast Dark",
+
+  "dataColors": [
+    "#5B9BD5",
+    "#8FB6D9",
+    "#B7C6CE",
+    "#F0B860",
+    "#A688D1",
+    "#6EC2B4",
+    "#E0837A",
+    "#B0BEC5"
+  ],
+
+  "good": "#5FBF67",
+  "neutral": "#E0C34A",
+  "bad": "#E5766B",
+
+  "maximum": "#5B9BD5",
+  "center": "#F0B860",
+  "minimum": "#233240",
+  "null": "#8A97A0",
+
+  "background": "#1E1E1E",
+  "backgroundLight": "#2B2B2B",
+  "backgroundNeutral": "#333333",
+  "foreground": "#F3F2F1",
+  "foregroundNeutralSecondary": "#C8C6C4",
+  "foregroundNeutralTertiary": "#A19F9D",
+  "tableAccent": "#5B9BD5",
+
+  "firstLevelElements": "#F3F2F1",
+  "secondLevelElements": "#C8C6C4",
+  "thirdLevelElements": "#3F3F3F",
+  "fourthLevelElements": "#2B2B2B",
+
+  "textClasses": {
+    "callout": { "fontSize": 32, "fontFace": "Segoe UI Semibold", "color": "#F3F2F1" },
+    "title": { "fontSize": 14, "fontFace": "Segoe UI Semibold", "color": "#F3F2F1" },
+    "header": { "fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#F3F2F1" },
+    "label": { "fontSize": 10, "fontFace": "Segoe UI", "color": "#F3F2F1" }
+  },
+
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#252526" } }, "transparency": 0 }],
+        "border": [{ "show": false }],
+        "dropShadow": [{ "show": false }],
+        "title": [{ "fontSize": 14, "fontColor": { "solid": { "color": "#F3F2F1" } }, "bold": true }]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [{ "color": { "solid": { "color": "#5B9BD5" } }, "fontSize": 28 }],
+        "categoryLabels": [{ "color": { "solid": { "color": "#C8C6C4" } }, "fontSize": 11 }]
+      }
+    },
+    "cardVisual": {
+      "*": {
+        "callout": [{ "color": { "solid": { "color": "#5B9BD5" } } }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#2B2B2B" } }, "transparency": 0 }]
+      }
+    }
+  }
+}

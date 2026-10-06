@@ -1,0 +1,239 @@
+/*
+  index.css — global styles and design tokens.
+
+  Design-token approach: every color, radius, and spacing value a component
+  needs is defined once here as a CSS custom property (variable). Components
+  never hardcode a hex color — they reference var(--accent), var(--bg), etc.
+  Flipping data-theme="dark" on <html> swaps every variable at once, which is
+  the entire mechanism behind the dark/light toggle. No per-component theme
+  logic is needed anywhere else in the app.
+*/
+
+:root {
+  --accent: #2F6B8A;
+  --accent-light: #6F8FA3;
+  --good: #2E7D32;
+  --neutral: #B38600;
+  --bad: #B3261E;
+
+  --bg: #F7F8FA;
+  --bg-canvas: #F0F2F4;
+  --card-bg: #FFFFFF;
+  --border: #E3E6E8;
+  --text: #1F2328;
+  --text-light: #66707A;
+  --rail-bg: #14181C;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 1px 2px rgba(16, 24, 32, 0.06);
+
+  --font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+html[data-theme="dark"] {
+  --bg: #17181A;
+  --bg-canvas: #101113;
+  --card-bg: #1F2124;
+  --border: #33363A;
+  --text: #F2F3F4;
+  --text-light: #A6ACB2;
+  --accent: #5B9BD5;
+  --accent-light: #8FB6D9;
+  --rail-bg: #0E1012;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-canvas);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, p { margin: 0; }
+
+button, select, input {
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Visible focus ring for keyboard navigation -- required for accessibility
+   (WCAG 2.4.7). Mouse users never see it because :focus-visible only
+   matches keyboard/programmatic focus. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+a { color: var(--accent); }
+
+/* Screen-reader-only utility: visually hidden but still announced. Used for
+   labels that a sighted user can infer from layout but an assistive
+   technology user cannot. */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------------------------------------------------------------------- */
+/* App shell: left nav rail + scrollable main content                     */
+/* ---------------------------------------------------------------------- */
+
+.app-shell {
+  display: flex;
+  height: 100vh;
+}
+
+.nav-rail {
+  width: 64px;
+  background: var(--rail-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.nav-rail-item {
+  width: 40px; height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  color: #9CA4AB; font-size: 11px; font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-rail-item.active { background: var(--accent); color: white; }
+.nav-rail-item:hover:not(.active) { background: #262a2e; }
+
+.main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 22px 28px 48px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.topbar h1 { font-size: 22px; font-weight: 700; }
+
+.theme-toggle {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 20px; padding: 6px 14px; cursor: pointer; font-size: 13px;
+  color: var(--text-light);
+}
+.theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
+.page-note {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Grid + card primitives                                                  */
+/* ---------------------------------------------------------------------- */
+
+.grid { display: grid; gap: 16px; }
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  box-shadow: var(--shadow);
+}
+
+.card h3 {
+  font-size: 11px; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--text-light); font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card h3 .card-subtitle {
+  font-weight: 400; text-transform: none; letter-spacing: normal;
+}
+
+.kpi-value { font-size: 26px; font-weight: 700; color: var(--accent); }
+.kpi-value.bad { color: var(--bad); }
+.kpi-value.good { color: var(--good); }
+
+.note-text { font-size: 12.5px; color: var(--text-light); line-height: 1.5; font-style: italic; }
+
+/* ---------------------------------------------------------------------- */
+/* Tables                                                                  */
+/* ---------------------------------------------------------------------- */
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th {
+  text-align: left; color: var(--text-light); font-weight: 600; font-size: 11px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--border);
+  cursor: pointer; user-select: none;
+}
+th:hover { color: var(--accent); }
+td { padding: 9px 4px; border-bottom: 1px solid var(--border); }
+tr.clickable { cursor: pointer; }
+tr.clickable:hover td { background: var(--bg); }
+
+.badge { padding: 2px 9px; border-radius: 12px; font-size: 11px; font-weight: 700; display: inline-block; }
+.badge.high { background: rgba(179, 38, 30, .12); color: var(--bad); }
+.badge.medium { background: rgba(179, 134, 0, .12); color: var(--neutral); }
+.badge.low { background: rgba(46, 125, 50, .12); color: var(--good); }
+
+.actions { display: flex; gap: 10px; margin-top: 12px; }
+.btn {
+  border: 1px solid var(--border); background: transparent; color: var(--accent);
+  font-weight: 600; font-size: 12px; padding: 7px 14px; border-radius: var(--radius-sm); cursor: pointer;
+}
+.btn:hover { background: var(--bg); }
+
+.legend { display: flex; gap: 16px; margin-top: 8px; font-size: 12px; color: var(--text-light); flex-wrap: wrap; }
+.legend .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+
+/* ---------------------------------------------------------------------- */
+/* Slicers (filter dropdowns)                                             */
+/* ---------------------------------------------------------------------- */
+
+.slicers { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 16px; }
+.slicer { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; }
+.slicer h4 { margin: 0 0 4px; font-size: 10.5px; text-transform: uppercase; letter-spacing: .03em; color: var(--text-light); }
+.slicer select { width: 100%; border: none; background: transparent; color: var(--text); font-size: 13px; padding: 3px 0; }
+
+/* ---------------------------------------------------------------------- */
+/* What-if slider + feature-contribution bars                             */
+/* ---------------------------------------------------------------------- */
+
+.bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.bar-label { width: 160px; font-size: 12px; text-align: right; color: var(--text-light); flex-shrink: 0; }
+.bar-track { flex: 1; height: 10px; background: var(--bg); border-radius: 4px; overflow: hidden; }
+.bar-fill { height: 10px; border-radius: 4px; }
+
+.slider-row { display: flex; align-items: center; gap: 14px; }
+input[type="range"] { flex: 1; accent-color: var(--accent); height: 4px; }
+.slider-value { font-weight: 700; color: var(--accent); width: 46px; text-align: right; }
+
+.kpi-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+
+/* ---------------------------------------------------------------------- */
+/* Loading / empty states                                                  */
+/* ---------------------------------------------------------------------- */
+
+.loading-text, .error-text { font-size: 13px; color: var(--text-light); padding: 20px 0; }
+.error-text { color: var(--bad); }

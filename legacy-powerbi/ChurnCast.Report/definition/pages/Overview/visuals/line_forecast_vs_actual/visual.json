@@ -1,0 +1,99 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "line_forecast_vs_actual",
+  "position": {
+    "x": 24,
+    "y": 198,
+    "z": 0,
+    "width": 1180,
+    "height": 380,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MonthlyRevenue"
+                    }
+                  },
+                  "Property": "month"
+                }
+              },
+              "queryRef": "MonthlyRevenue.month",
+              "nativeQueryRef": "month",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MonthlyRevenue"
+                    }
+                  },
+                  "Property": "actual_revenue"
+                }
+              },
+              "queryRef": "MonthlyRevenue.actual_revenue",
+              "nativeQueryRef": "actual_revenue"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MonthlyRevenue"
+                    }
+                  },
+                  "Property": "forecast_revenue"
+                }
+              },
+              "queryRef": "MonthlyRevenue.forecast_revenue",
+              "nativeQueryRef": "forecast_revenue"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MonthlyRevenue"
+                    }
+                  },
+                  "Property": "forecast_low"
+                }
+              },
+              "queryRef": "MonthlyRevenue.forecast_low",
+              "nativeQueryRef": "forecast_low"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MonthlyRevenue"
+                    }
+                  },
+                  "Property": "forecast_high"
+                }
+              },
+              "queryRef": "MonthlyRevenue.forecast_high",
+              "nativeQueryRef": "forecast_high"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

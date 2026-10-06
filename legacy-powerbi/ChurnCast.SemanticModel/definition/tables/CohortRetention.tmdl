@@ -1,0 +1,55 @@
+/// Retention curve per signup cohort, for the Overview page's cohort heatmap.
+table CohortRetention
+	lineageTag: 66ea98f8-cf30-4ae8-a3c4-7e1871a99c9a
+
+	column signup_month
+		dataType: string
+		lineageTag: 0e365d16-947e-4b18-bf4f-c61ef00ea802
+		summarizeBy: none
+		sourceColumn: signup_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column cohort_order
+		dataType: int64
+		isHidden
+		lineageTag: ac83ae09-d2da-45bc-b0a0-0ed96c5b8f54
+		summarizeBy: none
+		sourceColumn: cohort_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column months_since_signup
+		dataType: int64
+		lineageTag: a0637c62-2be2-424a-9c0e-50970c30e921
+		summarizeBy: none
+		sourceColumn: months_since_signup
+
+		annotation SummarizationSetBy = Automatic
+
+	column retention_rate
+		dataType: double
+		formatString: 0.0
+		lineageTag: 626239cf-79c7-4ab6-80ee-cd1227e489aa
+		summarizeBy: none
+		sourceColumn: retention_rate
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_forecast
+		dataType: int64
+		lineageTag: a63f58ff-b84b-4de5-abc6-3ce41ed026d5
+		summarizeBy: none
+		sourceColumn: is_forecast
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CohortRetention = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolderPath & "cohort_retention.csv"), [Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"signup_month", type text}, {"cohort_order", Int64.Type}, {"months_since_signup", Int64.Type}, {"retention_rate", type number}, {"is_forecast", Int64.Type}})
+				in
+				    #"Changed Type"

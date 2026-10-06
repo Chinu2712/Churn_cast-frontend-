@@ -1,0 +1,108 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "column_drift_small_multiples",
+  "position": {
+    "x": 976,
+    "y": 188,
+    "z": 0,
+    "width": 920,
+    "height": 360,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DriftDistributions"
+                    }
+                  },
+                  "Property": "bucket_label"
+                }
+              },
+              "queryRef": "DriftDistributions.bucket_label",
+              "nativeQueryRef": "bucket_label",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DriftDistributions"
+                    }
+                  },
+                  "Property": "period"
+                }
+              },
+              "queryRef": "DriftDistributions.period",
+              "nativeQueryRef": "period"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DriftDistributions"
+                    }
+                  },
+                  "Property": "proportion"
+                }
+              },
+              "queryRef": "DriftDistributions.proportion",
+              "nativeQueryRef": "proportion"
+            }
+          ]
+        },
+        "SmallMultiples": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DriftDistributions"
+                    }
+                  },
+                  "Property": "feature_name"
+                }
+              },
+              "queryRef": "DriftDistributions.feature_name",
+              "nativeQueryRef": "feature_name"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "smallMultiplesLayout": [
+        {
+          "properties": {
+            "gridLineType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'inner'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

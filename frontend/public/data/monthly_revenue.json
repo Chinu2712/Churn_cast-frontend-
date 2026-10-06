@@ -1,0 +1,119 @@
+[
+  {
+    "month": "2025-09-01",
+    "actual_revenue": 23368.34,
+    "forecast_revenue": null,
+    "forecast_low": null,
+    "forecast_high": null,
+    "is_forecast_month": 0,
+    "mape_trend": null
+  },
+  {
+    "month": "2025-10-01",
+    "actual_revenue": 23333.72,
+    "forecast_revenue": null,
+    "forecast_low": null,
+    "forecast_high": null,
+    "is_forecast_month": 0,
+    "mape_trend": null
+  },
+  {
+    "month": "2025-11-01",
+    "actual_revenue": 23283.4,
+    "forecast_revenue": null,
+    "forecast_low": null,
+    "forecast_high": null,
+    "is_forecast_month": 0,
+    "mape_trend": 0.07
+  },
+  {
+    "month": "2025-12-01",
+    "actual_revenue": 23304.6,
+    "forecast_revenue": null,
+    "forecast_low": null,
+    "forecast_high": null,
+    "is_forecast_month": 0,
+    "mape_trend": 0.26
+  },
+  {
+    "month": "2026-01-01",
+    "actual_revenue": 23406.64,
+    "forecast_revenue": null,
+    "forecast_low": null,
+    "forecast_high": null,
+    "is_forecast_month": 0,
+    "mape_trend": 0.62
+  },
+  {
+    "month": "2026-02-01",
+    "actual_revenue": 23278.9,
+    "forecast_revenue": null,
+    "forecast_low": null,
+    "forecast_high": null,
+    "is_forecast_month": 0,
+    "mape_trend": 0.32
+  },
+  {
+    "month": "2026-03-01",
+    "actual_revenue": 23260.5,
+    "forecast_revenue": null,
+    "forecast_low": null,
+    "forecast_high": null,
+    "is_forecast_month": 0,
+    "mape_trend": 0.21
+  },
+  {
+    "month": "2026-04-01",
+    "actual_revenue": 23306.23,
+    "forecast_revenue": null,
+    "forecast_low": null,
+    "forecast_high": null,
+    "is_forecast_month": 0,
+    "mape_trend": 0.13
+  },
+  {
+    "month": "2026-05-01",
+    "actual_revenue": 23324.78,
+    "forecast_revenue": null,
+    "forecast_low": null,
+    "forecast_high": null,
+    "is_forecast_month": 0,
+    "mape_trend": 0.19
+  },
+  {
+    "month": "2026-06-01",
+    "actual_revenue": 23197.57,
+    "forecast_revenue": null,
+    "forecast_low": null,
+    "forecast_high": null,
+    "is_forecast_month": 0,
+    "mape_trend": 0.4
+  },
+  {
+    "month": "2026-07-01",
+    "actual_revenue": 23078.48,
+    "forecast_revenue": null,
+    "forecast_low": null,
+    "forecast_high": null,
+    "is_forecast_month": 0,
+    "mape_trend": 0.74
+  },
+  {
+    "month": "2026-08-01",
+    "actual_revenue": 23003.67,
+    "forecast_revenue": 23003.67,
+    "forecast_low": 23003.67,
+    "forecast_high": 23003.67,
+    "is_forecast_month": 0,
+    "mape_trend": 0.75
+  },
+  {
+    "month": "2026-09-01",
+    "actual_revenue": null,
+    "forecast_revenue": 23100.23,
+    "forecast_low": 22953.6,
+    "forecast_high": 23246.87,
+    "is_forecast_month": 1,
+    "mape_trend": null
+  }
+]

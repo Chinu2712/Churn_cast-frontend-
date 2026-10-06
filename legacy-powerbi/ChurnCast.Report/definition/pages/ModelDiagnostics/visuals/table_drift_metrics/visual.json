@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "table_drift_metrics",
+  "position": {
+    "x": 24,
+    "y": 564,
+    "z": 0,
+    "width": 690,
+    "height": 300,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DriftMetrics"
+                    }
+                  },
+                  "Property": "feature_name"
+                }
+              },
+              "queryRef": "DriftMetrics.feature_name",
+              "nativeQueryRef": "feature_name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DriftMetrics"
+                    }
+                  },
+                  "Property": "ks_statistic"
+                }
+              },
+              "queryRef": "DriftMetrics.ks_statistic",
+              "nativeQueryRef": "ks_statistic"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DriftMetrics"
+                    }
+                  },
+                  "Property": "drift_flag"
+                }
+              },
+              "queryRef": "DriftMetrics.drift_flag",
+              "nativeQueryRef": "drift_flag"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DriftMetrics"
+                    }
+                  },
+                  "Property": "baseline_mean"
+                }
+              },
+              "queryRef": "DriftMetrics.baseline_mean",
+              "nativeQueryRef": "baseline_mean"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DriftMetrics"
+                    }
+                  },
+                  "Property": "recent_mean"
+                }
+              },
+              "queryRef": "DriftMetrics.recent_mean",
+              "nativeQueryRef": "recent_mean"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

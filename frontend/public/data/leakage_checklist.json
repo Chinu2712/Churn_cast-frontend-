@@ -1,0 +1,44 @@
+[
+  {
+    "feature_name": "retention_call_flag",
+    "correlation_with_label": 0.747,
+    "leakage_flag": 1,
+    "note": "This is logged by the support team *after* they decide an account looks shaky, so it's downstream of the very thing we're trying to predict. Drop it from training, or only use it if it was recorded before the churn outcome was known."
+  },
+  {
+    "feature_name": "usage_score",
+    "correlation_with_label": -0.233,
+    "leakage_flag": 0,
+    "note": "No strong correlation with the outcome; looks safe to keep."
+  },
+  {
+    "feature_name": "days_since_active",
+    "correlation_with_label": 0.208,
+    "leakage_flag": 0,
+    "note": "No strong correlation with the outcome; looks safe to keep."
+  },
+  {
+    "feature_name": "tenure_months",
+    "correlation_with_label": -0.135,
+    "leakage_flag": 0,
+    "note": "No strong correlation with the outcome; looks safe to keep."
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "correlation_with_label": 0.116,
+    "leakage_flag": 0,
+    "note": "No strong correlation with the outcome; looks safe to keep."
+  },
+  {
+    "feature_name": "contract_flexibility",
+    "correlation_with_label": 0.11,
+    "leakage_flag": 0,
+    "note": "No strong correlation with the outcome; looks safe to keep."
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "correlation_with_label": 0.056,
+    "leakage_flag": 0,
+    "note": "No strong correlation with the outcome; looks safe to keep."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "metric_name": "Revenue MAPE",
+    "metric_value": 0.37,
+    "metric_type": "Revenue",
+    "metric_display": "0.4%"
+  },
+  {
+    "metric_name": "Revenue RMSE",
+    "metric_value": 101.51,
+    "metric_type": "Revenue",
+    "metric_display": "$102"
+  },
+  {
+    "metric_name": "Churn AUC",
+    "metric_value": 0.665,
+    "metric_type": "Churn",
+    "metric_display": 0.66
+  },
+  {
+    "metric_name": "Churn Precision",
+    "metric_value": 0.611,
+    "metric_type": "Churn",
+    "metric_display": "61%"
+  },
+  {
+    "metric_name": "Churn Recall",
+    "metric_value": 0.429,
+    "metric_type": "Churn",
+    "metric_display": "43%"
+  },
+  {
+    "metric_name": "Precision @ Top 10",
+    "metric_value": 1.0,
+    "metric_type": "Churn",
+    "metric_display": "100%"
+  }
+]

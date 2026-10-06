@@ -1,0 +1,501 @@
+customer_id,customer_name,signup_date,last_active_date,contract_type,plan,region,tenure_months,monthly_revenue,usage_score,support_tickets_90d,days_since_active,churn_probability,churn_flag_thresholded,predicted_revenue_loss,did_churn_last_month,retention_call_flag
+CUST-0001,Miguel Martins,2025-07-30,2026-08-07,One year,Basic,West,13,16.51,71.9,1,24,0.269,0,4.44,0,0
+CUST-0002,Priya Brooks,2026-02-06,2026-08-16,Two year,Standard,East,6,45.49,83.4,1,15,0.1881,0,8.56,1,0
+CUST-0003,Omar Kim,2025-05-21,2026-07-31,Two year,Basic,West,15,19.49,65.5,2,31,0.3312,0,6.45,0,0
+CUST-0004,Aarav Haddad,2025-09-20,2026-07-27,Month-to-month,Basic,West,11,18.65,59.3,1,35,0.5203,1,9.7,0,0
+CUST-0005,Hana Johansson,2026-06-28,2026-07-06,Month-to-month,Standard,East,2,44.92,20.9,4,56,0.7877,1,35.39,1,1
+CUST-0006,Quinn Fischer,2024-12-19,2026-08-24,One year,Basic,South,20,18.86,77.6,3,7,0.2848,0,5.37,0,0
+CUST-0007,Sam Espinoza,2025-08-08,2026-07-29,Month-to-month,Premium,East,12,95.4,66.3,0,33,0.4449,0,42.44,0,0
+CUST-0008,Talia Tanaka,2025-07-21,2026-07-23,One year,Basic,South,13,19.22,52.8,1,39,0.5032,1,9.67,1,1
+CUST-0009,Zara Lopez,2026-06-16,2026-07-19,Month-to-month,Standard,East,2,48.31,56.9,3,43,0.5889,1,28.45,1,1
+CUST-0010,Rosa Ibrahim,2026-02-01,2026-07-30,Month-to-month,Standard,West,7,47.45,59.2,0,32,0.4904,0,23.27,1,1
+CUST-0011,Priya Brooks,2026-03-09,2026-08-11,Month-to-month,Standard,South,5,48.56,60.1,1,20,0.518,1,25.16,1,1
+CUST-0012,Ivan Patel,2025-03-09,2026-08-05,One year,Standard,East,18,48.31,77.1,0,26,0.1906,0,9.21,0,0
+CUST-0013,Jasmine Johansson,2025-10-23,2026-07-24,Month-to-month,Standard,North,10,48.44,47.9,2,38,0.5455,1,26.42,0,1
+CUST-0014,Vera Haddad,2025-06-22,2026-08-16,Month-to-month,Premium,East,14,96.54,83.7,0,15,0.4088,0,39.47,0,0
+CUST-0015,Miguel Nguyen,2026-02-04,2026-07-25,Month-to-month,Basic,South,6,18.81,47.0,3,37,0.5221,1,9.82,1,1
+CUST-0016,Sam Chen,2026-05-08,2026-07-16,Month-to-month,Basic,South,3,17.79,58.1,0,46,0.6221,1,11.07,1,1
+CUST-0017,Diya Kim,2025-12-11,2026-08-31,Month-to-month,Standard,East,8,49.97,96.8,0,0,0.3644,0,18.21,0,0
+CUST-0018,Diya Rossi,2026-07-10,2026-08-12,One year,Premium,North,1,85.65,71.9,1,19,0.3223,0,27.61,1,1
+CUST-0019,Farah Johansson,2025-06-18,2026-08-06,Month-to-month,Basic,East,14,18.58,69.5,0,25,0.452,0,8.4,0,0
+CUST-0020,Farah Anderson,2025-10-30,2026-08-03,One year,Standard,East,10,48.32,53.9,3,28,0.4848,0,23.43,0,0
+CUST-0021,Priya Espinoza,2025-08-10,2026-07-28,Two year,Premium,South,12,90.45,60.1,1,34,0.3201,0,28.95,0,0
+CUST-0022,Quinn Brooks,2026-03-16,2026-07-25,Month-to-month,Standard,North,5,50.45,69.1,0,37,0.5404,1,27.26,0,0
+CUST-0023,Omar Kim,2024-12-29,2026-08-10,Month-to-month,Premium,South,20,98.68,68.6,1,21,0.3918,0,38.66,0,0
+CUST-0024,Hana Haddad,2025-04-17,2026-08-02,One year,Standard,North,16,49.27,66.6,3,29,0.3465,0,17.07,0,0
+CUST-0025,Omar Chen,2025-07-27,2026-08-28,Month-to-month,Standard,South,13,51.27,67.5,1,3,0.3584,0,18.37,1,1
+CUST-0026,Diya Nguyen,2026-05-21,2026-08-04,Month-to-month,Basic,East,3,19.42,64.8,0,27,0.5071,1,9.85,0,0
+CUST-0027,Miguel Davies,2026-01-24,2026-07-22,Two year,Premium,North,7,93.23,46.4,0,40,0.4673,0,43.56,0,1
+CUST-0028,Ethan Garcia,2026-07-19,2026-07-27,Two year,Basic,East,1,17.74,47.3,1,35,0.4124,0,7.32,1,1
+CUST-0029,Bella Tanaka,2026-06-06,2026-07-29,One year,Standard,North,2,45.53,68.7,2,33,0.337,0,15.35,0,0
+CUST-0030,Ethan Brooks,2025-09-29,2026-07-23,Month-to-month,Standard,West,11,45.71,47.5,0,39,0.5075,1,23.2,0,0
+CUST-0031,Carlos Espinoza,2025-08-20,2026-08-05,One year,Standard,East,12,47.53,65.2,1,26,0.3731,0,17.73,0,0
+CUST-0032,Miguel Garcia,2025-01-05,2026-07-30,One year,Standard,South,20,47.82,55.7,0,32,0.4606,0,22.02,0,0
+CUST-0033,Omar Kim,2026-03-29,2026-08-23,Month-to-month,Standard,East,5,51.67,69.7,1,8,0.4467,0,23.08,0,0
+CUST-0034,Priya Espinoza,2026-03-09,2026-08-10,One year,Premium,North,5,89.65,62.2,0,21,0.3375,0,30.26,0,0
+CUST-0035,Layla Tanaka,2026-01-23,2026-08-16,Month-to-month,Standard,North,7,46.78,90.2,1,15,0.4075,0,19.06,1,1
+CUST-0036,Ethan Anderson,2026-05-23,2026-08-29,Month-to-month,Standard,West,3,50.13,75.6,1,2,0.3832,0,19.21,0,0
+CUST-0037,Aarav Silva,2026-06-15,2026-07-17,Month-to-month,Basic,West,2,18.93,35.3,1,45,0.6394,1,12.1,1,1
+CUST-0038,Sam Kim,2026-01-20,2026-08-17,Month-to-month,Standard,North,7,44.38,78.1,1,14,0.3608,0,16.01,0,0
+CUST-0039,Zara Anderson,2026-05-08,2026-07-14,Month-to-month,Standard,South,3,49.92,56.4,1,48,0.6606,1,32.98,0,0
+CUST-0040,Hana Chen,2025-10-07,2026-07-24,One year,Basic,North,10,16.38,59.3,1,38,0.2856,0,4.68,1,0
+CUST-0041,Farah Chen,2026-02-07,2026-08-14,Two year,Basic,South,6,16.29,72.7,0,17,0.296,0,4.82,0,0
+CUST-0042,Ivan Fischer,2025-06-14,2026-07-21,One year,Standard,South,14,49.7,60.6,0,41,0.3696,0,18.37,0,0
+CUST-0043,Farah Garcia,2025-09-18,2026-08-23,One year,Standard,South,11,50.8,81.4,1,8,0.2288,0,11.62,0,0
+CUST-0044,Farah Martins,2026-04-03,2026-07-20,Two year,Standard,East,5,41.42,56.4,1,42,0.4826,0,19.99,1,1
+CUST-0045,Miguel Garcia,2025-06-14,2026-08-09,Month-to-month,Basic,North,14,18.69,58.7,2,22,0.456,0,8.52,1,1
+CUST-0046,Umar O'Connor,2025-07-07,2026-07-20,Month-to-month,Basic,West,14,19.04,58.2,0,42,0.4902,0,9.33,1,1
+CUST-0047,Sam Fischer,2026-03-02,2026-08-02,Month-to-month,Basic,East,6,20.69,59.5,0,29,0.4991,0,10.33,1,1
+CUST-0048,Yusuf Fischer,2026-04-13,2026-08-27,Month-to-month,Standard,West,4,47.79,84.5,1,4,0.3875,0,18.52,0,0
+CUST-0049,Jasmine Fischer,2025-09-30,2026-08-15,One year,Premium,North,11,91.81,77.4,1,16,0.2633,0,24.17,0,0
+CUST-0050,Miguel Garcia,2026-06-11,2026-08-14,Month-to-month,Basic,East,2,20.47,80.6,4,17,0.3807,0,7.79,0,0
+CUST-0051,Jasmine Quintero,2026-05-19,2026-08-31,Month-to-month,Standard,West,3,48.08,100.0,1,0,0.2609,0,12.54,0,0
+CUST-0052,Bella Espinoza,2026-08-14,2026-07-10,Month-to-month,Basic,North,1,19.69,39.5,4,52,0.7673,1,15.11,1,1
+CUST-0053,Kenji Fischer,2025-07-20,2026-08-11,Month-to-month,Basic,West,13,17.6,69.1,1,20,0.444,0,7.81,0,0
+CUST-0054,Gabriel Tanaka,2025-10-10,2026-07-18,Two year,Basic,South,10,16.95,50.4,1,44,0.4332,0,7.34,1,1
+CUST-0055,Miguel Nguyen,2025-09-15,2026-07-24,Month-to-month,Basic,West,11,17.42,56.3,0,38,0.5148,1,8.97,1,1
+CUST-0056,Ethan Davies,2025-07-25,2026-07-30,Month-to-month,Standard,South,13,46.41,58.5,0,32,0.4649,0,21.58,1,1
+CUST-0057,Talia Rossi,2026-01-28,2026-07-28,Month-to-month,Premium,West,7,103.15,52.1,0,34,0.6264,1,64.61,0,1
+CUST-0058,Vera Davies,2025-12-04,2026-07-23,Month-to-month,Basic,North,9,18.95,52.2,0,39,0.5411,1,10.25,0,0
+CUST-0059,Yusuf Davies,2026-06-11,2026-07-20,One year,Standard,South,2,45.81,52.8,0,42,0.434,0,19.88,1,1
+CUST-0060,Carlos Ibrahim,2026-06-21,2026-06-25,Month-to-month,Standard,South,2,47.17,36.7,2,67,0.7817,1,36.87,1,1
+CUST-0061,Diya Nguyen,2025-10-08,2026-08-08,Month-to-month,Premium,North,10,97.91,80.6,2,23,0.3928,0,38.46,0,0
+CUST-0062,Zara Davies,2026-01-22,2026-07-18,Month-to-month,Standard,South,7,49.74,54.2,0,44,0.5332,1,26.52,1,1
+CUST-0063,Wei Patel,2025-12-06,2026-08-07,One year,Basic,South,8,18.94,100.0,0,24,0.225,0,4.26,0,0
+CUST-0064,Priya Davies,2025-08-06,2026-07-27,One year,Standard,North,13,40.44,61.2,0,35,0.3768,0,15.24,1,0
+CUST-0065,Ivan Patel,2025-10-28,2026-08-03,One year,Basic,East,10,17.3,69.1,2,28,0.3762,0,6.51,0,0
+CUST-0066,Nora Brooks,2025-12-12,2026-07-16,One year,Premium,East,8,94.8,48.6,1,46,0.5826,1,55.23,1,1
+CUST-0067,Nora Johansson,2025-12-09,2026-08-31,One year,Basic,West,8,17.96,93.6,2,0,0.222,0,3.99,0,0
+CUST-0068,Wei Martins,2026-04-07,2026-08-23,Month-to-month,Standard,East,4,49.99,84.8,0,8,0.2454,0,12.27,0,0
+CUST-0069,Nora Fischer,2026-07-26,2026-08-03,Month-to-month,Basic,North,1,19.25,59.5,2,28,0.5582,1,10.75,0,0
+CUST-0070,Aarav Martins,2026-02-07,2026-07-16,Month-to-month,Standard,North,6,48.25,47.8,0,46,0.5957,1,28.74,1,1
+CUST-0071,Sam Nguyen,2026-05-13,2026-08-10,Month-to-month,Premium,South,3,96.39,71.2,0,21,0.4531,0,43.68,1,1
+CUST-0072,Umar Nguyen,2026-02-20,2026-07-22,One year,Standard,South,6,45.98,51.2,1,40,0.4701,0,21.62,1,1
+CUST-0073,Hana Haddad,2025-05-26,2026-08-15,Month-to-month,Standard,North,15,51.81,89.9,4,16,0.3866,0,20.03,1,1
+CUST-0074,Diya Patel,2026-05-06,2026-08-09,One year,Premium,West,3,90.61,80.1,1,22,0.3122,0,28.29,0,0
+CUST-0075,Diya O'Connor,2026-07-12,2026-07-29,Two year,Premium,East,1,88.82,56.4,4,33,0.452,0,40.15,1,1
+CUST-0076,Vera Garcia,2026-04-16,2026-07-13,Month-to-month,Basic,East,4,19.17,31.5,1,49,0.6503,1,12.47,1,0
+CUST-0077,Layla O'Connor,2026-04-11,2026-07-16,Two year,Standard,North,4,47.54,53.2,0,46,0.3629,0,17.25,0,0
+CUST-0078,Nora Silva,2025-10-12,2026-08-08,One year,Standard,West,10,45.85,78.3,0,23,0.4432,0,20.32,1,1
+CUST-0079,Yusuf Quintero,2025-12-10,2026-08-31,Two year,Standard,North,8,46.21,86.2,1,0,0.1328,0,6.14,0,0
+CUST-0080,Bella O'Connor,2025-07-23,2026-08-22,Month-to-month,Basic,South,13,20.17,84.6,1,9,0.3602,0,7.26,0,0
+CUST-0081,Farah Patel,2025-10-11,2026-07-16,Month-to-month,Basic,South,10,18.94,44.1,0,46,0.5208,1,9.86,0,0
+CUST-0082,Vera Quintero,2026-02-21,2026-08-03,Month-to-month,Premium,West,6,97.96,72.5,1,28,0.4756,0,46.59,0,0
+CUST-0083,Omar Fischer,2025-06-29,2026-08-11,Month-to-month,Premium,South,14,97.37,83.2,2,20,0.3537,0,34.44,0,0
+CUST-0084,Aarav O'Connor,2026-06-01,2026-07-15,Month-to-month,Premium,North,3,97.73,43.1,2,47,0.6242,1,61.0,0,0
+CUST-0085,Sam Davies,2026-07-31,2026-07-22,Two year,Premium,South,1,92.91,54.9,3,40,0.486,0,45.15,1,1
+CUST-0086,Diya Haddad,2026-06-30,2026-07-29,One year,Standard,South,2,47.09,59.1,4,33,0.4828,0,22.74,1,1
+CUST-0087,Umar Silva,2025-09-04,2026-08-08,Month-to-month,Standard,North,12,49.58,63.5,2,23,0.5118,1,25.37,0,0
+CUST-0088,Umar Fischer,2026-01-27,2026-07-17,Month-to-month,Standard,North,7,46.24,40.2,0,45,0.5262,1,24.33,0,0
+CUST-0089,Vera Quintero,2026-06-03,2026-07-22,Month-to-month,Standard,North,2,46.63,50.1,2,40,0.697,1,32.5,1,1
+CUST-0090,Miguel Ibrahim,2026-01-08,2026-08-02,Month-to-month,Standard,South,7,54.25,63.1,0,29,0.4307,0,23.37,1,1
+CUST-0091,Gabriel Espinoza,2026-06-06,2026-08-09,Two year,Basic,South,2,16.95,52.8,2,22,0.4523,0,7.67,0,1
+CUST-0092,Wei Brooks,2025-09-21,2026-08-02,Month-to-month,Standard,South,11,47.1,59.5,2,29,0.5677,1,26.74,0,0
+CUST-0093,Omar Kim,2026-02-03,2026-07-31,Month-to-month,Basic,East,6,20.36,61.4,2,31,0.5586,1,11.37,1,1
+CUST-0094,Quinn Johansson,2026-03-05,2026-08-08,One year,Basic,North,5,18.3,67.4,1,23,0.3138,0,5.74,1,1
+CUST-0095,Diya Kim,2026-04-08,2026-08-13,Month-to-month,Standard,West,4,50.42,74.6,0,18,0.4352,0,21.94,0,0
+CUST-0096,Quinn Anderson,2025-10-31,2026-07-29,Month-to-month,Standard,West,10,48.66,63.4,2,33,0.4933,0,24.01,0,0
+CUST-0097,Priya Fischer,2026-03-13,2026-08-10,One year,Basic,North,5,17.76,61.9,0,21,0.3594,0,6.38,1,1
+CUST-0098,Hana Anderson,2026-07-01,2026-08-10,One year,Premium,South,2,93.25,56.4,1,21,0.3854,0,35.94,0,0
+CUST-0099,Talia Garcia,2026-06-19,2026-07-06,Two year,Premium,North,2,82.94,26.2,4,56,0.4864,0,40.34,0,0
+CUST-0100,Diya Silva,2025-01-15,2026-08-06,One year,Basic,South,19,17.97,75.2,2,25,0.3647,0,6.55,1,0
+CUST-0101,Sam Davies,2025-03-31,2026-07-23,Month-to-month,Basic,South,17,19.28,68.0,1,39,0.4816,0,9.28,0,0
+CUST-0102,Yusuf Nguyen,2025-09-19,2026-07-31,One year,Basic,North,11,19.72,68.6,0,31,0.3212,0,6.33,0,1
+CUST-0103,Omar Anderson,2026-04-23,2026-08-29,Two year,Standard,North,4,44.29,82.4,0,2,0.158,0,7.0,0,1
+CUST-0104,Carlos Lopez,2025-01-01,2026-07-15,One year,Premium,South,20,83.07,38.7,0,47,0.4874,0,40.49,0,0
+CUST-0105,Omar Silva,2025-07-26,2026-07-11,Two year,Basic,East,13,17.02,38.4,1,51,0.419,0,7.13,0,1
+CUST-0106,Nora Garcia,2025-09-08,2026-08-08,One year,Standard,South,11,52.93,72.1,1,23,0.2107,0,11.15,0,0
+CUST-0107,Omar Davies,2026-02-01,2026-08-02,Two year,Basic,West,7,17.84,67.9,0,29,0.3238,0,5.78,0,0
+CUST-0108,Hana Lopez,2026-04-20,2026-08-15,Month-to-month,Basic,South,4,18.23,70.6,0,16,0.4624,0,8.43,0,0
+CUST-0109,Quinn Fischer,2026-06-27,2026-07-20,One year,Premium,West,2,96.83,48.1,4,42,0.5129,1,49.66,1,1
+CUST-0110,Gabriel Rossi,2025-04-07,2026-08-11,Month-to-month,Basic,North,17,18.3,78.0,2,20,0.3531,0,6.46,0,1
+CUST-0111,Omar Quintero,2026-01-29,2026-08-10,One year,Basic,East,7,16.83,82.0,0,21,0.2864,0,4.82,0,0
+CUST-0112,Priya Nguyen,2026-05-18,2026-08-18,One year,Standard,West,3,45.74,75.3,3,13,0.2586,0,11.83,0,1
+CUST-0113,Quinn Martins,2026-04-06,2026-08-06,Two year,Standard,North,4,44.3,64.1,0,25,0.2627,0,11.64,0,0
+CUST-0114,Umar Martins,2025-11-28,2026-08-02,Two year,Premium,West,9,80.76,36.4,2,29,0.3957,0,31.95,1,1
+CUST-0115,Wei O'Connor,2026-05-28,2026-08-20,Month-to-month,Premium,South,3,93.31,79.5,3,11,0.4735,0,44.19,1,1
+CUST-0116,Umar Johansson,2025-05-23,2026-08-25,One year,Basic,South,15,18.06,86.3,0,6,0.1847,0,3.34,0,0
+CUST-0117,Umar Tanaka,2025-08-10,2026-08-22,One year,Basic,East,12,17.68,77.7,3,9,0.2649,0,4.68,0,0
+CUST-0118,Wei Garcia,2025-09-06,2026-07-25,Month-to-month,Standard,East,11,49.97,54.8,1,37,0.6406,1,32.01,1,1
+CUST-0119,Gabriel Anderson,2026-02-10,2026-08-14,Month-to-month,Basic,North,6,17.85,78.1,0,17,0.4248,0,7.58,1,1
+CUST-0120,Hana Nguyen,2025-11-01,2026-08-31,Month-to-month,Premium,West,10,102.53,80.9,0,0,0.356,0,36.5,1,1
+CUST-0121,Nora Nguyen,2025-11-26,2026-08-23,One year,Standard,East,9,43.79,91.4,0,8,0.1889,0,8.27,1,0
+CUST-0122,Miguel Tanaka,2025-10-19,2026-08-03,Month-to-month,Basic,West,10,20.56,54.9,1,28,0.4907,0,10.09,0,1
+CUST-0123,Sam Haddad,2026-07-02,2026-07-20,Two year,Premium,South,2,81.46,51.6,1,42,0.3137,0,25.55,0,0
+CUST-0124,Aarav Ibrahim,2026-02-17,2026-08-25,Month-to-month,Basic,East,6,17.96,79.2,0,6,0.4212,0,7.56,0,0
+CUST-0125,Diya Lopez,2026-07-20,2026-07-27,Two year,Standard,South,1,45.02,55.9,0,35,0.4013,0,18.07,0,0
+CUST-0126,Talia Haddad,2026-01-11,2026-07-26,Month-to-month,Standard,West,7,53.08,51.2,1,36,0.5548,1,29.45,1,1
+CUST-0127,Vera Patel,2026-03-27,2026-08-08,One year,Standard,West,5,47.28,74.2,2,23,0.3384,0,16.0,0,0
+CUST-0128,Hana Ibrahim,2026-06-09,2026-08-01,Month-to-month,Standard,West,2,50.38,63.7,6,30,0.6167,1,31.07,1,1
+CUST-0129,Ivan Patel,2026-06-25,2026-07-30,One year,Standard,East,2,46.59,56.3,0,32,0.3385,0,15.77,1,1
+CUST-0130,Omar Ibrahim,2025-11-24,2026-08-21,One year,Premium,West,9,89.22,71.3,3,10,0.2913,0,25.99,0,0
+CUST-0131,Miguel Espinoza,2026-05-30,2026-08-15,Two year,Premium,South,3,86.92,64.1,0,16,0.2349,0,20.42,0,0
+CUST-0132,Ethan Tanaka,2025-03-11,2026-08-28,One year,Standard,South,17,43.73,90.2,1,3,0.2766,0,12.09,1,1
+CUST-0133,Nora Kim,2025-11-27,2026-07-26,Month-to-month,Basic,West,9,17.79,54.5,1,36,0.5906,1,10.51,0,0
+CUST-0134,Vera O'Connor,2026-03-20,2026-08-04,Month-to-month,Standard,North,5,49.98,59.2,0,27,0.3938,0,19.68,0,0
+CUST-0135,Sam Lopez,2025-11-22,2026-08-01,Month-to-month,Premium,East,9,93.44,68.2,1,30,0.4066,0,37.99,1,1
+CUST-0136,Vera Haddad,2026-07-31,2026-08-08,Month-to-month,Basic,North,1,19.3,68.2,2,23,0.4908,0,9.47,0,0
+CUST-0137,Quinn Tanaka,2025-01-21,2026-07-27,One year,Standard,East,19,43.52,45.5,0,35,0.3914,0,17.04,0,0
+CUST-0138,Wei Haddad,2026-01-17,2026-07-23,One year,Standard,South,7,47.24,48.3,1,39,0.396,0,18.71,0,0
+CUST-0139,Gabriel Tanaka,2025-07-23,2026-07-11,One year,Basic,South,13,17.61,37.4,2,51,0.6268,1,11.04,1,0
+CUST-0140,Bella Ibrahim,2026-07-02,2026-07-24,Two year,Standard,South,2,47.2,55.5,1,38,0.4139,0,19.54,1,1
+CUST-0141,Carlos Anderson,2026-01-15,2026-07-08,One year,Basic,South,7,18.34,51.2,0,54,0.505,1,9.26,1,1
+CUST-0142,Zara Anderson,2026-01-13,2026-08-07,One year,Standard,South,7,49.43,62.2,1,24,0.3373,0,16.67,1,1
+CUST-0143,Quinn Tanaka,2025-02-22,2026-08-14,Month-to-month,Premium,South,18,95.26,77.9,2,17,0.4356,0,41.5,1,0
+CUST-0144,Gabriel Kim,2025-12-02,2026-07-26,Month-to-month,Premium,East,9,99.28,58.4,1,36,0.5142,1,51.05,1,1
+CUST-0145,Wei Haddad,2026-01-21,2026-08-09,One year,Standard,West,7,44.27,71.5,1,22,0.3199,0,14.16,0,0
+CUST-0146,Ivan Quintero,2026-04-22,2026-08-06,Two year,Basic,East,4,16.75,63.5,0,25,0.3466,0,5.81,0,0
+CUST-0147,Priya Martins,2026-03-26,2026-08-26,Month-to-month,Standard,East,5,48.36,78.1,2,5,0.3203,0,15.49,1,1
+CUST-0148,Gabriel Nguyen,2025-12-29,2026-08-16,Month-to-month,Premium,West,8,95.41,75.1,2,15,0.5114,1,48.79,0,0
+CUST-0149,Carlos Nguyen,2026-02-06,2026-08-06,One year,Standard,West,6,43.72,57.6,1,25,0.4027,0,17.61,1,1
+CUST-0150,Gabriel Davies,2026-08-01,2026-08-07,Month-to-month,Premium,North,1,92.0,52.5,2,24,0.6193,1,56.97,1,1
+CUST-0151,Farah Brooks,2025-06-19,2026-08-25,Month-to-month,Basic,East,14,16.78,83.7,1,6,0.2937,0,4.93,0,1
+CUST-0152,Omar O'Connor,2025-04-14,2026-08-19,Two year,Premium,North,16,84.39,73.9,1,12,0.1766,0,14.9,0,0
+CUST-0153,Aarav Anderson,2026-06-11,2026-07-05,One year,Basic,North,2,18.62,34.0,1,57,0.518,1,9.65,1,1
+CUST-0154,Gabriel O'Connor,2025-12-12,2026-08-09,Month-to-month,Basic,West,8,17.48,77.8,1,22,0.4415,0,7.72,1,1
+CUST-0155,Omar Chen,2026-06-23,2026-07-21,Two year,Standard,North,2,41.08,38.7,1,41,0.4686,0,19.25,0,1
+CUST-0156,Kenji Fischer,2025-10-06,2026-08-25,Month-to-month,Basic,West,10,20.7,89.2,1,6,0.316,0,6.54,0,0
+CUST-0157,Quinn O'Connor,2026-04-16,2026-08-31,Two year,Basic,West,4,16.56,83.4,2,0,0.1514,0,2.51,0,0
+CUST-0158,Rosa Martins,2025-10-14,2026-08-13,Month-to-month,Basic,West,10,19.3,72.3,0,18,0.3557,0,6.86,0,0
+CUST-0159,Zara Patel,2025-09-01,2026-08-05,One year,Standard,East,12,48.04,70.4,1,26,0.3327,0,15.98,0,0
+CUST-0160,Vera Martins,2025-08-03,2026-07-28,Month-to-month,Standard,West,13,50.62,64.9,2,34,0.483,0,24.45,0,0
+CUST-0161,Farah Anderson,2026-06-23,2026-08-09,Month-to-month,Basic,North,2,17.55,65.2,2,22,0.4682,0,8.22,1,1
+CUST-0162,Sam Quintero,2025-03-22,2026-07-24,Two year,Standard,West,17,43.59,62.4,1,38,0.4097,0,17.86,1,1
+CUST-0163,Quinn Espinoza,2026-05-07,2026-08-21,Month-to-month,Premium,North,3,90.99,71.5,0,10,0.415,0,37.76,1,1
+CUST-0164,Priya Chen,2026-07-22,2026-08-16,Month-to-month,Basic,South,1,21.32,68.1,1,15,0.5266,1,11.23,0,0
+CUST-0165,Umar Rossi,2025-12-11,2026-07-24,Month-to-month,Basic,North,8,17.48,59.6,1,38,0.5107,1,8.93,0,0
+CUST-0166,Diya Davies,2026-03-09,2026-07-16,One year,Premium,South,5,89.12,58.8,2,46,0.4755,0,42.37,1,1
+CUST-0167,Jasmine Kim,2025-06-16,2026-07-19,One year,Premium,East,14,89.16,50.1,1,43,0.445,0,39.67,0,0
+CUST-0168,Vera Johansson,2025-07-04,2026-07-24,Two year,Standard,South,14,40.8,52.0,1,38,0.2922,0,11.92,0,0
+CUST-0169,Ximena Patel,2026-04-01,2026-08-02,Month-to-month,Premium,West,5,105.7,40.6,5,29,0.7086,1,74.9,1,1
+CUST-0170,Aarav Anderson,2025-01-30,2026-08-31,Month-to-month,Basic,East,19,21.3,78.9,2,0,0.3391,0,7.22,0,0
+CUST-0171,Miguel Chen,2026-04-12,2026-08-27,Month-to-month,Basic,East,4,18.55,95.1,1,4,0.3669,0,6.81,0,0
+CUST-0172,Gabriel Ibrahim,2026-01-01,2026-08-26,One year,Standard,West,8,43.48,89.4,0,5,0.1712,0,7.45,1,1
+CUST-0173,Ethan Johansson,2026-04-27,2026-07-26,Two year,Basic,South,4,15.19,43.6,0,36,0.408,0,6.2,0,0
+CUST-0174,Bella Patel,2025-02-24,2026-08-14,One year,Standard,South,18,45.98,78.9,0,17,0.2078,0,9.56,0,0
+CUST-0175,Nora Martins,2026-06-02,2026-08-12,One year,Standard,West,3,45.81,76.3,3,19,0.4066,0,18.63,1,1
+CUST-0176,Rosa Chen,2026-07-18,2026-07-13,Month-to-month,Standard,East,1,47.4,48.1,2,49,0.6554,1,31.07,1,1
+CUST-0177,Nora Tanaka,2026-02-08,2026-08-06,Two year,Standard,East,6,44.59,69.5,1,25,0.3203,0,14.28,1,1
+CUST-0178,Jasmine Johansson,2024-11-01,2026-07-03,Month-to-month,Basic,South,22,19.38,37.9,2,59,0.7131,1,13.82,1,1
+CUST-0179,Umar Tanaka,2025-04-19,2026-08-09,Month-to-month,Basic,North,16,19.31,72.0,1,22,0.485,0,9.36,1,1
+CUST-0180,Quinn Tanaka,2025-08-17,2026-07-25,Month-to-month,Basic,North,12,18.7,52.0,3,37,0.613,1,11.46,0,1
+CUST-0181,Ximena Brooks,2025-04-20,2026-07-31,Month-to-month,Standard,North,16,46.3,71.0,2,31,0.3971,0,18.39,0,0
+CUST-0182,Jasmine Kim,2025-04-17,2026-07-26,Month-to-month,Basic,North,16,19.63,44.6,2,36,0.5397,1,10.59,1,1
+CUST-0183,Gabriel Ibrahim,2025-12-30,2026-07-21,Month-to-month,Basic,East,8,19.01,76.1,1,41,0.4375,0,8.32,0,0
+CUST-0184,Layla Johansson,2026-04-02,2026-08-15,Month-to-month,Basic,North,5,19.84,83.4,1,16,0.4376,0,8.68,0,0
+CUST-0185,Nora Garcia,2025-07-31,2026-07-24,One year,Basic,East,13,18.76,56.3,0,38,0.4111,0,7.71,0,0
+CUST-0186,Layla Lopez,2025-10-12,2026-07-19,Month-to-month,Premium,West,10,91.96,50.9,1,43,0.5063,1,46.56,0,0
+CUST-0187,Vera Johansson,2026-03-08,2026-06-26,Month-to-month,Basic,West,5,17.64,35.7,1,66,0.6977,1,12.31,1,1
+CUST-0188,Bella Davies,2026-06-28,2026-07-17,Two year,Premium,South,2,85.73,51.0,3,45,0.3837,0,32.9,1,1
+CUST-0189,Nora Fischer,2025-08-18,2026-08-12,One year,Basic,North,12,17.1,59.3,1,19,0.3518,0,6.02,0,0
+CUST-0190,Layla Chen,2026-04-24,2026-07-07,Month-to-month,Standard,West,4,50.85,44.7,1,55,0.5648,1,28.72,0,0
+CUST-0191,Farah Quintero,2025-02-23,2026-08-14,Month-to-month,Standard,North,18,49.86,74.8,1,17,0.4244,0,21.16,0,0
+CUST-0192,Quinn Nguyen,2026-05-03,2026-07-31,Two year,Basic,East,4,18.04,61.3,1,31,0.372,0,6.71,0,1
+CUST-0193,Umar Haddad,2026-06-18,2026-07-24,Month-to-month,Premium,East,2,100.96,38.9,3,38,0.7469,1,75.4,1,1
+CUST-0194,Omar Haddad,2025-06-15,2026-07-26,Month-to-month,Premium,North,14,100.03,59.7,2,36,0.5696,1,56.98,1,1
+CUST-0195,Carlos Brooks,2026-06-06,2026-08-14,Two year,Premium,East,2,94.44,71.1,2,17,0.2768,0,26.14,1,1
+CUST-0196,Bella Fischer,2026-05-27,2026-08-12,Month-to-month,Basic,North,3,19.45,77.0,0,19,0.4657,0,9.06,0,0
+CUST-0197,Kenji Silva,2025-11-17,2026-08-07,One year,Basic,North,9,18.11,66.0,1,24,0.2831,0,5.13,0,0
+CUST-0198,Rosa Anderson,2025-05-06,2026-07-29,One year,Standard,West,16,50.0,77.3,2,33,0.2836,0,14.18,0,0
+CUST-0199,Ivan Chen,2026-05-20,2026-07-07,One year,Basic,West,3,18.15,50.6,3,55,0.5515,1,10.01,0,0
+CUST-0200,Ivan Quintero,2026-04-04,2026-08-06,Month-to-month,Standard,South,4,48.25,68.5,1,25,0.3732,0,18.01,0,0
+CUST-0201,Wei Kim,2025-07-27,2026-08-07,Month-to-month,Standard,West,13,46.95,70.2,1,24,0.4455,0,20.91,0,0
+CUST-0202,Aarav Anderson,2024-12-27,2026-08-03,Month-to-month,Standard,West,20,50.72,61.0,1,28,0.4204,0,21.32,0,0
+CUST-0203,Carlos Johansson,2026-01-08,2026-08-02,Month-to-month,Premium,West,7,105.12,74.5,1,29,0.4678,0,49.18,0,1
+CUST-0204,Ethan O'Connor,2026-06-10,2026-07-20,Two year,Standard,North,2,43.99,43.3,3,42,0.4232,0,18.62,0,0
+CUST-0205,Zara Garcia,2026-08-07,2026-08-05,Month-to-month,Basic,South,1,20.24,62.6,1,26,0.5339,1,10.81,0,0
+CUST-0206,Miguel Haddad,2026-05-07,2026-08-05,One year,Basic,East,3,16.27,76.3,1,26,0.3404,0,5.54,0,0
+CUST-0207,Ethan Martins,2026-06-14,2026-06-26,One year,Standard,West,2,46.42,11.2,1,66,0.7509,1,34.86,1,1
+CUST-0208,Ivan Lopez,2025-10-03,2026-08-20,One year,Standard,West,11,46.46,85.9,1,11,0.2423,0,11.26,0,0
+CUST-0209,Zara Silva,2026-06-18,2026-07-03,Month-to-month,Basic,South,2,18.31,9.3,2,59,0.7624,1,13.96,1,1
+CUST-0210,Sam Espinoza,2026-01-05,2026-07-24,Month-to-month,Standard,North,7,54.84,58.8,1,38,0.5306,1,29.1,1,1
+CUST-0211,Farah Fischer,2025-09-22,2026-08-03,Two year,Standard,West,11,43.95,83.4,1,28,0.1807,0,7.94,0,0
+CUST-0212,Gabriel Davies,2025-11-27,2026-07-27,One year,Premium,South,9,92.13,63.2,1,35,0.4137,0,38.11,0,1
+CUST-0213,Bella Nguyen,2026-05-19,2026-07-08,One year,Standard,South,3,46.61,46.0,2,54,0.5651,1,26.34,1,1
+CUST-0214,Umar Kim,2025-07-07,2026-07-31,Two year,Basic,West,14,15.39,51.6,1,31,0.4826,0,7.43,0,0
+CUST-0215,Diya Garcia,2025-09-09,2026-08-16,One year,Basic,East,11,17.36,83.4,0,15,0.2181,0,3.79,1,1
+CUST-0216,Hana Nguyen,2025-08-24,2026-07-21,Month-to-month,Standard,South,12,51.41,39.2,0,41,0.58,1,29.82,1,1
+CUST-0217,Jasmine Haddad,2026-06-14,2026-08-11,One year,Basic,North,2,17.48,71.9,2,20,0.3244,0,5.67,0,0
+CUST-0218,Quinn Davies,2026-06-17,2026-07-20,Month-to-month,Standard,South,2,46.97,54.2,1,42,0.5946,1,27.93,1,1
+CUST-0219,Priya Kim,2025-03-08,2026-07-22,One year,Standard,West,18,49.6,50.1,2,40,0.4598,0,22.81,0,0
+CUST-0220,Umar Ibrahim,2026-02-25,2026-08-10,Two year,Basic,South,6,18.25,59.3,0,21,0.3116,0,5.69,1,1
+CUST-0221,Hana Ibrahim,2026-04-08,2026-08-04,Month-to-month,Basic,East,4,19.49,52.7,1,27,0.5961,1,11.62,1,1
+CUST-0222,Kenji Ibrahim,2026-01-14,2026-08-27,Month-to-month,Basic,South,7,18.57,81.0,1,4,0.3398,0,6.31,0,0
+CUST-0223,Kenji Silva,2025-10-12,2026-08-11,Month-to-month,Premium,West,10,97.81,79.0,1,20,0.4631,0,45.3,0,0
+CUST-0224,Bella Espinoza,2025-01-26,2026-06-30,Two year,Standard,West,19,42.33,42.2,0,62,0.4786,0,20.26,0,0
+CUST-0225,Talia Fischer,2026-04-14,2026-07-21,Month-to-month,Basic,East,4,18.05,61.9,1,41,0.5479,1,9.89,0,0
+CUST-0226,Nora Lopez,2025-03-11,2026-08-11,Month-to-month,Premium,West,17,93.83,55.1,0,20,0.4499,0,42.21,0,0
+CUST-0227,Miguel Anderson,2026-07-30,2026-07-31,Month-to-month,Standard,East,1,47.49,74.4,2,31,0.6193,1,29.41,0,0
+CUST-0228,Zara Chen,2025-12-11,2026-07-13,Month-to-month,Standard,South,8,46.46,47.7,4,49,0.6059,1,28.15,1,1
+CUST-0229,Ethan Lopez,2025-10-29,2026-08-31,Month-to-month,Premium,East,10,91.26,92.1,1,0,0.3274,0,29.88,1,1
+CUST-0230,Zara Kim,2026-06-24,2026-07-29,Month-to-month,Basic,West,2,19.21,54.5,1,33,0.5203,1,10.0,1,1
+CUST-0231,Rosa Nguyen,2026-06-11,2026-07-04,Month-to-month,Basic,West,2,19.22,37.6,1,58,0.7758,1,14.91,1,1
+CUST-0232,Farah Chen,2026-02-16,2026-07-24,Month-to-month,Standard,North,6,53.17,57.8,2,38,0.6058,1,32.21,0,0
+CUST-0233,Rosa Rossi,2025-01-07,2026-08-07,Month-to-month,Basic,East,20,18.37,56.0,2,24,0.4563,0,8.38,0,0
+CUST-0234,Talia Johansson,2025-11-19,2026-07-17,Month-to-month,Standard,North,9,49.73,48.9,2,45,0.6295,1,31.31,1,0
+CUST-0235,Jasmine Davies,2025-02-28,2026-08-24,Month-to-month,Basic,East,18,19.3,69.4,1,7,0.4019,0,7.76,1,1
+CUST-0236,Ivan Garcia,2025-07-07,2026-07-24,One year,Basic,East,14,17.82,49.6,1,38,0.4098,0,7.3,0,0
+CUST-0237,Vera Espinoza,2026-01-24,2026-07-02,Month-to-month,Basic,South,7,19.71,35.3,0,60,0.7116,1,14.03,1,1
+CUST-0238,Ethan Johansson,2025-07-22,2026-08-01,Month-to-month,Standard,West,13,50.9,62.3,0,30,0.4986,0,25.38,1,1
+CUST-0239,Aarav Johansson,2026-08-04,2026-07-09,Month-to-month,Basic,West,1,19.31,28.0,0,53,0.7074,1,13.66,0,0
+CUST-0240,Rosa Ibrahim,2026-06-23,2026-07-10,Month-to-month,Basic,North,2,18.76,43.7,0,52,0.6338,1,11.89,0,0
+CUST-0241,Ximena Johansson,2025-06-16,2026-07-18,Month-to-month,Premium,North,14,97.23,54.4,1,44,0.5771,1,56.11,1,1
+CUST-0242,Nora Silva,2025-07-13,2026-07-16,Month-to-month,Basic,North,13,17.7,54.9,0,46,0.5609,1,9.93,1,0
+CUST-0243,Diya Tanaka,2026-05-06,2026-08-23,Two year,Basic,West,3,16.41,98.0,2,8,0.1788,0,2.93,0,0
+CUST-0244,Omar Johansson,2025-12-24,2026-07-29,Month-to-month,Basic,East,8,18.41,68.8,1,33,0.4589,0,8.45,1,1
+CUST-0245,Gabriel Tanaka,2025-11-13,2026-08-03,Month-to-month,Basic,East,9,17.93,71.7,1,28,0.5491,1,9.85,0,0
+CUST-0246,Vera Quintero,2025-05-13,2026-07-13,Month-to-month,Basic,West,15,19.42,41.4,3,49,0.5847,1,11.35,1,1
+CUST-0247,Priya Quintero,2025-11-15,2026-07-28,Month-to-month,Standard,West,9,51.93,58.2,1,34,0.5497,1,28.54,1,0
+CUST-0248,Ivan Espinoza,2026-02-19,2026-08-10,Month-to-month,Basic,North,6,18.14,71.2,3,21,0.4639,0,8.41,0,0
+CUST-0249,Quinn Ibrahim,2026-03-08,2026-08-03,One year,Premium,North,5,95.38,52.6,0,28,0.4977,0,47.47,1,1
+CUST-0250,Rosa Haddad,2026-02-12,2026-08-24,One year,Premium,South,6,89.19,81.6,1,7,0.2144,0,19.13,1,1
+CUST-0251,Rosa Brooks,2025-10-18,2026-07-25,Month-to-month,Basic,South,10,18.71,50.0,0,37,0.5134,1,9.61,1,0
+CUST-0252,Jasmine Brooks,2025-05-13,2026-08-01,Month-to-month,Basic,East,15,18.34,63.7,0,30,0.4202,0,7.71,1,1
+CUST-0253,Omar Martins,2026-01-30,2026-07-18,Month-to-month,Basic,North,7,19.57,59.2,1,44,0.5742,1,11.24,0,0
+CUST-0254,Bella Ibrahim,2026-04-30,2026-08-08,Month-to-month,Standard,South,4,47.34,70.5,0,23,0.3875,0,18.34,1,1
+CUST-0255,Kenji Quintero,2026-05-05,2026-07-21,One year,Basic,North,3,18.96,58.4,0,41,0.4073,0,7.72,0,0
+CUST-0256,Jasmine Nguyen,2025-08-19,2026-07-25,Month-to-month,Premium,North,12,97.78,63.9,2,37,0.413,0,40.39,1,1
+CUST-0257,Nora Brooks,2025-06-27,2026-08-05,Month-to-month,Standard,North,14,47.41,64.5,0,26,0.4698,0,22.27,1,1
+CUST-0258,Yusuf Quintero,2026-06-24,2026-07-13,Two year,Premium,North,2,83.52,44.0,1,49,0.4441,0,37.09,1,1
+CUST-0259,Yusuf Johansson,2026-07-09,2026-08-03,Month-to-month,Standard,East,1,49.62,62.3,3,28,0.4701,0,23.33,0,0
+CUST-0260,Miguel Lopez,2025-11-20,2026-07-29,Month-to-month,Premium,South,9,103.43,71.6,1,33,0.5329,1,55.12,1,0
+CUST-0261,Quinn Tanaka,2026-06-09,2026-07-20,One year,Basic,South,2,18.3,53.7,4,42,0.4379,0,8.01,1,1
+CUST-0262,Carlos Martins,2025-06-20,2026-08-10,Month-to-month,Standard,South,14,54.49,61.5,2,21,0.5189,1,28.27,1,1
+CUST-0263,Miguel Anderson,2026-04-04,2026-08-14,Month-to-month,Basic,East,4,20.36,79.9,1,17,0.3837,0,7.81,0,0
+CUST-0264,Rosa Davies,2026-06-10,2026-07-10,Month-to-month,Premium,West,2,97.48,51.5,4,52,0.7388,1,72.02,1,1
+CUST-0265,Rosa Ibrahim,2025-03-16,2026-08-04,Two year,Standard,East,17,43.4,63.4,1,27,0.3359,0,14.58,0,1
+CUST-0266,Zara Anderson,2026-06-01,2026-08-04,Month-to-month,Premium,East,3,101.32,69.6,1,27,0.4353,0,44.1,0,0
+CUST-0267,Miguel Davies,2026-04-15,2026-08-22,Month-to-month,Basic,East,4,18.2,93.4,1,9,0.3035,0,5.52,0,0
+CUST-0268,Ximena Patel,2026-06-06,2026-07-19,Month-to-month,Premium,East,2,104.77,34.9,1,43,0.6845,1,71.72,1,1
+CUST-0269,Zara Chen,2026-06-20,2026-08-01,Month-to-month,Standard,North,2,49.89,66.5,1,30,0.4942,0,24.66,1,0
+CUST-0270,Omar Davies,2026-08-01,2026-07-15,One year,Standard,West,1,47.15,26.6,2,47,0.5812,1,27.4,0,0
+CUST-0271,Carlos Kim,2026-07-13,2026-08-03,Month-to-month,Premium,North,1,102.4,58.3,2,28,0.6097,1,62.43,1,1
+CUST-0272,Jasmine Brooks,2026-05-29,2026-08-16,One year,Basic,South,3,19.6,91.6,3,15,0.2427,0,4.76,0,0
+CUST-0273,Talia Fischer,2026-07-14,2026-07-30,One year,Basic,East,1,18.2,62.3,2,32,0.4275,0,7.78,0,0
+CUST-0274,Priya Silva,2025-11-22,2026-08-10,One year,Standard,South,9,46.29,70.6,1,21,0.3766,0,17.43,0,1
+CUST-0275,Yusuf Martins,2025-10-01,2026-07-27,Month-to-month,Basic,North,11,20.43,59.6,0,35,0.5485,1,11.21,0,1
+CUST-0276,Vera Tanaka,2026-02-27,2026-08-07,Two year,Basic,West,6,17.93,68.5,1,24,0.2949,0,5.29,0,0
+CUST-0277,Bella Haddad,2026-04-01,2026-08-03,One year,Basic,North,5,17.76,64.2,1,28,0.3672,0,6.52,0,0
+CUST-0278,Wei Martins,2026-01-06,2026-07-22,Month-to-month,Basic,North,7,19.0,56.2,1,40,0.4705,0,8.94,0,0
+CUST-0279,Jasmine Espinoza,2025-05-06,2026-08-08,One year,Premium,West,16,94.97,63.7,1,23,0.2864,0,27.19,0,1
+CUST-0280,Vera Haddad,2025-05-28,2026-08-08,Two year,Standard,East,15,44.9,71.0,0,23,0.2697,0,12.11,1,1
+CUST-0281,Nora Davies,2026-07-19,2026-07-20,Month-to-month,Basic,North,1,17.71,43.5,1,42,0.6173,1,10.93,0,0
+CUST-0282,Layla Quintero,2026-05-26,2026-08-09,Two year,Standard,West,3,40.7,55.9,0,22,0.3409,0,13.87,0,0
+CUST-0283,Bella Davies,2026-05-04,2026-07-28,Month-to-month,Standard,West,3,46.83,47.6,0,34,0.6215,1,29.1,1,1
+CUST-0284,Diya Espinoza,2026-04-29,2026-07-29,One year,Standard,North,4,44.3,73.9,1,33,0.3052,0,13.52,1,1
+CUST-0285,Priya Johansson,2025-12-02,2026-08-09,Two year,Premium,South,9,86.23,76.2,0,22,0.2377,0,20.49,0,0
+CUST-0286,Omar Ibrahim,2026-02-17,2026-08-19,Month-to-month,Premium,South,6,102.14,71.5,0,12,0.4259,0,43.51,1,1
+CUST-0287,Omar Garcia,2026-07-16,2026-08-19,One year,Basic,North,1,17.9,69.5,0,12,0.2822,0,5.05,1,1
+CUST-0288,Ethan Haddad,2026-03-08,2026-08-08,Month-to-month,Basic,North,5,19.19,69.3,1,23,0.5415,1,10.39,1,0
+CUST-0289,Nora Fischer,2025-12-27,2026-07-29,One year,Standard,North,8,43.7,73.9,1,33,0.3988,0,17.43,1,1
+CUST-0290,Bella Silva,2026-06-25,2026-08-01,One year,Standard,North,2,45.48,59.6,0,30,0.4138,0,18.82,0,0
+CUST-0291,Diya Lopez,2025-06-13,2026-07-25,Month-to-month,Standard,South,14,50.44,66.6,1,37,0.5829,1,29.4,0,0
+CUST-0292,Miguel Silva,2026-07-15,2026-07-17,Month-to-month,Standard,South,1,50.46,47.0,0,45,0.5326,1,26.88,1,1
+CUST-0293,Quinn Tanaka,2025-03-11,2026-08-28,Month-to-month,Standard,North,17,47.22,100.0,0,3,0.2607,0,12.31,0,0
+CUST-0294,Rosa Nguyen,2026-06-26,2026-08-01,Month-to-month,Basic,South,2,19.15,48.2,4,30,0.6273,1,12.01,1,1
+CUST-0295,Zara Quintero,2025-06-04,2026-07-21,Month-to-month,Basic,North,15,21.09,58.0,1,41,0.486,0,10.25,0,0
+CUST-0296,Wei Chen,2025-04-07,2026-08-14,Month-to-month,Basic,West,17,18.98,74.5,1,17,0.4168,0,7.91,0,0
+CUST-0297,Jasmine Silva,2024-12-09,2026-08-02,Month-to-month,Basic,North,21,18.34,71.8,1,29,0.3782,0,6.94,0,0
+CUST-0298,Umar Johansson,2025-07-09,2026-07-27,Month-to-month,Basic,West,13,18.83,46.9,0,35,0.5814,1,10.95,0,0
+CUST-0299,Carlos O'Connor,2025-07-26,2026-08-18,One year,Standard,East,13,46.76,84.8,2,13,0.311,0,14.54,0,0
+CUST-0300,Wei Espinoza,2025-10-24,2026-08-02,One year,Basic,West,10,17.91,66.6,1,29,0.3758,0,6.73,0,0
+CUST-0301,Kenji Brooks,2025-07-26,2026-07-25,One year,Basic,East,13,18.02,51.3,3,37,0.3619,0,6.52,1,1
+CUST-0302,Talia Rossi,2026-06-13,2026-08-07,Month-to-month,Standard,South,2,45.46,72.8,2,24,0.4329,0,19.68,1,0
+CUST-0303,Zara Ibrahim,2025-12-21,2026-08-16,Two year,Standard,East,8,41.98,77.4,0,15,0.2568,0,10.78,0,0
+CUST-0304,Sam Chen,2026-01-01,2026-07-27,One year,Basic,South,8,17.92,49.0,0,35,0.4344,0,7.79,0,0
+CUST-0305,Ximena Nguyen,2025-05-22,2026-08-14,Month-to-month,Premium,North,15,98.18,94.7,1,17,0.2021,0,19.84,0,0
+CUST-0306,Aarav Brooks,2026-01-26,2026-08-05,Month-to-month,Premium,South,7,96.2,77.9,2,26,0.5173,1,49.77,0,0
+CUST-0307,Ethan Johansson,2026-03-03,2026-08-12,One year,Standard,South,6,46.14,67.8,0,19,0.3355,0,15.48,0,0
+CUST-0308,Quinn O'Connor,2025-10-25,2026-08-20,Month-to-month,Standard,North,10,49.15,91.9,1,11,0.3028,0,14.88,1,1
+CUST-0309,Omar O'Connor,2026-04-22,2026-08-14,Month-to-month,Basic,North,4,19.84,70.4,2,17,0.5145,1,10.21,1,1
+CUST-0310,Diya Johansson,2026-06-11,2026-08-05,Two year,Premium,West,2,88.66,54.6,2,26,0.3468,0,30.74,0,0
+CUST-0311,Sam Haddad,2026-01-19,2026-07-21,Month-to-month,Basic,East,7,19.38,58.1,0,41,0.5067,1,9.82,0,0
+CUST-0312,Bella Quintero,2026-02-17,2026-08-27,Month-to-month,Premium,South,6,96.32,76.7,2,4,0.4188,0,40.34,1,1
+CUST-0313,Zara Davies,2026-05-06,2026-08-04,Two year,Standard,West,3,45.36,75.1,1,27,0.3852,0,17.47,1,1
+CUST-0314,Ethan Brooks,2026-03-11,2026-08-08,One year,Basic,North,5,18.39,68.2,0,23,0.4224,0,7.77,0,0
+CUST-0315,Layla Davies,2026-03-11,2026-07-29,Month-to-month,Basic,South,5,19.82,56.2,0,33,0.5492,1,10.89,1,1
+CUST-0316,Vera Quintero,2026-03-28,2026-08-04,Two year,Standard,West,5,45.67,69.9,0,27,0.3194,0,14.59,0,0
+CUST-0317,Nora Johansson,2026-03-05,2026-07-31,Two year,Standard,East,5,45.4,67.0,1,31,0.37,0,16.8,0,0
+CUST-0318,Talia Anderson,2025-09-28,2026-07-28,Month-to-month,Basic,South,11,18.91,48.0,1,34,0.4955,0,9.37,0,0
+CUST-0319,Sam Davies,2026-04-10,2026-07-13,One year,Standard,South,4,47.12,45.9,0,49,0.5265,1,24.81,1,1
+CUST-0320,Yusuf Anderson,2025-02-06,2026-08-12,Month-to-month,Premium,North,19,104.26,76.5,1,19,0.3581,0,37.34,0,0
+CUST-0321,Miguel Quintero,2025-03-22,2026-07-16,Month-to-month,Standard,North,17,47.4,29.0,3,46,0.6826,1,32.35,1,1
+CUST-0322,Zara Johansson,2026-01-17,2026-08-10,One year,Standard,North,7,45.09,71.1,1,21,0.3212,0,14.48,0,0
+CUST-0323,Nora Brooks,2026-03-28,2026-07-20,Month-to-month,Basic,West,5,19.17,60.8,2,42,0.5899,1,11.31,1,1
+CUST-0324,Ximena Espinoza,2025-12-21,2026-08-08,One year,Standard,East,8,47.52,87.6,0,23,0.2709,0,12.87,0,0
+CUST-0325,Talia Martins,2025-05-31,2026-07-25,One year,Basic,South,15,17.31,60.6,0,37,0.2254,0,3.9,0,0
+CUST-0326,Diya Lopez,2025-10-18,2026-08-23,Month-to-month,Premium,West,10,98.63,77.9,0,8,0.3808,0,37.55,1,0
+CUST-0327,Quinn Quintero,2025-07-07,2026-07-28,One year,Basic,North,14,17.97,62.0,3,34,0.438,0,7.87,0,1
+CUST-0328,Wei Anderson,2025-12-23,2026-07-31,Month-to-month,Standard,North,8,43.57,69.7,1,31,0.5047,1,21.99,0,0
+CUST-0329,Diya Brooks,2025-10-29,2026-08-09,Two year,Basic,South,10,16.91,79.1,1,22,0.244,0,4.13,1,1
+CUST-0330,Vera Anderson,2026-04-14,2026-07-25,Month-to-month,Basic,West,4,18.85,61.1,0,37,0.6101,1,11.5,1,1
+CUST-0331,Carlos Haddad,2025-08-27,2026-08-15,One year,Standard,East,12,46.18,82.9,1,16,0.2789,0,12.88,0,0
+CUST-0332,Wei O'Connor,2026-05-18,2026-07-26,One year,Standard,West,3,49.85,53.1,1,36,0.4702,0,23.44,1,0
+CUST-0333,Umar Nguyen,2025-09-22,2026-08-14,Month-to-month,Standard,North,11,46.02,72.4,0,17,0.4654,0,21.42,0,0
+CUST-0334,Diya Espinoza,2025-05-20,2026-08-31,One year,Premium,West,15,90.17,81.8,3,0,0.2575,0,23.22,0,0
+CUST-0335,Sam Nguyen,2026-06-14,2026-08-01,One year,Premium,North,2,81.77,64.9,4,30,0.3857,0,31.54,1,1
+CUST-0336,Diya Nguyen,2025-11-09,2026-08-27,One year,Premium,North,9,91.79,96.7,0,4,0.0556,0,5.1,1,1
+CUST-0337,Omar Davies,2026-06-28,2026-07-13,One year,Basic,East,2,17.69,43.5,1,49,0.4968,0,8.79,0,0
+CUST-0338,Yusuf O'Connor,2025-09-02,2026-07-31,Two year,Standard,North,12,42.98,47.3,0,31,0.4052,0,17.42,0,0
+CUST-0339,Farah Ibrahim,2026-07-02,2026-07-09,Month-to-month,Premium,West,2,104.48,40.1,0,53,0.6337,1,66.21,0,0
+CUST-0340,Ethan Brooks,2025-02-25,2026-07-28,Month-to-month,Basic,West,18,19.82,77.9,1,34,0.4743,0,9.4,1,0
+CUST-0341,Kenji Haddad,2026-06-12,2026-08-01,Month-to-month,Basic,East,2,19.07,62.5,3,30,0.5541,1,10.57,1,1
+CUST-0342,Jasmine Patel,2025-01-20,2026-08-08,One year,Premium,South,19,92.31,69.5,1,23,0.3746,0,34.58,0,1
+CUST-0343,Bella Nguyen,2025-07-10,2026-07-21,Month-to-month,Standard,North,13,51.51,51.2,1,41,0.5465,1,28.15,1,0
+CUST-0344,Layla Fischer,2025-11-20,2026-07-30,Month-to-month,Standard,East,9,48.95,79.5,0,32,0.459,0,22.47,0,0
+CUST-0345,Gabriel Patel,2025-07-24,2026-07-30,Month-to-month,Premium,East,13,94.95,49.6,1,32,0.5669,1,53.82,1,1
+CUST-0346,Diya Haddad,2025-07-14,2026-08-18,Two year,Standard,West,13,40.32,85.4,2,13,0.2812,0,11.34,0,0
+CUST-0347,Hana Johansson,2025-02-10,2026-08-31,Month-to-month,Standard,East,18,47.92,100.0,1,0,0.1772,0,8.49,0,0
+CUST-0348,Aarav Brooks,2026-04-28,2026-08-15,One year,Basic,North,4,18.73,73.5,2,16,0.3082,0,5.77,1,1
+CUST-0349,Ximena Tanaka,2025-11-22,2026-08-13,Month-to-month,Standard,North,9,54.58,76.7,0,18,0.4488,0,24.5,0,1
+CUST-0350,Zara Quintero,2026-06-28,2026-07-10,Two year,Basic,West,2,17.15,47.6,3,52,0.5671,1,9.73,1,1
+CUST-0351,Jasmine Davies,2025-11-08,2026-07-01,Month-to-month,Standard,North,9,47.12,40.8,1,61,0.676,1,31.85,1,1
+CUST-0352,Wei Lopez,2026-05-30,2026-07-26,Month-to-month,Premium,West,3,93.13,59.0,2,36,0.5457,1,50.82,1,1
+CUST-0353,Layla Patel,2025-12-06,2026-07-27,Two year,Basic,North,8,17.57,51.6,0,35,0.4122,0,7.24,1,1
+CUST-0354,Ximena Kim,2025-12-02,2026-06-30,Two year,Basic,East,9,15.59,46.3,0,62,0.5086,1,7.93,0,0
+CUST-0355,Ethan Espinoza,2026-01-25,2026-08-30,Month-to-month,Premium,West,7,101.72,93.8,1,1,0.2994,0,30.46,0,1
+CUST-0356,Hana Tanaka,2025-12-28,2026-08-14,Month-to-month,Basic,South,8,19.78,72.1,1,17,0.4517,0,8.93,0,0
+CUST-0357,Talia Fischer,2025-08-06,2026-08-25,One year,Standard,North,13,47.57,73.7,0,6,0.3116,0,14.83,0,0
+CUST-0358,Farah Garcia,2025-07-11,2026-07-22,Two year,Standard,West,13,43.62,63.4,0,40,0.4277,0,18.66,0,0
+CUST-0359,Vera Haddad,2026-01-12,2026-07-27,Month-to-month,Standard,North,7,50.38,65.4,0,35,0.536,1,27.0,1,0
+CUST-0360,Layla Rossi,2025-11-17,2026-07-29,Month-to-month,Basic,East,9,19.16,82.5,2,33,0.4552,0,8.72,0,1
+CUST-0361,Kenji Kim,2025-03-03,2026-08-17,One year,Standard,West,18,44.74,67.5,1,14,0.2924,0,13.08,0,0
+CUST-0362,Layla O'Connor,2026-06-19,2026-07-21,One year,Basic,East,2,19.72,63.0,1,41,0.4583,0,9.04,1,0
+CUST-0363,Umar Silva,2026-06-20,2026-07-24,One year,Standard,North,2,45.73,52.1,3,38,0.4795,0,21.93,0,1
+CUST-0364,Aarav Silva,2026-06-30,2026-07-16,One year,Basic,West,2,18.75,49.9,1,46,0.4997,0,9.37,0,0
+CUST-0365,Talia Rossi,2025-10-15,2026-08-02,Month-to-month,Standard,North,10,43.07,46.9,1,29,0.4982,0,21.46,0,0
+CUST-0366,Umar Silva,2026-02-16,2026-07-01,Two year,Standard,East,6,46.91,38.3,1,61,0.576,1,27.02,1,1
+CUST-0367,Vera Silva,2025-07-30,2026-07-27,Two year,Basic,East,13,18.36,64.1,2,35,0.2848,0,5.23,0,0
+CUST-0368,Zara Tanaka,2025-10-06,2026-08-07,One year,Basic,South,10,18.08,68.8,2,24,0.3313,0,5.99,0,0
+CUST-0369,Umar Martins,2026-03-25,2026-07-16,Month-to-month,Basic,South,5,19.53,48.7,1,46,0.6108,1,11.93,1,1
+CUST-0370,Nora Chen,2025-04-11,2026-08-12,Month-to-month,Basic,North,16,19.53,67.5,2,19,0.5467,1,10.68,1,1
+CUST-0371,Miguel Chen,2025-08-07,2026-08-11,One year,Basic,West,12,17.47,68.8,1,20,0.3028,0,5.29,1,1
+CUST-0372,Kenji Patel,2026-04-21,2026-07-15,Month-to-month,Premium,North,4,101.71,35.7,0,47,0.6113,1,62.18,0,0
+CUST-0373,Vera Garcia,2026-03-12,2026-08-10,Two year,Standard,South,5,42.32,54.3,0,21,0.3069,0,12.99,0,0
+CUST-0374,Kenji Quintero,2026-04-03,2026-08-04,Month-to-month,Premium,East,5,95.99,74.1,0,27,0.5347,1,51.32,1,1
+CUST-0375,Omar Silva,2026-06-04,2026-07-22,One year,Premium,East,2,99.35,60.8,2,40,0.3071,0,30.51,1,1
+CUST-0376,Carlos Martins,2026-06-08,2026-07-18,Two year,Basic,East,2,17.93,37.7,2,44,0.4396,0,7.88,1,1
+CUST-0377,Ivan Patel,2025-02-24,2026-08-05,Month-to-month,Standard,East,18,47.27,70.4,1,26,0.575,1,27.18,1,1
+CUST-0378,Gabriel Fischer,2026-02-07,2026-08-20,Month-to-month,Premium,East,6,95.37,83.3,1,11,0.4143,0,39.51,0,0
+CUST-0379,Layla Ibrahim,2026-03-04,2026-08-13,One year,Standard,West,6,45.05,79.7,0,18,0.2292,0,10.33,0,0
+CUST-0380,Nora Tanaka,2025-08-30,2026-08-10,One year,Standard,South,12,48.26,66.6,5,21,0.3824,0,18.45,0,0
+CUST-0381,Sam Quintero,2025-12-12,2026-08-07,Month-to-month,Standard,West,8,46.55,61.0,2,24,0.5094,1,23.71,1,1
+CUST-0382,Layla Espinoza,2025-02-24,2026-07-21,One year,Basic,West,18,18.37,58.6,0,41,0.4312,0,7.92,0,0
+CUST-0383,Diya Silva,2025-07-25,2026-08-12,Two year,Standard,West,13,45.75,75.0,0,19,0.3261,0,14.92,0,0
+CUST-0384,Omar Johansson,2026-01-18,2026-07-23,Month-to-month,Premium,West,7,98.56,70.9,3,39,0.5476,1,53.97,1,1
+CUST-0385,Bella Quintero,2026-03-07,2026-08-13,Month-to-month,Premium,West,5,104.0,77.4,0,18,0.3881,0,40.36,0,0
+CUST-0386,Wei Kim,2024-11-20,2026-08-15,Month-to-month,Basic,North,21,18.71,70.0,1,16,0.443,0,8.29,1,0
+CUST-0387,Umar Martins,2025-09-07,2026-08-06,Month-to-month,Standard,West,11,48.48,80.3,5,25,0.4355,0,21.11,0,0
+CUST-0388,Farah Davies,2025-02-02,2026-08-02,Month-to-month,Basic,East,19,18.07,69.4,0,29,0.3831,0,6.92,0,0
+CUST-0389,Gabriel Garcia,2026-06-19,2026-07-30,Month-to-month,Premium,South,2,104.04,66.8,0,32,0.4116,0,42.83,0,0
+CUST-0390,Aarav O'Connor,2025-05-29,2026-08-07,One year,Basic,East,15,17.36,81.1,1,24,0.2055,0,3.57,1,1
+CUST-0391,Jasmine Quintero,2025-10-27,2026-08-01,Month-to-month,Premium,South,10,100.73,55.9,0,30,0.465,0,46.84,0,1
+CUST-0392,Aarav Brooks,2026-06-18,2026-07-06,Two year,Premium,East,2,88.78,27.9,3,56,0.511,1,45.37,1,1
+CUST-0393,Yusuf Brooks,2025-11-23,2026-08-26,Month-to-month,Basic,West,9,18.0,91.2,2,5,0.3605,0,6.49,0,0
+CUST-0394,Diya Nguyen,2025-09-27,2026-08-19,Month-to-month,Basic,North,11,18.42,71.8,1,12,0.3538,0,6.52,1,1
+CUST-0395,Rosa Ibrahim,2026-08-08,2026-07-08,One year,Premium,South,1,100.55,29.3,2,54,0.4425,0,44.5,1,0
+CUST-0396,Omar Quintero,2026-01-30,2026-07-18,Two year,Basic,West,7,17.27,57.3,2,44,0.3551,0,6.13,1,1
+CUST-0397,Gabriel Brooks,2025-06-20,2026-08-13,Month-to-month,Standard,South,14,46.53,79.6,1,18,0.3715,0,17.29,0,0
+CUST-0398,Vera Garcia,2026-04-11,2026-08-13,Month-to-month,Premium,West,4,100.51,63.8,1,18,0.4478,0,45.01,0,0
+CUST-0399,Carlos Anderson,2026-01-28,2026-08-12,Month-to-month,Standard,North,7,48.64,60.3,0,19,0.5482,1,26.66,1,1
+CUST-0400,Ximena O'Connor,2026-02-05,2026-08-09,Month-to-month,Basic,East,6,22.28,89.0,0,22,0.3522,0,7.85,0,1
+CUST-0401,Talia Rossi,2026-04-08,2026-07-25,Month-to-month,Standard,West,4,49.7,52.3,0,37,0.6027,1,29.95,0,1
+CUST-0402,Quinn Davies,2025-03-19,2026-08-02,Month-to-month,Basic,West,17,18.64,56.0,0,29,0.4863,0,9.06,1,1
+CUST-0403,Wei Garcia,2025-07-25,2026-08-11,Month-to-month,Premium,North,13,106.03,71.2,1,20,0.4307,0,45.67,0,0
+CUST-0404,Kenji Quintero,2026-06-22,2026-08-12,Month-to-month,Basic,West,2,17.25,60.9,1,19,0.455,0,7.85,1,1
+CUST-0405,Hana Anderson,2024-10-09,2026-07-31,Two year,Basic,South,23,17.18,75.4,0,31,0.2352,0,4.04,0,0
+CUST-0406,Ethan Tanaka,2025-05-02,2026-08-20,One year,Basic,South,16,19.85,81.7,2,11,0.217,0,4.31,0,0
+CUST-0407,Yusuf Rossi,2026-04-15,2026-07-28,Month-to-month,Premium,South,4,98.42,71.0,1,34,0.5059,1,49.79,1,1
+CUST-0408,Kenji Davies,2025-06-10,2026-08-11,Month-to-month,Basic,East,14,17.35,75.3,0,20,0.3912,0,6.79,1,1
+CUST-0409,Vera Chen,2026-06-24,2026-07-12,Month-to-month,Premium,East,2,97.04,51.1,3,50,0.5947,1,57.71,0,0
+CUST-0410,Ivan Nguyen,2024-09-21,2026-08-05,Month-to-month,Standard,South,23,52.56,68.9,1,26,0.4791,0,25.18,0,0
+CUST-0411,Yusuf Anderson,2025-10-10,2026-07-31,One year,Premium,North,10,95.82,69.6,0,31,0.366,0,35.07,1,1
+CUST-0412,Wei Kim,2025-10-19,2026-08-03,Two year,Premium,West,10,85.36,71.2,0,28,0.2583,0,22.05,1,1
+CUST-0413,Ivan Brooks,2026-06-29,2026-07-31,Two year,Premium,North,2,86.05,66.6,1,31,0.3473,0,29.88,1,1
+CUST-0414,Miguel Kim,2025-04-13,2026-08-10,Two year,Premium,North,16,86.61,76.3,3,21,0.2601,0,22.52,1,1
+CUST-0415,Umar Haddad,2026-07-27,2026-07-29,Two year,Basic,East,1,17.41,55.7,1,33,0.3432,0,5.97,0,0
+CUST-0416,Farah O'Connor,2026-05-03,2026-07-12,Two year,Standard,South,4,47.05,55.9,0,50,0.4158,0,19.56,1,0
+CUST-0417,Aarav Rossi,2026-06-10,2026-08-04,Month-to-month,Standard,East,2,51.58,56.0,2,27,0.5173,1,26.68,0,0
+CUST-0418,Hana Johansson,2025-07-28,2026-08-06,Month-to-month,Standard,West,13,50.12,67.6,0,25,0.3996,0,20.03,1,1
+CUST-0419,Priya Martins,2026-05-20,2026-08-08,Month-to-month,Premium,North,3,92.41,70.9,0,23,0.3763,0,34.77,0,0
+CUST-0420,Diya Martins,2025-03-29,2026-08-28,One year,Premium,South,17,87.81,100.0,0,3,0.1232,0,10.82,0,1
+CUST-0421,Ivan Tanaka,2025-10-16,2026-08-03,Month-to-month,Standard,East,10,50.31,60.1,0,28,0.5178,1,26.05,0,0
+CUST-0422,Ximena Espinoza,2026-07-23,2026-07-29,One year,Standard,West,1,43.42,61.3,4,33,0.4195,0,18.21,0,0
+CUST-0423,Bella Espinoza,2026-08-16,2026-08-10,One year,Standard,East,1,46.02,71.0,3,21,0.5005,1,23.03,0,0
+CUST-0424,Bella Haddad,2026-07-15,2026-08-09,Month-to-month,Basic,South,1,19.29,56.5,1,22,0.5675,1,10.95,1,1
+CUST-0425,Layla O'Connor,2025-11-14,2026-08-31,Month-to-month,Basic,East,9,17.92,100.0,3,0,0.3777,0,6.77,0,0
+CUST-0426,Aarav Rossi,2025-07-09,2026-08-10,Month-to-month,Basic,West,13,18.03,62.3,2,21,0.5188,1,9.35,1,1
+CUST-0427,Aarav Fischer,2026-05-04,2026-08-24,Month-to-month,Basic,South,3,18.91,72.9,1,7,0.5112,1,9.67,0,0
+CUST-0428,Ethan Chen,2025-05-30,2026-07-26,Two year,Basic,West,15,17.53,56.0,0,36,0.3029,0,5.31,0,0
+CUST-0429,Carlos Martins,2026-07-12,2026-07-18,One year,Standard,West,1,49.02,49.7,2,44,0.3724,0,18.25,0,0
+CUST-0430,Vera Lopez,2025-07-10,2026-08-05,One year,Standard,South,13,47.96,71.7,1,26,0.3052,0,14.64,0,0
+CUST-0431,Diya Haddad,2025-03-07,2026-08-12,Month-to-month,Premium,North,18,99.36,80.7,0,19,0.3983,0,39.57,0,0
+CUST-0432,Nora Davies,2025-07-31,2026-08-25,Month-to-month,Standard,West,13,47.17,72.8,0,6,0.3834,0,18.08,0,0
+CUST-0433,Sam Quintero,2025-09-20,2026-08-31,Month-to-month,Basic,North,11,17.98,86.9,2,0,0.3541,0,6.37,1,1
+CUST-0434,Quinn Quintero,2025-06-09,2026-07-20,One year,Basic,South,14,17.59,66.6,0,42,0.4408,0,7.75,1,0
+CUST-0435,Rosa O'Connor,2026-07-21,2026-07-31,One year,Basic,North,1,18.42,50.0,1,31,0.4699,0,8.66,1,1
+CUST-0436,Jasmine Lopez,2026-05-18,2026-08-27,Month-to-month,Premium,East,3,100.67,100.0,2,4,0.3677,0,37.02,0,0
+CUST-0437,Ximena Fischer,2026-06-17,2026-08-06,Two year,Basic,South,2,15.3,60.9,2,25,0.3087,0,4.72,1,1
+CUST-0438,Bella Ibrahim,2026-01-06,2026-07-28,Month-to-month,Standard,East,7,47.08,57.2,0,34,0.47,0,22.13,0,0
+CUST-0439,Carlos Brooks,2025-08-20,2026-08-03,Two year,Premium,West,12,94.47,57.6,5,28,0.4661,0,44.03,0,0
+CUST-0440,Wei Espinoza,2025-10-31,2026-07-21,Month-to-month,Premium,West,10,99.39,53.9,1,41,0.5651,1,56.17,1,1
+CUST-0441,Bella Johansson,2025-05-28,2026-08-16,Month-to-month,Basic,West,15,17.65,82.0,0,15,0.3317,0,5.85,0,0
+CUST-0442,Ethan Ibrahim,2026-06-05,2026-07-26,One year,Basic,North,2,20.18,49.5,0,36,0.42,0,8.48,1,1
+CUST-0443,Ethan Brooks,2025-08-27,2026-08-16,Month-to-month,Basic,South,12,18.97,69.9,0,15,0.3812,0,7.23,1,1
+CUST-0444,Aarav Tanaka,2026-05-22,2026-08-03,Month-to-month,Basic,North,3,19.37,67.0,0,28,0.4493,0,8.7,0,0
+CUST-0445,Diya Fischer,2026-04-21,2026-08-24,Month-to-month,Basic,West,4,19.38,79.0,2,7,0.3428,0,6.64,0,0
+CUST-0446,Omar Kim,2025-09-12,2026-07-23,Month-to-month,Standard,East,11,48.1,55.3,0,39,0.4592,0,22.09,1,1
+CUST-0447,Rosa Johansson,2024-12-08,2026-07-03,One year,Premium,South,21,90.63,51.9,1,59,0.4568,0,41.4,1,1
+CUST-0448,Carlos Johansson,2025-11-10,2026-07-29,Two year,Standard,East,9,48.78,71.4,0,33,0.2672,0,13.04,0,0
+CUST-0449,Yusuf Quintero,2026-07-14,2026-07-28,Two year,Standard,East,1,46.31,64.0,1,34,0.4155,0,19.24,0,1
+CUST-0450,Carlos O'Connor,2025-11-08,2026-08-11,Month-to-month,Basic,South,9,19.78,73.0,0,20,0.4398,0,8.7,0,0
+CUST-0451,Rosa Rossi,2026-07-19,2026-08-01,Month-to-month,Premium,South,1,101.85,42.9,3,30,0.6313,1,64.3,1,1
+CUST-0452,Umar Haddad,2025-04-27,2026-08-25,Month-to-month,Standard,North,16,46.54,78.2,2,6,0.3365,0,15.66,0,1
+CUST-0453,Nora Fischer,2025-09-12,2026-07-18,Month-to-month,Premium,South,11,105.32,56.8,1,44,0.5492,1,57.84,1,1
+CUST-0454,Miguel Ibrahim,2026-05-29,2026-08-06,Month-to-month,Premium,South,3,94.83,60.2,1,25,0.531,1,50.36,0,0
+CUST-0455,Carlos Lopez,2026-06-29,2026-07-21,Two year,Basic,West,2,17.34,40.8,1,41,0.4937,0,8.56,0,0
+CUST-0456,Gabriel Garcia,2026-05-25,2026-08-23,Two year,Basic,West,3,15.7,87.5,0,8,0.1829,0,2.87,0,0
+CUST-0457,Wei Johansson,2024-12-08,2026-08-22,One year,Basic,West,21,16.21,77.5,0,9,0.2794,0,4.53,0,0
+CUST-0458,Jasmine Davies,2026-01-28,2026-08-23,Month-to-month,Standard,North,7,49.78,77.1,1,8,0.3959,0,19.71,1,1
+CUST-0459,Aarav Lopez,2025-07-22,2026-08-21,Month-to-month,Premium,West,13,94.99,86.7,0,10,0.3778,0,35.89,0,0
+CUST-0460,Sam O'Connor,2025-10-27,2026-08-31,Month-to-month,Basic,South,10,17.11,100.0,0,0,0.2477,0,4.24,0,0
+CUST-0461,Rosa Kim,2025-12-02,2026-07-22,Month-to-month,Standard,South,9,50.32,42.4,3,40,0.5347,1,26.91,1,1
+CUST-0462,Bella Rossi,2026-06-09,2026-07-24,Month-to-month,Standard,West,2,54.19,43.9,0,38,0.6097,1,33.04,0,0
+CUST-0463,Bella Tanaka,2025-02-10,2026-07-25,Month-to-month,Basic,West,18,20.32,58.8,1,37,0.5459,1,11.09,0,0
+CUST-0464,Diya Silva,2026-04-08,2026-07-29,Month-to-month,Basic,North,4,18.76,55.2,2,33,0.591,1,11.09,1,1
+CUST-0465,Bella Brooks,2025-11-29,2026-07-25,Two year,Standard,South,9,44.12,51.8,2,37,0.4225,0,18.64,0,0
+CUST-0466,Quinn Rossi,2025-09-19,2026-07-29,Month-to-month,Standard,East,11,51.17,63.5,1,33,0.4839,0,24.76,0,0
+CUST-0467,Diya Garcia,2025-10-20,2026-07-23,Two year,Standard,East,10,46.57,49.8,1,39,0.3586,0,16.7,0,0
+CUST-0468,Priya Johansson,2025-02-18,2026-08-12,Month-to-month,Basic,South,18,18.67,73.0,0,19,0.4248,0,7.93,1,1
+CUST-0469,Ethan Ibrahim,2026-06-08,2026-07-23,One year,Standard,East,2,46.63,55.8,1,39,0.4714,0,21.98,0,0
+CUST-0470,Zara Fischer,2026-01-04,2026-08-06,Month-to-month,Basic,West,7,19.29,75.2,0,25,0.4087,0,7.88,0,0
+CUST-0471,Sam Rossi,2026-02-22,2026-08-13,Month-to-month,Premium,North,6,101.74,75.6,1,18,0.4866,0,49.51,1,1
+CUST-0472,Jasmine Martins,2026-01-21,2026-08-12,Month-to-month,Basic,East,7,18.87,77.0,1,19,0.382,0,7.21,1,1
+CUST-0473,Layla Tanaka,2026-06-19,2026-07-28,Month-to-month,Basic,East,2,18.89,49.4,1,34,0.5493,1,10.38,1,1
+CUST-0474,Bella Tanaka,2026-06-13,2026-08-28,Two year,Standard,West,2,47.14,86.8,2,3,0.2857,0,13.47,0,0
+CUST-0475,Bella Ibrahim,2026-04-18,2026-08-03,Month-to-month,Standard,South,4,51.96,71.5,2,28,0.5348,1,27.79,1,1
+CUST-0476,Nora O'Connor,2026-04-07,2026-07-11,One year,Standard,North,4,47.66,40.1,3,51,0.5399,1,25.73,0,1
+CUST-0477,Aarav Kim,2026-02-11,2026-07-21,Month-to-month,Standard,East,6,53.21,53.0,1,41,0.5887,1,31.33,0,0
+CUST-0478,Quinn Johansson,2025-11-11,2026-07-14,Month-to-month,Premium,East,9,97.09,41.9,0,48,0.6194,1,60.14,0,0
+CUST-0479,Jasmine O'Connor,2025-10-28,2026-08-06,Month-to-month,Standard,South,10,52.98,68.3,1,25,0.328,0,17.38,1,1
+CUST-0480,Diya Nguyen,2026-02-19,2026-07-30,Month-to-month,Standard,West,6,50.33,66.2,0,32,0.4453,0,22.41,0,0
+CUST-0481,Nora Silva,2026-02-20,2026-07-24,Two year,Standard,West,6,51.31,61.0,0,38,0.3529,0,18.11,0,0
+CUST-0482,Omar Patel,2026-05-12,2026-08-23,One year,Basic,North,3,16.97,98.2,0,8,0.1825,0,3.1,0,0
+CUST-0483,Talia Martins,2025-11-23,2026-08-13,One year,Standard,West,9,44.95,76.2,2,18,0.3255,0,14.63,1,1
+CUST-0484,Farah Silva,2026-04-01,2026-08-04,Month-to-month,Basic,North,5,19.4,78.9,0,27,0.4915,0,9.53,1,1
+CUST-0485,Omar Chen,2026-07-23,2026-07-13,Month-to-month,Standard,South,1,49.97,41.0,1,49,0.6361,1,31.79,1,1
+CUST-0486,Vera Patel,2026-02-16,2026-07-20,Two year,Basic,North,6,18.77,53.0,2,42,0.3666,0,6.88,0,0
+CUST-0487,Hana Haddad,2026-01-21,2026-08-04,Month-to-month,Premium,South,7,95.69,68.6,2,27,0.5069,1,48.5,0,0
+CUST-0488,Vera Ibrahim,2026-05-09,2026-08-06,Month-to-month,Standard,West,3,51.22,70.6,1,25,0.4602,0,23.57,1,1
+CUST-0489,Sam Patel,2025-12-02,2026-07-21,Month-to-month,Premium,South,9,104.75,40.2,0,41,0.5905,1,61.86,0,1
+CUST-0490,Layla Fischer,2025-12-05,2026-07-29,One year,Standard,East,8,48.19,65.3,1,33,0.3688,0,17.77,0,0
+CUST-0491,Wei Rossi,2025-09-17,2026-07-14,One year,Basic,North,11,17.18,68.2,0,48,0.5061,1,8.7,0,0
+CUST-0492,Zara Johansson,2025-10-20,2026-08-06,One year,Premium,East,10,100.67,64.8,2,25,0.2579,0,25.97,1,1
+CUST-0493,Gabriel Garcia,2025-10-18,2026-07-27,One year,Standard,South,10,49.41,55.8,0,35,0.3847,0,19.01,1,0
+CUST-0494,Zara Garcia,2026-04-02,2026-08-03,Month-to-month,Standard,East,5,50.47,59.9,0,28,0.504,1,25.44,0,0
+CUST-0495,Aarav Ibrahim,2025-07-20,2026-08-08,Two year,Standard,West,13,44.55,65.3,1,23,0.2525,0,11.25,1,0
+CUST-0496,Diya Silva,2025-12-14,2026-07-26,Month-to-month,Standard,East,8,49.55,69.4,3,36,0.5675,1,28.12,0,0
+CUST-0497,Bella Chen,2026-02-10,2026-08-19,One year,Premium,North,6,93.68,77.1,0,12,0.3176,0,29.75,0,0
+CUST-0498,Jasmine Kim,2025-11-02,2026-08-23,Month-to-month,Standard,South,10,50.57,84.2,0,8,0.3473,0,17.56,0,0
+CUST-0499,Yusuf Quintero,2026-03-14,2026-08-15,Two year,Basic,North,5,17.13,63.6,1,16,0.287,0,4.92,0,0
+CUST-0500,Priya Johansson,2026-01-02,2026-08-06,Month-to-month,Standard,South,8,46.92,61.2,0,25,0.4776,0,22.41,1,1

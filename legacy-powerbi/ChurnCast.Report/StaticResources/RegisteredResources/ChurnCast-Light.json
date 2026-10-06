@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/main/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.141.json",
+  "name": "ChurnCast Light",
+
+  "dataColors": [
+    "#2F6B8A",
+    "#6F8FA3",
+    "#A8B8C2",
+    "#E8A33D",
+    "#7C5AA6",
+    "#4C9A8E",
+    "#B3564D",
+    "#8D9EA7"
+  ],
+
+  "good": "#2E7D32",
+  "neutral": "#B38600",
+  "bad": "#B3261E",
+
+  "maximum": "#2F6B8A",
+  "center": "#E8A33D",
+  "minimum": "#DEEFFF",
+  "null": "#8D9EA7",
+
+  "background": "#FFFFFF",
+  "backgroundLight": "#F5F6F7",
+  "backgroundNeutral": "#E8EBED",
+  "foreground": "#252423",
+  "foregroundNeutralSecondary": "#605E5C",
+  "foregroundNeutralTertiary": "#8A8886",
+  "tableAccent": "#2F6B8A",
+
+  "firstLevelElements": "#252423",
+  "secondLevelElements": "#605E5C",
+  "thirdLevelElements": "#D6D6D6",
+  "fourthLevelElements": "#EEEEEE",
+
+  "textClasses": {
+    "callout": { "fontSize": 32, "fontFace": "Segoe UI Semibold", "color": "#252423" },
+    "title": { "fontSize": 14, "fontFace": "Segoe UI Semibold", "color": "#252423" },
+    "header": { "fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#252423" },
+    "label": { "fontSize": 10, "fontFace": "Segoe UI", "color": "#252423" }
+  },
+
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 0 }],
+        "border": [{ "show": false }],
+        "dropShadow": [{ "show": false }],
+        "title": [{ "fontSize": 14, "fontColor": { "solid": { "color": "#252423" } }, "bold": true }]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [{ "color": { "solid": { "color": "#2F6B8A" } }, "fontSize": 28 }],
+        "categoryLabels": [{ "color": { "solid": { "color": "#605E5C" } }, "fontSize": 11 }]
+      }
+    },
+    "cardVisual": {
+      "*": {
+        "callout": [{ "color": { "solid": { "color": "#2F6B8A" } } }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#F5F6F7" } }, "transparency": 0 }]
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+/// Single-row table describing the (mock) model's training run, for the retraining cadence card.
+table ModelMeta
+	lineageTag: 776918c0-4347-41f0-a71d-59ff12ecc4dc
+
+	column last_trained_date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: e22e7d74-a3e4-4d71-b80b-a943e590a491
+		summarizeBy: none
+		sourceColumn: last_trained_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column next_scheduled_retrain
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 563acd9d-7718-474d-83e3-7043a264a5b9
+		summarizeBy: none
+		sourceColumn: next_scheduled_retrain
+
+		annotation SummarizationSetBy = Automatic
+
+	column holdout_start
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 732f5dd1-f423-4e71-8d40-0786fa76fcbd
+		summarizeBy: none
+		sourceColumn: holdout_start
+
+		annotation SummarizationSetBy = Automatic
+
+	column holdout_end
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 1732b1fb-8f81-4ab3-acb1-66d9285c8207
+		summarizeBy: none
+		sourceColumn: holdout_end
+
+		annotation SummarizationSetBy = Automatic
+
+	column sample_size
+		dataType: int64
+		lineageTag: b950448d-a47c-4f7b-8ad2-40d6b6e3e64f
+		summarizeBy: none
+		sourceColumn: sample_size
+
+		annotation SummarizationSetBy = Automatic
+
+	column holdout_mape
+		dataType: double
+		formatString: 0.00
+		lineageTag: 74093701-414c-4277-b5a6-67a46cfa30df
+		summarizeBy: none
+		sourceColumn: holdout_mape
+
+		annotation SummarizationSetBy = Automatic
+
+	column holdout_auc
+		dataType: double
+		formatString: 0.000
+		lineageTag: 80a7e382-503c-4fed-a2fe-91a077e4c4ca
+		summarizeBy: none
+		sourceColumn: holdout_auc
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ModelMeta = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolderPath & "model_meta.csv"), [Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"last_trained_date", type date}, {"next_scheduled_retrain", type date}, {"holdout_start", type date}, {"holdout_end", type date}, {"sample_size", Int64.Type}, {"holdout_mape", type number}, {"holdout_auc", type number}})
+				in
+				    #"Changed Type"

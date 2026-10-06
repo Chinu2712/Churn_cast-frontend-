@@ -1,0 +1,46 @@
+/// Correlation of each raw feature against the real outcome, to catch potential label leakage.
+table LeakageChecklist
+	lineageTag: 4e5ff734-c60a-4ac7-b5c0-548d8f8f6421
+
+	column feature_name
+		dataType: string
+		lineageTag: 2d3ddf44-d14d-420a-9d6b-b59284cf8d84
+		summarizeBy: none
+		sourceColumn: feature_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column correlation_with_label
+		dataType: double
+		formatString: 0.000
+		lineageTag: 6bb164be-41bd-4a56-851b-ea3ce79fdf81
+		summarizeBy: none
+		sourceColumn: correlation_with_label
+
+		annotation SummarizationSetBy = Automatic
+
+	column leakage_flag
+		dataType: int64
+		lineageTag: 8a444440-a10a-405d-bd6d-dc892e63e7f8
+		summarizeBy: none
+		sourceColumn: leakage_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column note
+		dataType: string
+		lineageTag: edbb3476-22e4-4d25-a3ad-4984fbbba5dd
+		summarizeBy: none
+		sourceColumn: note
+
+		annotation SummarizationSetBy = Automatic
+
+	partition LeakageChecklist = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolderPath & "leakage_checklist.csv"), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"feature_name", type text}, {"correlation_with_label", type number}, {"leakage_flag", Int64.Type}, {"note", type text}})
+				in
+				    #"Changed Type"

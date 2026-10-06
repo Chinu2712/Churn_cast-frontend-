@@ -1,0 +1,2501 @@
+customer_id,feature_name,contribution,rank
+CUST-0001,Month-to-month contract,-0.0582,1
+CUST-0001,Low product usage,-0.0275,2
+CUST-0001,Short tenure,-0.0134,3
+CUST-0001,Days since last login,-0.0127,4
+CUST-0001,Recent support tickets,-0.0016,5
+CUST-0002,Month-to-month contract,-0.1082,1
+CUST-0002,Low product usage,-0.0677,2
+CUST-0002,Days since last login,-0.0377,3
+CUST-0002,Short tenure,0.006,4
+CUST-0002,Recent support tickets,-0.0016,5
+CUST-0003,Month-to-month contract,-0.1082,1
+CUST-0003,Short tenure,-0.019,2
+CUST-0003,Recent support tickets,0.0109,3
+CUST-0003,Days since last login,0.0068,4
+CUST-0003,Low product usage,-0.0053,5
+CUST-0004,Month-to-month contract,0.0618,1
+CUST-0004,Days since last login,0.0179,2
+CUST-0004,Low product usage,0.0166,3
+CUST-0004,Short tenure,-0.0079,4
+CUST-0004,Recent support tickets,-0.0016,5
+CUST-0005,Low product usage,0.1511,1
+CUST-0005,Days since last login,0.0762,2
+CUST-0005,Month-to-month contract,0.0618,3
+CUST-0005,Recent support tickets,0.036,4
+CUST-0005,Short tenure,0.0171,5
+CUST-0006,Days since last login,-0.0599,1
+CUST-0006,Month-to-month contract,-0.0582,2
+CUST-0006,Low product usage,-0.0475,3
+CUST-0006,Short tenure,-0.0329,4
+CUST-0006,Recent support tickets,0.0234,5
+CUST-0007,Month-to-month contract,0.0618,1
+CUST-0007,Recent support tickets,-0.0141,2
+CUST-0007,Days since last login,0.0123,3
+CUST-0007,Short tenure,-0.0106,4
+CUST-0007,Low product usage,-0.0079,5
+CUST-0008,Month-to-month contract,-0.0582,1
+CUST-0008,Low product usage,0.0393,2
+CUST-0008,Days since last login,0.029,3
+CUST-0008,Short tenure,-0.0134,4
+CUST-0008,Recent support tickets,-0.0016,5
+CUST-0009,Month-to-month contract,0.0618,1
+CUST-0009,Days since last login,0.0401,2
+CUST-0009,Low product usage,0.025,3
+CUST-0009,Recent support tickets,0.0234,4
+CUST-0009,Short tenure,0.0171,5
+CUST-0010,Month-to-month contract,0.0618,1
+CUST-0010,Low product usage,0.0168,2
+CUST-0010,Recent support tickets,-0.0141,3
+CUST-0010,Days since last login,0.0095,4
+CUST-0010,Short tenure,0.0032,5
+CUST-0011,Month-to-month contract,0.0618,1
+CUST-0011,Days since last login,-0.0238,2
+CUST-0011,Low product usage,0.0139,3
+CUST-0011,Short tenure,0.0088,4
+CUST-0011,Recent support tickets,-0.0016,5
+CUST-0012,Month-to-month contract,-0.0582,1
+CUST-0012,Low product usage,-0.0457,2
+CUST-0012,Short tenure,-0.0273,3
+CUST-0012,Recent support tickets,-0.0141,4
+CUST-0012,Days since last login,-0.0071,5
+CUST-0013,Month-to-month contract,0.0618,1
+CUST-0013,Low product usage,0.0564,2
+CUST-0013,Days since last login,0.0262,3
+CUST-0013,Recent support tickets,0.0109,4
+CUST-0013,Short tenure,-0.0051,5
+CUST-0014,Low product usage,-0.0689,1
+CUST-0014,Month-to-month contract,0.0618,2
+CUST-0014,Days since last login,-0.0377,3
+CUST-0014,Short tenure,-0.0162,4
+CUST-0014,Recent support tickets,-0.0141,5
+CUST-0015,Month-to-month contract,0.0618,1
+CUST-0015,Low product usage,0.0595,2
+CUST-0015,Days since last login,0.0234,3
+CUST-0015,Recent support tickets,0.0234,4
+CUST-0015,Short tenure,0.006,5
+CUST-0016,Month-to-month contract,0.0618,1
+CUST-0016,Days since last login,0.0484,2
+CUST-0016,Low product usage,0.0209,3
+CUST-0016,Short tenure,0.0144,4
+CUST-0016,Recent support tickets,-0.0141,5
+CUST-0017,Low product usage,-0.1148,1
+CUST-0017,Days since last login,-0.0794,2
+CUST-0017,Month-to-month contract,0.0618,3
+CUST-0017,Recent support tickets,-0.0141,4
+CUST-0017,Short tenure,0.0005,5
+CUST-0018,Month-to-month contract,-0.0582,1
+CUST-0018,Low product usage,-0.0276,2
+CUST-0018,Days since last login,-0.0266,3
+CUST-0018,Short tenure,0.0199,4
+CUST-0018,Recent support tickets,-0.0016,5
+CUST-0019,Month-to-month contract,0.0618,1
+CUST-0019,Low product usage,-0.019,2
+CUST-0019,Short tenure,-0.0162,3
+CUST-0019,Recent support tickets,-0.0141,4
+CUST-0019,Days since last login,-0.0099,5
+CUST-0020,Month-to-month contract,-0.0582,1
+CUST-0020,Low product usage,0.0355,2
+CUST-0020,Recent support tickets,0.0234,3
+CUST-0020,Short tenure,-0.0051,4
+CUST-0020,Days since last login,-0.0016,5
+CUST-0021,Month-to-month contract,-0.1082,1
+CUST-0021,Days since last login,0.0151,2
+CUST-0021,Low product usage,0.0139,3
+CUST-0021,Short tenure,-0.0106,4
+CUST-0021,Recent support tickets,-0.0016,5
+CUST-0022,Month-to-month contract,0.0618,1
+CUST-0022,Days since last login,0.0234,2
+CUST-0022,Low product usage,-0.0177,3
+CUST-0022,Recent support tickets,-0.0141,4
+CUST-0022,Short tenure,0.0088,5
+CUST-0023,Month-to-month contract,0.0618,1
+CUST-0023,Short tenure,-0.0329,2
+CUST-0023,Days since last login,-0.021,3
+CUST-0023,Low product usage,-0.0158,4
+CUST-0023,Recent support tickets,-0.0016,5
+CUST-0024,Month-to-month contract,-0.0582,1
+CUST-0024,Recent support tickets,0.0234,2
+CUST-0024,Short tenure,-0.0218,3
+CUST-0024,Low product usage,-0.0091,4
+CUST-0024,Days since last login,0.0012,5
+CUST-0025,Days since last login,-0.071,1
+CUST-0025,Month-to-month contract,0.0618,2
+CUST-0025,Short tenure,-0.0134,3
+CUST-0025,Low product usage,-0.0122,4
+CUST-0025,Recent support tickets,-0.0016,5
+CUST-0026,Month-to-month contract,0.0618,1
+CUST-0026,Short tenure,0.0144,2
+CUST-0026,Recent support tickets,-0.0141,3
+CUST-0026,Days since last login,-0.0044,4
+CUST-0026,Low product usage,-0.0026,5
+CUST-0027,Month-to-month contract,-0.1082,1
+CUST-0027,Low product usage,0.0618,2
+CUST-0027,Days since last login,0.0318,3
+CUST-0027,Recent support tickets,-0.0141,4
+CUST-0027,Short tenure,0.0032,5
+CUST-0028,Month-to-month contract,-0.1082,1
+CUST-0028,Low product usage,0.0587,2
+CUST-0028,Short tenure,0.0199,3
+CUST-0028,Days since last login,0.0179,4
+CUST-0028,Recent support tickets,-0.0016,5
+CUST-0029,Month-to-month contract,-0.0582,1
+CUST-0029,Short tenure,0.0171,2
+CUST-0029,Low product usage,-0.0164,3
+CUST-0029,Days since last login,0.0123,4
+CUST-0029,Recent support tickets,0.0109,5
+CUST-0030,Month-to-month contract,0.0618,1
+CUST-0030,Low product usage,0.058,2
+CUST-0030,Days since last login,0.029,3
+CUST-0030,Recent support tickets,-0.0141,4
+CUST-0030,Short tenure,-0.0079,5
+CUST-0031,Month-to-month contract,-0.0582,1
+CUST-0031,Short tenure,-0.0106,2
+CUST-0031,Days since last login,-0.0071,3
+CUST-0031,Low product usage,-0.0039,4
+CUST-0031,Recent support tickets,-0.0016,5
+CUST-0032,Month-to-month contract,-0.0582,1
+CUST-0032,Short tenure,-0.0329,2
+CUST-0032,Low product usage,0.0292,3
+CUST-0032,Recent support tickets,-0.0141,4
+CUST-0032,Days since last login,0.0095,5
+CUST-0033,Month-to-month contract,0.0618,1
+CUST-0033,Days since last login,-0.0571,2
+CUST-0033,Low product usage,-0.0197,3
+CUST-0033,Short tenure,0.0088,4
+CUST-0033,Recent support tickets,-0.0016,5
+CUST-0034,Month-to-month contract,-0.0582,1
+CUST-0034,Days since last login,-0.021,2
+CUST-0034,Recent support tickets,-0.0141,3
+CUST-0034,Short tenure,0.0088,4
+CUST-0034,Low product usage,0.0065,5
+CUST-0035,Low product usage,-0.0914,1
+CUST-0035,Month-to-month contract,0.0618,2
+CUST-0035,Days since last login,-0.0377,3
+CUST-0035,Short tenure,0.0032,4
+CUST-0035,Recent support tickets,-0.0016,5
+CUST-0036,Days since last login,-0.0738,1
+CUST-0036,Month-to-month contract,0.0618,2
+CUST-0036,Low product usage,-0.0405,3
+CUST-0036,Short tenure,0.0144,4
+CUST-0036,Recent support tickets,-0.0016,5
+CUST-0037,Low product usage,0.1005,1
+CUST-0037,Month-to-month contract,0.0618,2
+CUST-0037,Days since last login,0.0456,3
+CUST-0037,Short tenure,0.0171,4
+CUST-0037,Recent support tickets,-0.0016,5
+CUST-0038,Month-to-month contract,0.0618,1
+CUST-0038,Low product usage,-0.0491,2
+CUST-0038,Days since last login,-0.0405,3
+CUST-0038,Short tenure,0.0032,4
+CUST-0038,Recent support tickets,-0.0016,5
+CUST-0039,Month-to-month contract,0.0618,1
+CUST-0039,Days since last login,0.054,2
+CUST-0039,Low product usage,0.0268,3
+CUST-0039,Short tenure,0.0144,4
+CUST-0039,Recent support tickets,-0.0016,5
+CUST-0040,Month-to-month contract,-0.0582,1
+CUST-0040,Days since last login,0.0262,2
+CUST-0040,Low product usage,0.0164,3
+CUST-0040,Short tenure,-0.0051,4
+CUST-0040,Recent support tickets,-0.0016,5
+CUST-0041,Month-to-month contract,-0.1082,1
+CUST-0041,Days since last login,-0.0321,2
+CUST-0041,Low product usage,-0.0303,3
+CUST-0041,Recent support tickets,-0.0141,4
+CUST-0041,Short tenure,0.006,5
+CUST-0042,Month-to-month contract,-0.0582,1
+CUST-0042,Days since last login,0.0345,2
+CUST-0042,Short tenure,-0.0162,3
+CUST-0042,Recent support tickets,-0.0141,4
+CUST-0042,Low product usage,0.0119,5
+CUST-0043,Low product usage,-0.0607,1
+CUST-0043,Month-to-month contract,-0.0582,2
+CUST-0043,Days since last login,-0.0571,3
+CUST-0043,Short tenure,-0.0079,4
+CUST-0043,Recent support tickets,-0.0016,5
+CUST-0044,Month-to-month contract,-0.1082,1
+CUST-0044,Days since last login,0.0373,2
+CUST-0044,Low product usage,0.0268,3
+CUST-0044,Short tenure,0.0088,4
+CUST-0044,Recent support tickets,-0.0016,5
+CUST-0045,Month-to-month contract,0.0618,1
+CUST-0045,Low product usage,0.0186,2
+CUST-0045,Days since last login,-0.0182,3
+CUST-0045,Short tenure,-0.0162,4
+CUST-0045,Recent support tickets,0.0109,5
+CUST-0046,Month-to-month contract,0.0618,1
+CUST-0046,Days since last login,0.0373,2
+CUST-0046,Low product usage,0.0206,3
+CUST-0046,Short tenure,-0.0162,4
+CUST-0046,Recent support tickets,-0.0141,5
+CUST-0047,Month-to-month contract,0.0618,1
+CUST-0047,Low product usage,0.0158,2
+CUST-0047,Recent support tickets,-0.0141,3
+CUST-0047,Short tenure,0.006,4
+CUST-0047,Days since last login,0.0012,5
+CUST-0048,Low product usage,-0.0716,1
+CUST-0048,Days since last login,-0.0682,2
+CUST-0048,Month-to-month contract,0.0618,3
+CUST-0048,Short tenure,0.0116,4
+CUST-0048,Recent support tickets,-0.0016,5
+CUST-0049,Month-to-month contract,-0.0582,1
+CUST-0049,Low product usage,-0.0469,2
+CUST-0049,Days since last login,-0.0349,3
+CUST-0049,Short tenure,-0.0079,4
+CUST-0049,Recent support tickets,-0.0016,5
+CUST-0050,Month-to-month contract,0.0618,1
+CUST-0050,Low product usage,-0.0581,2
+CUST-0050,Recent support tickets,0.036,3
+CUST-0050,Days since last login,-0.0321,4
+CUST-0050,Short tenure,0.0171,5
+CUST-0051,Low product usage,-0.1259,1
+CUST-0051,Days since last login,-0.0794,2
+CUST-0051,Month-to-month contract,0.0618,3
+CUST-0051,Short tenure,0.0144,4
+CUST-0051,Recent support tickets,-0.0016,5
+CUST-0052,Low product usage,0.0857,1
+CUST-0052,Days since last login,0.0651,2
+CUST-0052,Month-to-month contract,0.0618,3
+CUST-0052,Recent support tickets,0.036,4
+CUST-0052,Short tenure,0.0199,5
+CUST-0053,Month-to-month contract,0.0618,1
+CUST-0053,Days since last login,-0.0238,2
+CUST-0053,Low product usage,-0.0176,3
+CUST-0053,Short tenure,-0.0134,4
+CUST-0053,Recent support tickets,-0.0016,5
+CUST-0054,Month-to-month contract,-0.1082,1
+CUST-0054,Low product usage,0.0479,2
+CUST-0054,Days since last login,0.0429,3
+CUST-0054,Short tenure,-0.0051,4
+CUST-0054,Recent support tickets,-0.0016,5
+CUST-0055,Month-to-month contract,0.0618,1
+CUST-0055,Low product usage,0.027,2
+CUST-0055,Days since last login,0.0262,3
+CUST-0055,Recent support tickets,-0.0141,4
+CUST-0055,Short tenure,-0.0079,5
+CUST-0056,Month-to-month contract,0.0618,1
+CUST-0056,Low product usage,0.0192,2
+CUST-0056,Recent support tickets,-0.0141,3
+CUST-0056,Short tenure,-0.0134,4
+CUST-0056,Days since last login,0.0095,5
+CUST-0057,Month-to-month contract,0.0618,1
+CUST-0057,Low product usage,0.0416,2
+CUST-0057,Days since last login,0.0151,3
+CUST-0057,Recent support tickets,-0.0141,4
+CUST-0057,Short tenure,0.0032,5
+CUST-0058,Month-to-month contract,0.0618,1
+CUST-0058,Low product usage,0.0414,2
+CUST-0058,Days since last login,0.029,3
+CUST-0058,Recent support tickets,-0.0141,4
+CUST-0058,Short tenure,-0.0023,5
+CUST-0059,Month-to-month contract,-0.0582,1
+CUST-0059,Low product usage,0.0392,2
+CUST-0059,Days since last login,0.0373,3
+CUST-0059,Short tenure,0.0171,4
+CUST-0059,Recent support tickets,-0.0141,5
+CUST-0060,Days since last login,0.1068,1
+CUST-0060,Low product usage,0.0955,2
+CUST-0060,Month-to-month contract,0.0618,3
+CUST-0060,Short tenure,0.0171,4
+CUST-0060,Recent support tickets,0.0109,5
+CUST-0061,Month-to-month contract,0.0618,1
+CUST-0061,Low product usage,-0.0581,2
+CUST-0061,Days since last login,-0.0155,3
+CUST-0061,Recent support tickets,0.0109,4
+CUST-0061,Short tenure,-0.0051,5
+CUST-0062,Month-to-month contract,0.0618,1
+CUST-0062,Days since last login,0.0429,2
+CUST-0062,Low product usage,0.0343,3
+CUST-0062,Recent support tickets,-0.0141,4
+CUST-0062,Short tenure,0.0032,5
+CUST-0063,Low product usage,-0.1259,1
+CUST-0063,Month-to-month contract,-0.0582,2
+CUST-0063,Recent support tickets,-0.0141,3
+CUST-0063,Days since last login,-0.0127,4
+CUST-0063,Short tenure,0.0005,5
+CUST-0064,Month-to-month contract,-0.0582,1
+CUST-0064,Days since last login,0.0179,2
+CUST-0064,Recent support tickets,-0.0141,3
+CUST-0064,Short tenure,-0.0134,4
+CUST-0064,Low product usage,0.0098,5
+CUST-0065,Month-to-month contract,-0.0582,1
+CUST-0065,Low product usage,-0.0176,2
+CUST-0065,Recent support tickets,0.0109,3
+CUST-0065,Short tenure,-0.0051,4
+CUST-0065,Days since last login,-0.0016,5
+CUST-0066,Month-to-month contract,-0.0582,1
+CUST-0066,Low product usage,0.0541,2
+CUST-0066,Days since last login,0.0484,3
+CUST-0066,Recent support tickets,-0.0016,4
+CUST-0066,Short tenure,0.0005,5
+CUST-0067,Low product usage,-0.1034,1
+CUST-0067,Days since last login,-0.0794,2
+CUST-0067,Month-to-month contract,-0.0582,3
+CUST-0067,Recent support tickets,0.0109,4
+CUST-0067,Short tenure,0.0005,5
+CUST-0068,Low product usage,-0.0726,1
+CUST-0068,Month-to-month contract,0.0618,2
+CUST-0068,Days since last login,-0.0571,3
+CUST-0068,Recent support tickets,-0.0141,4
+CUST-0068,Short tenure,0.0116,5
+CUST-0069,Month-to-month contract,0.0618,1
+CUST-0069,Short tenure,0.0199,2
+CUST-0069,Low product usage,0.016,3
+CUST-0069,Recent support tickets,0.0109,4
+CUST-0069,Days since last login,-0.0016,5
+CUST-0070,Month-to-month contract,0.0618,1
+CUST-0070,Low product usage,0.0568,2
+CUST-0070,Days since last login,0.0484,3
+CUST-0070,Recent support tickets,-0.0141,4
+CUST-0070,Short tenure,0.006,5
+CUST-0071,Month-to-month contract,0.0618,1
+CUST-0071,Low product usage,-0.0249,2
+CUST-0071,Days since last login,-0.021,3
+CUST-0071,Short tenure,0.0144,4
+CUST-0071,Recent support tickets,-0.0141,5
+CUST-0072,Month-to-month contract,-0.0582,1
+CUST-0072,Low product usage,0.045,2
+CUST-0072,Days since last login,0.0318,3
+CUST-0072,Short tenure,0.006,4
+CUST-0072,Recent support tickets,-0.0016,5
+CUST-0073,Low product usage,-0.0906,1
+CUST-0073,Month-to-month contract,0.0618,2
+CUST-0073,Recent support tickets,0.036,3
+CUST-0073,Days since last login,-0.0349,4
+CUST-0073,Short tenure,-0.019,5
+CUST-0074,Month-to-month contract,-0.0582,1
+CUST-0074,Low product usage,-0.0564,2
+CUST-0074,Days since last login,-0.0182,3
+CUST-0074,Short tenure,0.0144,4
+CUST-0074,Recent support tickets,-0.0016,5
+CUST-0075,Month-to-month contract,-0.1082,1
+CUST-0075,Recent support tickets,0.036,2
+CUST-0075,Low product usage,0.0266,3
+CUST-0075,Short tenure,0.0199,4
+CUST-0075,Days since last login,0.0123,5
+CUST-0076,Low product usage,0.114,1
+CUST-0076,Month-to-month contract,0.0618,2
+CUST-0076,Days since last login,0.0568,3
+CUST-0076,Short tenure,0.0116,4
+CUST-0076,Recent support tickets,-0.0016,5
+CUST-0077,Month-to-month contract,-0.1082,1
+CUST-0077,Days since last login,0.0484,2
+CUST-0077,Low product usage,0.0378,3
+CUST-0077,Recent support tickets,-0.0141,4
+CUST-0077,Short tenure,0.0116,5
+CUST-0078,Month-to-month contract,-0.0582,1
+CUST-0078,Low product usage,-0.05,2
+CUST-0078,Days since last login,-0.0155,3
+CUST-0078,Recent support tickets,-0.0141,4
+CUST-0078,Short tenure,-0.0051,5
+CUST-0079,Month-to-month contract,-0.1082,1
+CUST-0079,Days since last login,-0.0794,2
+CUST-0079,Low product usage,-0.0775,3
+CUST-0079,Recent support tickets,-0.0016,4
+CUST-0079,Short tenure,0.0005,5
+CUST-0080,Low product usage,-0.0721,1
+CUST-0080,Month-to-month contract,0.0618,2
+CUST-0080,Days since last login,-0.0544,3
+CUST-0080,Short tenure,-0.0134,4
+CUST-0080,Recent support tickets,-0.0016,5
+CUST-0081,Low product usage,0.0697,1
+CUST-0081,Month-to-month contract,0.0618,2
+CUST-0081,Days since last login,0.0484,3
+CUST-0081,Recent support tickets,-0.0141,4
+CUST-0081,Short tenure,-0.0051,5
+CUST-0082,Month-to-month contract,0.0618,1
+CUST-0082,Low product usage,-0.0297,2
+CUST-0082,Short tenure,0.006,3
+CUST-0082,Days since last login,-0.0016,4
+CUST-0082,Recent support tickets,-0.0016,5
+CUST-0083,Low product usage,-0.0672,1
+CUST-0083,Month-to-month contract,0.0618,2
+CUST-0083,Days since last login,-0.0238,3
+CUST-0083,Short tenure,-0.0162,4
+CUST-0083,Recent support tickets,0.0109,5
+CUST-0084,Low product usage,0.0732,1
+CUST-0084,Month-to-month contract,0.0618,2
+CUST-0084,Days since last login,0.0512,3
+CUST-0084,Short tenure,0.0144,4
+CUST-0084,Recent support tickets,0.0109,5
+CUST-0085,Month-to-month contract,-0.1082,1
+CUST-0085,Low product usage,0.032,2
+CUST-0085,Days since last login,0.0318,3
+CUST-0085,Recent support tickets,0.0234,4
+CUST-0085,Short tenure,0.0199,5
+CUST-0086,Month-to-month contract,-0.0582,1
+CUST-0086,Recent support tickets,0.036,2
+CUST-0086,Low product usage,0.0173,3
+CUST-0086,Short tenure,0.0171,4
+CUST-0086,Days since last login,0.0123,5
+CUST-0087,Month-to-month contract,0.0618,1
+CUST-0087,Days since last login,-0.0155,2
+CUST-0087,Recent support tickets,0.0109,3
+CUST-0087,Short tenure,-0.0106,4
+CUST-0087,Low product usage,0.0019,5
+CUST-0088,Low product usage,0.0834,1
+CUST-0088,Month-to-month contract,0.0618,2
+CUST-0088,Days since last login,0.0456,3
+CUST-0088,Recent support tickets,-0.0141,4
+CUST-0088,Short tenure,0.0032,5
+CUST-0089,Month-to-month contract,0.0618,1
+CUST-0089,Low product usage,0.0487,2
+CUST-0089,Days since last login,0.0318,3
+CUST-0089,Short tenure,0.0171,4
+CUST-0089,Recent support tickets,0.0109,5
+CUST-0090,Month-to-month contract,0.0618,1
+CUST-0090,Recent support tickets,-0.0141,2
+CUST-0090,Low product usage,0.0033,3
+CUST-0090,Short tenure,0.0032,4
+CUST-0090,Days since last login,0.0012,5
+CUST-0091,Month-to-month contract,-0.1082,1
+CUST-0091,Low product usage,0.0394,2
+CUST-0091,Days since last login,-0.0182,3
+CUST-0091,Short tenure,0.0171,4
+CUST-0091,Recent support tickets,0.0109,5
+CUST-0092,Month-to-month contract,0.0618,1
+CUST-0092,Low product usage,0.0157,2
+CUST-0092,Recent support tickets,0.0109,3
+CUST-0092,Short tenure,-0.0079,4
+CUST-0092,Days since last login,0.0012,5
+CUST-0093,Month-to-month contract,0.0618,1
+CUST-0093,Recent support tickets,0.0109,2
+CUST-0093,Low product usage,0.0094,3
+CUST-0093,Days since last login,0.0068,4
+CUST-0093,Short tenure,0.006,5
+CUST-0094,Month-to-month contract,-0.0582,1
+CUST-0094,Days since last login,-0.0155,2
+CUST-0094,Low product usage,-0.0118,3
+CUST-0094,Short tenure,0.0088,4
+CUST-0094,Recent support tickets,-0.0016,5
+CUST-0095,Month-to-month contract,0.0618,1
+CUST-0095,Low product usage,-0.0371,2
+CUST-0095,Days since last login,-0.0294,3
+CUST-0095,Recent support tickets,-0.0141,4
+CUST-0095,Short tenure,0.0116,5
+CUST-0096,Month-to-month contract,0.0618,1
+CUST-0096,Days since last login,0.0123,2
+CUST-0096,Recent support tickets,0.0109,3
+CUST-0096,Short tenure,-0.0051,4
+CUST-0096,Low product usage,0.0021,5
+CUST-0097,Month-to-month contract,-0.0582,1
+CUST-0097,Days since last login,-0.021,2
+CUST-0097,Recent support tickets,-0.0141,3
+CUST-0097,Short tenure,0.0088,4
+CUST-0097,Low product usage,0.0076,5
+CUST-0098,Month-to-month contract,-0.0582,1
+CUST-0098,Low product usage,0.0268,2
+CUST-0098,Days since last login,-0.021,3
+CUST-0098,Short tenure,0.0171,4
+CUST-0098,Recent support tickets,-0.0016,5
+CUST-0099,Low product usage,0.1325,1
+CUST-0099,Month-to-month contract,-0.1082,2
+CUST-0099,Days since last login,0.0762,3
+CUST-0099,Recent support tickets,0.036,4
+CUST-0099,Short tenure,0.0171,5
+CUST-0100,Month-to-month contract,-0.0582,1
+CUST-0100,Low product usage,-0.0389,2
+CUST-0100,Short tenure,-0.0301,3
+CUST-0100,Recent support tickets,0.0109,4
+CUST-0100,Days since last login,-0.0099,5
+CUST-0101,Month-to-month contract,0.0618,1
+CUST-0101,Days since last login,0.029,2
+CUST-0101,Short tenure,-0.0245,3
+CUST-0101,Low product usage,-0.0138,4
+CUST-0101,Recent support tickets,-0.0016,5
+CUST-0102,Month-to-month contract,-0.0582,1
+CUST-0102,Low product usage,-0.016,2
+CUST-0102,Recent support tickets,-0.0141,3
+CUST-0102,Short tenure,-0.0079,4
+CUST-0102,Days since last login,0.0068,5
+CUST-0103,Month-to-month contract,-0.1082,1
+CUST-0103,Days since last login,-0.0738,2
+CUST-0103,Low product usage,-0.0643,3
+CUST-0103,Recent support tickets,-0.0141,4
+CUST-0103,Short tenure,0.0116,5
+CUST-0104,Low product usage,0.0887,1
+CUST-0104,Month-to-month contract,-0.0582,2
+CUST-0104,Days since last login,0.0512,3
+CUST-0104,Short tenure,-0.0329,4
+CUST-0104,Recent support tickets,-0.0141,5
+CUST-0105,Month-to-month contract,-0.1082,1
+CUST-0105,Low product usage,0.0898,2
+CUST-0105,Days since last login,0.0623,3
+CUST-0105,Short tenure,-0.0134,4
+CUST-0105,Recent support tickets,-0.0016,5
+CUST-0106,Month-to-month contract,-0.0582,1
+CUST-0106,Low product usage,-0.0282,2
+CUST-0106,Days since last login,-0.0155,3
+CUST-0106,Short tenure,-0.0079,4
+CUST-0106,Recent support tickets,-0.0016,5
+CUST-0107,Month-to-month contract,-0.1082,1
+CUST-0107,Recent support tickets,-0.0141,2
+CUST-0107,Low product usage,-0.0135,3
+CUST-0107,Short tenure,0.0032,4
+CUST-0107,Days since last login,0.0012,5
+CUST-0108,Month-to-month contract,0.0618,1
+CUST-0108,Days since last login,-0.0349,2
+CUST-0108,Low product usage,-0.0228,3
+CUST-0108,Recent support tickets,-0.0141,4
+CUST-0108,Short tenure,0.0116,5
+CUST-0109,Month-to-month contract,-0.0582,1
+CUST-0109,Low product usage,0.0559,2
+CUST-0109,Days since last login,0.0373,3
+CUST-0109,Recent support tickets,0.036,4
+CUST-0109,Short tenure,0.0171,5
+CUST-0110,Month-to-month contract,0.0618,1
+CUST-0110,Low product usage,-0.0487,2
+CUST-0110,Short tenure,-0.0245,3
+CUST-0110,Days since last login,-0.0238,4
+CUST-0110,Recent support tickets,0.0109,5
+CUST-0111,Low product usage,-0.0628,1
+CUST-0111,Month-to-month contract,-0.0582,2
+CUST-0111,Days since last login,-0.021,3
+CUST-0111,Recent support tickets,-0.0141,4
+CUST-0111,Short tenure,0.0032,5
+CUST-0112,Month-to-month contract,-0.0582,1
+CUST-0112,Days since last login,-0.0432,2
+CUST-0112,Low product usage,-0.0393,3
+CUST-0112,Recent support tickets,0.0234,4
+CUST-0112,Short tenure,0.0144,5
+CUST-0113,Month-to-month contract,-0.1082,1
+CUST-0113,Recent support tickets,-0.0141,2
+CUST-0113,Short tenure,0.0116,3
+CUST-0113,Days since last login,-0.0099,4
+CUST-0113,Low product usage,-0.0002,5
+CUST-0114,Month-to-month contract,-0.1082,1
+CUST-0114,Low product usage,0.0968,2
+CUST-0114,Recent support tickets,0.0109,3
+CUST-0114,Short tenure,-0.0023,4
+CUST-0114,Days since last login,0.0012,5
+CUST-0115,Month-to-month contract,0.0618,1
+CUST-0115,Low product usage,-0.0543,2
+CUST-0115,Days since last login,-0.0488,3
+CUST-0115,Recent support tickets,0.0234,4
+CUST-0115,Short tenure,0.0144,5
+CUST-0116,Low product usage,-0.078,1
+CUST-0116,Days since last login,-0.0627,2
+CUST-0116,Month-to-month contract,-0.0582,3
+CUST-0116,Short tenure,-0.019,4
+CUST-0116,Recent support tickets,-0.0141,5
+CUST-0117,Month-to-month contract,-0.0582,1
+CUST-0117,Days since last login,-0.0544,2
+CUST-0117,Low product usage,-0.0477,3
+CUST-0117,Recent support tickets,0.0234,4
+CUST-0117,Short tenure,-0.0106,5
+CUST-0118,Month-to-month contract,0.0618,1
+CUST-0118,Low product usage,0.0323,2
+CUST-0118,Days since last login,0.0234,3
+CUST-0118,Short tenure,-0.0079,4
+CUST-0118,Recent support tickets,-0.0016,5
+CUST-0119,Month-to-month contract,0.0618,1
+CUST-0119,Low product usage,-0.0492,2
+CUST-0119,Days since last login,-0.0321,3
+CUST-0119,Recent support tickets,-0.0141,4
+CUST-0119,Short tenure,0.006,5
+CUST-0120,Days since last login,-0.0794,1
+CUST-0120,Month-to-month contract,0.0618,2
+CUST-0120,Low product usage,-0.059,3
+CUST-0120,Recent support tickets,-0.0141,4
+CUST-0120,Short tenure,-0.0051,5
+CUST-0121,Low product usage,-0.0957,1
+CUST-0121,Month-to-month contract,-0.0582,2
+CUST-0121,Days since last login,-0.0571,3
+CUST-0121,Recent support tickets,-0.0141,4
+CUST-0121,Short tenure,-0.0023,5
+CUST-0122,Month-to-month contract,0.0618,1
+CUST-0122,Low product usage,0.0321,2
+CUST-0122,Short tenure,-0.0051,3
+CUST-0122,Days since last login,-0.0016,4
+CUST-0122,Recent support tickets,-0.0016,5
+CUST-0123,Month-to-month contract,-0.1082,1
+CUST-0123,Low product usage,0.0435,2
+CUST-0123,Days since last login,0.0373,3
+CUST-0123,Short tenure,0.0171,4
+CUST-0123,Recent support tickets,-0.0016,5
+CUST-0124,Days since last login,-0.0627,1
+CUST-0124,Month-to-month contract,0.0618,2
+CUST-0124,Low product usage,-0.0531,3
+CUST-0124,Recent support tickets,-0.0141,4
+CUST-0124,Short tenure,0.006,5
+CUST-0125,Month-to-month contract,-0.1082,1
+CUST-0125,Low product usage,0.0286,2
+CUST-0125,Short tenure,0.0199,3
+CUST-0125,Days since last login,0.0179,4
+CUST-0125,Recent support tickets,-0.0141,5
+CUST-0126,Month-to-month contract,0.0618,1
+CUST-0126,Low product usage,0.0448,2
+CUST-0126,Days since last login,0.0206,3
+CUST-0126,Short tenure,0.0032,4
+CUST-0126,Recent support tickets,-0.0016,5
+CUST-0127,Month-to-month contract,-0.0582,1
+CUST-0127,Low product usage,-0.0356,2
+CUST-0127,Days since last login,-0.0155,3
+CUST-0127,Recent support tickets,0.0109,4
+CUST-0127,Short tenure,0.0088,5
+CUST-0128,Month-to-month contract,0.0618,1
+CUST-0128,Recent support tickets,0.0609,2
+CUST-0128,Short tenure,0.0171,3
+CUST-0128,Days since last login,0.004,4
+CUST-0128,Low product usage,0.0013,5
+CUST-0129,Month-to-month contract,-0.0582,1
+CUST-0129,Low product usage,0.027,2
+CUST-0129,Short tenure,0.0171,3
+CUST-0129,Recent support tickets,-0.0141,4
+CUST-0129,Days since last login,0.0095,5
+CUST-0130,Month-to-month contract,-0.0582,1
+CUST-0130,Days since last login,-0.0516,2
+CUST-0130,Low product usage,-0.0254,3
+CUST-0130,Recent support tickets,0.0234,4
+CUST-0130,Short tenure,-0.0023,5
+CUST-0131,Month-to-month contract,-0.1082,1
+CUST-0131,Days since last login,-0.0349,2
+CUST-0131,Short tenure,0.0144,3
+CUST-0131,Recent support tickets,-0.0141,4
+CUST-0131,Low product usage,-0.0003,5
+CUST-0132,Low product usage,-0.0915,1
+CUST-0132,Days since last login,-0.071,2
+CUST-0132,Month-to-month contract,-0.0582,3
+CUST-0132,Short tenure,-0.0245,4
+CUST-0132,Recent support tickets,-0.0016,5
+CUST-0133,Month-to-month contract,0.0618,1
+CUST-0133,Low product usage,0.0334,2
+CUST-0133,Days since last login,0.0206,3
+CUST-0133,Short tenure,-0.0023,4
+CUST-0133,Recent support tickets,-0.0016,5
+CUST-0134,Month-to-month contract,0.0618,1
+CUST-0134,Low product usage,0.017,2
+CUST-0134,Recent support tickets,-0.0141,3
+CUST-0134,Short tenure,0.0088,4
+CUST-0134,Days since last login,-0.0044,5
+CUST-0135,Month-to-month contract,0.0618,1
+CUST-0135,Low product usage,-0.0144,2
+CUST-0135,Days since last login,0.004,3
+CUST-0135,Short tenure,-0.0023,4
+CUST-0135,Recent support tickets,-0.0016,5
+CUST-0136,Month-to-month contract,0.0618,1
+CUST-0136,Short tenure,0.0199,2
+CUST-0136,Days since last login,-0.0155,3
+CUST-0136,Low product usage,-0.0145,4
+CUST-0136,Recent support tickets,0.0109,5
+CUST-0137,Low product usage,0.0647,1
+CUST-0137,Month-to-month contract,-0.0582,2
+CUST-0137,Short tenure,-0.0301,3
+CUST-0137,Days since last login,0.0179,4
+CUST-0137,Recent support tickets,-0.0141,5
+CUST-0138,Month-to-month contract,-0.0582,1
+CUST-0138,Low product usage,0.0549,2
+CUST-0138,Days since last login,0.029,3
+CUST-0138,Short tenure,0.0032,4
+CUST-0138,Recent support tickets,-0.0016,5
+CUST-0139,Low product usage,0.0931,1
+CUST-0139,Days since last login,0.0623,2
+CUST-0139,Month-to-month contract,-0.0582,3
+CUST-0139,Short tenure,-0.0134,4
+CUST-0139,Recent support tickets,0.0109,5
+CUST-0140,Month-to-month contract,-0.1082,1
+CUST-0140,Low product usage,0.0299,2
+CUST-0140,Days since last login,0.0262,3
+CUST-0140,Short tenure,0.0171,4
+CUST-0140,Recent support tickets,-0.0016,5
+CUST-0141,Days since last login,0.0706,1
+CUST-0141,Month-to-month contract,-0.0582,2
+CUST-0141,Low product usage,0.0448,3
+CUST-0141,Recent support tickets,-0.0141,4
+CUST-0141,Short tenure,0.0032,5
+CUST-0142,Month-to-month contract,-0.0582,1
+CUST-0142,Days since last login,-0.0127,2
+CUST-0142,Low product usage,0.0063,3
+CUST-0142,Short tenure,0.0032,4
+CUST-0142,Recent support tickets,-0.0016,5
+CUST-0143,Month-to-month contract,0.0618,1
+CUST-0143,Low product usage,-0.0486,2
+CUST-0143,Days since last login,-0.0321,3
+CUST-0143,Short tenure,-0.0273,4
+CUST-0143,Recent support tickets,0.0109,5
+CUST-0144,Month-to-month contract,0.0618,1
+CUST-0144,Days since last login,0.0206,2
+CUST-0144,Low product usage,0.0198,3
+CUST-0144,Short tenure,-0.0023,4
+CUST-0144,Recent support tickets,-0.0016,5
+CUST-0145,Month-to-month contract,-0.0582,1
+CUST-0145,Low product usage,-0.026,2
+CUST-0145,Days since last login,-0.0182,3
+CUST-0145,Short tenure,0.0032,4
+CUST-0145,Recent support tickets,-0.0016,5
+CUST-0146,Month-to-month contract,-0.1082,1
+CUST-0146,Recent support tickets,-0.0141,2
+CUST-0146,Short tenure,0.0116,3
+CUST-0146,Days since last login,-0.0099,4
+CUST-0146,Low product usage,0.0018,5
+CUST-0147,Days since last login,-0.0655,1
+CUST-0147,Month-to-month contract,0.0618,2
+CUST-0147,Low product usage,-0.0492,3
+CUST-0147,Recent support tickets,0.0109,4
+CUST-0147,Short tenure,0.0088,5
+CUST-0148,Month-to-month contract,0.0618,1
+CUST-0148,Low product usage,-0.0388,2
+CUST-0148,Days since last login,-0.0377,3
+CUST-0148,Recent support tickets,0.0109,4
+CUST-0148,Short tenure,0.0005,5
+CUST-0149,Month-to-month contract,-0.0582,1
+CUST-0149,Low product usage,0.0225,2
+CUST-0149,Days since last login,-0.0099,3
+CUST-0149,Short tenure,0.006,4
+CUST-0149,Recent support tickets,-0.0016,5
+CUST-0150,Month-to-month contract,0.0618,1
+CUST-0150,Low product usage,0.0405,2
+CUST-0150,Short tenure,0.0199,3
+CUST-0150,Days since last login,-0.0127,4
+CUST-0150,Recent support tickets,0.0109,5
+CUST-0151,Low product usage,-0.0687,1
+CUST-0151,Days since last login,-0.0627,2
+CUST-0151,Month-to-month contract,0.0618,3
+CUST-0151,Short tenure,-0.0162,4
+CUST-0151,Recent support tickets,-0.0016,5
+CUST-0152,Month-to-month contract,-0.1082,1
+CUST-0152,Days since last login,-0.046,2
+CUST-0152,Low product usage,-0.0345,3
+CUST-0152,Short tenure,-0.0218,4
+CUST-0152,Recent support tickets,-0.0016,5
+CUST-0153,Low product usage,0.105,1
+CUST-0153,Days since last login,0.079,2
+CUST-0153,Month-to-month contract,-0.0582,3
+CUST-0153,Short tenure,0.0171,4
+CUST-0153,Recent support tickets,-0.0016,5
+CUST-0154,Month-to-month contract,0.0618,1
+CUST-0154,Low product usage,-0.0483,2
+CUST-0154,Days since last login,-0.0182,3
+CUST-0154,Recent support tickets,-0.0016,4
+CUST-0154,Short tenure,0.0005,5
+CUST-0155,Month-to-month contract,-0.1082,1
+CUST-0155,Low product usage,0.0886,2
+CUST-0155,Days since last login,0.0345,3
+CUST-0155,Short tenure,0.0171,4
+CUST-0155,Recent support tickets,-0.0016,5
+CUST-0156,Low product usage,-0.088,1
+CUST-0156,Days since last login,-0.0627,2
+CUST-0156,Month-to-month contract,0.0618,3
+CUST-0156,Short tenure,-0.0051,4
+CUST-0156,Recent support tickets,-0.0016,5
+CUST-0157,Month-to-month contract,-0.1082,1
+CUST-0157,Days since last login,-0.0794,2
+CUST-0157,Low product usage,-0.0676,3
+CUST-0157,Short tenure,0.0116,4
+CUST-0157,Recent support tickets,0.0109,5
+CUST-0158,Month-to-month contract,0.0618,1
+CUST-0158,Days since last login,-0.0294,2
+CUST-0158,Low product usage,-0.0291,3
+CUST-0158,Recent support tickets,-0.0141,4
+CUST-0158,Short tenure,-0.0051,5
+CUST-0159,Month-to-month contract,-0.0582,1
+CUST-0159,Low product usage,-0.0221,2
+CUST-0159,Short tenure,-0.0106,3
+CUST-0159,Days since last login,-0.0071,4
+CUST-0159,Recent support tickets,-0.0016,5
+CUST-0160,Month-to-month contract,0.0618,1
+CUST-0160,Days since last login,0.0151,2
+CUST-0160,Short tenure,-0.0134,3
+CUST-0160,Recent support tickets,0.0109,4
+CUST-0160,Low product usage,-0.0029,5
+CUST-0161,Month-to-month contract,0.0618,1
+CUST-0161,Days since last login,-0.0182,2
+CUST-0161,Short tenure,0.0171,3
+CUST-0161,Recent support tickets,0.0109,4
+CUST-0161,Low product usage,-0.004,5
+CUST-0162,Month-to-month contract,-0.1082,1
+CUST-0162,Days since last login,0.0262,2
+CUST-0162,Short tenure,-0.0245,3
+CUST-0162,Low product usage,0.0056,4
+CUST-0162,Recent support tickets,-0.0016,5
+CUST-0163,Month-to-month contract,0.0618,1
+CUST-0163,Days since last login,-0.0516,2
+CUST-0163,Low product usage,-0.0262,3
+CUST-0163,Short tenure,0.0144,4
+CUST-0163,Recent support tickets,-0.0141,5
+CUST-0164,Month-to-month contract,0.0618,1
+CUST-0164,Days since last login,-0.0377,2
+CUST-0164,Short tenure,0.0199,3
+CUST-0164,Low product usage,-0.0141,4
+CUST-0164,Recent support tickets,-0.0016,5
+CUST-0165,Month-to-month contract,0.0618,1
+CUST-0165,Days since last login,0.0262,2
+CUST-0165,Low product usage,0.0156,3
+CUST-0165,Recent support tickets,-0.0016,4
+CUST-0165,Short tenure,0.0005,5
+CUST-0166,Month-to-month contract,-0.0582,1
+CUST-0166,Days since last login,0.0484,2
+CUST-0166,Low product usage,0.0185,3
+CUST-0166,Recent support tickets,0.0109,4
+CUST-0166,Short tenure,0.0088,5
+CUST-0167,Month-to-month contract,-0.0582,1
+CUST-0167,Low product usage,0.0488,2
+CUST-0167,Days since last login,0.0401,3
+CUST-0167,Short tenure,-0.0162,4
+CUST-0167,Recent support tickets,-0.0016,5
+CUST-0168,Month-to-month contract,-0.1082,1
+CUST-0168,Low product usage,0.042,2
+CUST-0168,Days since last login,0.0262,3
+CUST-0168,Short tenure,-0.0162,4
+CUST-0168,Recent support tickets,-0.0016,5
+CUST-0169,Low product usage,0.0821,1
+CUST-0169,Month-to-month contract,0.0618,2
+CUST-0169,Recent support tickets,0.0485,3
+CUST-0169,Short tenure,0.0088,4
+CUST-0169,Days since last login,0.0012,5
+CUST-0170,Days since last login,-0.0794,1
+CUST-0170,Month-to-month contract,0.0618,2
+CUST-0170,Low product usage,-0.0522,3
+CUST-0170,Short tenure,-0.0301,4
+CUST-0170,Recent support tickets,0.0109,5
+CUST-0171,Low product usage,-0.1088,1
+CUST-0171,Days since last login,-0.0682,2
+CUST-0171,Month-to-month contract,0.0618,3
+CUST-0171,Short tenure,0.0116,4
+CUST-0171,Recent support tickets,-0.0016,5
+CUST-0172,Low product usage,-0.0887,1
+CUST-0172,Days since last login,-0.0655,2
+CUST-0172,Month-to-month contract,-0.0582,3
+CUST-0172,Recent support tickets,-0.0141,4
+CUST-0172,Short tenure,0.0005,5
+CUST-0173,Month-to-month contract,-0.1082,1
+CUST-0173,Low product usage,0.0715,2
+CUST-0173,Days since last login,0.0206,3
+CUST-0173,Recent support tickets,-0.0141,4
+CUST-0173,Short tenure,0.0116,5
+CUST-0174,Month-to-month contract,-0.0582,1
+CUST-0174,Low product usage,-0.0519,2
+CUST-0174,Days since last login,-0.0321,3
+CUST-0174,Short tenure,-0.0273,4
+CUST-0174,Recent support tickets,-0.0141,5
+CUST-0175,Month-to-month contract,-0.0582,1
+CUST-0175,Low product usage,-0.043,2
+CUST-0175,Days since last login,-0.0266,3
+CUST-0175,Recent support tickets,0.0234,4
+CUST-0175,Short tenure,0.0144,5
+CUST-0176,Month-to-month contract,0.0618,1
+CUST-0176,Days since last login,0.0568,2
+CUST-0176,Low product usage,0.0556,3
+CUST-0176,Short tenure,0.0199,4
+CUST-0176,Recent support tickets,0.0109,5
+CUST-0177,Month-to-month contract,-0.1082,1
+CUST-0177,Low product usage,-0.0192,2
+CUST-0177,Days since last login,-0.0099,3
+CUST-0177,Short tenure,0.006,4
+CUST-0177,Recent support tickets,-0.0016,5
+CUST-0178,Low product usage,0.0915,1
+CUST-0178,Days since last login,0.0845,2
+CUST-0178,Month-to-month contract,0.0618,3
+CUST-0178,Short tenure,-0.0384,4
+CUST-0178,Recent support tickets,0.0109,5
+CUST-0179,Month-to-month contract,0.0618,1
+CUST-0179,Low product usage,-0.0279,2
+CUST-0179,Short tenure,-0.0218,3
+CUST-0179,Days since last login,-0.0182,4
+CUST-0179,Recent support tickets,-0.0016,5
+CUST-0180,Month-to-month contract,0.0618,1
+CUST-0180,Low product usage,0.042,2
+CUST-0180,Days since last login,0.0234,3
+CUST-0180,Recent support tickets,0.0234,4
+CUST-0180,Short tenure,-0.0106,5
+CUST-0181,Month-to-month contract,0.0618,1
+CUST-0181,Low product usage,-0.0243,2
+CUST-0181,Short tenure,-0.0218,3
+CUST-0181,Recent support tickets,0.0109,4
+CUST-0181,Days since last login,0.0068,5
+CUST-0182,Low product usage,0.0681,1
+CUST-0182,Month-to-month contract,0.0618,2
+CUST-0182,Short tenure,-0.0218,3
+CUST-0182,Days since last login,0.0206,4
+CUST-0182,Recent support tickets,0.0109,5
+CUST-0183,Month-to-month contract,0.0618,1
+CUST-0183,Low product usage,-0.0424,2
+CUST-0183,Days since last login,0.0345,3
+CUST-0183,Recent support tickets,-0.0016,4
+CUST-0183,Short tenure,0.0005,5
+CUST-0184,Low product usage,-0.0677,1
+CUST-0184,Month-to-month contract,0.0618,2
+CUST-0184,Days since last login,-0.0349,3
+CUST-0184,Short tenure,0.0088,4
+CUST-0184,Recent support tickets,-0.0016,5
+CUST-0185,Month-to-month contract,-0.0582,1
+CUST-0185,Low product usage,0.0272,2
+CUST-0185,Days since last login,0.0262,3
+CUST-0185,Recent support tickets,-0.0141,4
+CUST-0185,Short tenure,-0.0134,5
+CUST-0186,Month-to-month contract,0.0618,1
+CUST-0186,Low product usage,0.0458,2
+CUST-0186,Days since last login,0.0401,3
+CUST-0186,Short tenure,-0.0051,4
+CUST-0186,Recent support tickets,-0.0016,5
+CUST-0187,Days since last login,0.104,1
+CUST-0187,Low product usage,0.0993,2
+CUST-0187,Month-to-month contract,0.0618,3
+CUST-0187,Short tenure,0.0088,4
+CUST-0187,Recent support tickets,-0.0016,5
+CUST-0188,Month-to-month contract,-0.1082,1
+CUST-0188,Low product usage,0.0456,2
+CUST-0188,Days since last login,0.0456,3
+CUST-0188,Recent support tickets,0.0234,4
+CUST-0188,Short tenure,0.0171,5
+CUST-0189,Month-to-month contract,-0.0582,1
+CUST-0189,Days since last login,-0.0266,2
+CUST-0189,Low product usage,0.0167,3
+CUST-0189,Short tenure,-0.0106,4
+CUST-0189,Recent support tickets,-0.0016,5
+CUST-0190,Days since last login,0.0734,1
+CUST-0190,Low product usage,0.0676,2
+CUST-0190,Month-to-month contract,0.0618,3
+CUST-0190,Short tenure,0.0116,4
+CUST-0190,Recent support tickets,-0.0016,5
+CUST-0191,Month-to-month contract,0.0618,1
+CUST-0191,Low product usage,-0.0377,2
+CUST-0191,Days since last login,-0.0321,3
+CUST-0191,Short tenure,-0.0273,4
+CUST-0191,Recent support tickets,-0.0016,5
+CUST-0192,Month-to-month contract,-0.1082,1
+CUST-0192,Short tenure,0.0116,2
+CUST-0192,Low product usage,0.0098,3
+CUST-0192,Days since last login,0.0068,4
+CUST-0192,Recent support tickets,-0.0016,5
+CUST-0193,Low product usage,0.0881,1
+CUST-0193,Month-to-month contract,0.0618,2
+CUST-0193,Days since last login,0.0262,3
+CUST-0193,Recent support tickets,0.0234,4
+CUST-0193,Short tenure,0.0171,5
+CUST-0194,Month-to-month contract,0.0618,1
+CUST-0194,Days since last login,0.0206,2
+CUST-0194,Short tenure,-0.0162,3
+CUST-0194,Low product usage,0.0152,4
+CUST-0194,Recent support tickets,0.0109,5
+CUST-0195,Month-to-month contract,-0.1082,1
+CUST-0195,Days since last login,-0.0321,2
+CUST-0195,Low product usage,-0.0246,3
+CUST-0195,Short tenure,0.0171,4
+CUST-0195,Recent support tickets,0.0109,5
+CUST-0196,Month-to-month contract,0.0618,1
+CUST-0196,Low product usage,-0.0455,2
+CUST-0196,Days since last login,-0.0266,3
+CUST-0196,Short tenure,0.0144,4
+CUST-0196,Recent support tickets,-0.0141,5
+CUST-0197,Month-to-month contract,-0.0582,1
+CUST-0197,Days since last login,-0.0127,2
+CUST-0197,Low product usage,-0.007,3
+CUST-0197,Short tenure,-0.0023,4
+CUST-0197,Recent support tickets,-0.0016,5
+CUST-0198,Month-to-month contract,-0.0582,1
+CUST-0198,Low product usage,-0.0464,2
+CUST-0198,Short tenure,-0.0218,3
+CUST-0198,Days since last login,0.0123,4
+CUST-0198,Recent support tickets,0.0109,5
+CUST-0199,Days since last login,0.0734,1
+CUST-0199,Month-to-month contract,-0.0582,2
+CUST-0199,Low product usage,0.0471,3
+CUST-0199,Recent support tickets,0.0234,4
+CUST-0199,Short tenure,0.0144,5
+CUST-0200,Month-to-month contract,0.0618,1
+CUST-0200,Low product usage,-0.0156,2
+CUST-0200,Short tenure,0.0116,3
+CUST-0200,Days since last login,-0.0099,4
+CUST-0200,Recent support tickets,-0.0016,5
+CUST-0201,Month-to-month contract,0.0618,1
+CUST-0201,Low product usage,-0.0216,2
+CUST-0201,Short tenure,-0.0134,3
+CUST-0201,Days since last login,-0.0127,4
+CUST-0201,Recent support tickets,-0.0016,5
+CUST-0202,Month-to-month contract,0.0618,1
+CUST-0202,Short tenure,-0.0329,2
+CUST-0202,Low product usage,0.0108,3
+CUST-0202,Days since last login,-0.0016,4
+CUST-0202,Recent support tickets,-0.0016,5
+CUST-0203,Month-to-month contract,0.0618,1
+CUST-0203,Low product usage,-0.0367,2
+CUST-0203,Short tenure,0.0032,3
+CUST-0203,Recent support tickets,-0.0016,4
+CUST-0203,Days since last login,0.0012,5
+CUST-0204,Month-to-month contract,-0.1082,1
+CUST-0204,Low product usage,0.0726,2
+CUST-0204,Days since last login,0.0373,3
+CUST-0204,Recent support tickets,0.0234,4
+CUST-0204,Short tenure,0.0171,5
+CUST-0205,Month-to-month contract,0.0618,1
+CUST-0205,Short tenure,0.0199,2
+CUST-0205,Days since last login,-0.0071,3
+CUST-0205,Low product usage,0.0049,4
+CUST-0205,Recent support tickets,-0.0016,5
+CUST-0206,Month-to-month contract,-0.0582,1
+CUST-0206,Low product usage,-0.0428,2
+CUST-0206,Short tenure,0.0144,3
+CUST-0206,Days since last login,-0.0071,4
+CUST-0206,Recent support tickets,-0.0016,5
+CUST-0207,Low product usage,0.1848,1
+CUST-0207,Days since last login,0.104,2
+CUST-0207,Month-to-month contract,-0.0582,3
+CUST-0207,Short tenure,0.0171,4
+CUST-0207,Recent support tickets,-0.0016,5
+CUST-0208,Low product usage,-0.0764,1
+CUST-0208,Month-to-month contract,-0.0582,2
+CUST-0208,Days since last login,-0.0488,3
+CUST-0208,Short tenure,-0.0079,4
+CUST-0208,Recent support tickets,-0.0016,5
+CUST-0209,Low product usage,0.1916,1
+CUST-0209,Days since last login,0.0845,2
+CUST-0209,Month-to-month contract,0.0618,3
+CUST-0209,Short tenure,0.0171,4
+CUST-0209,Recent support tickets,0.0109,5
+CUST-0210,Month-to-month contract,0.0618,1
+CUST-0210,Days since last login,0.0262,2
+CUST-0210,Low product usage,0.0185,3
+CUST-0210,Short tenure,0.0032,4
+CUST-0210,Recent support tickets,-0.0016,5
+CUST-0211,Month-to-month contract,-0.1082,1
+CUST-0211,Low product usage,-0.0677,2
+CUST-0211,Short tenure,-0.0079,3
+CUST-0211,Days since last login,-0.0016,4
+CUST-0211,Recent support tickets,-0.0016,5
+CUST-0212,Month-to-month contract,-0.0582,1
+CUST-0212,Days since last login,0.0179,2
+CUST-0212,Low product usage,0.0028,3
+CUST-0212,Short tenure,-0.0023,4
+CUST-0212,Recent support tickets,-0.0016,5
+CUST-0213,Days since last login,0.0706,1
+CUST-0213,Low product usage,0.0631,2
+CUST-0213,Month-to-month contract,-0.0582,3
+CUST-0213,Short tenure,0.0144,4
+CUST-0213,Recent support tickets,0.0109,5
+CUST-0214,Month-to-month contract,-0.1082,1
+CUST-0214,Low product usage,0.0436,2
+CUST-0214,Short tenure,-0.0162,3
+CUST-0214,Days since last login,0.0068,4
+CUST-0214,Recent support tickets,-0.0016,5
+CUST-0215,Low product usage,-0.0678,1
+CUST-0215,Month-to-month contract,-0.0582,2
+CUST-0215,Days since last login,-0.0377,3
+CUST-0215,Recent support tickets,-0.0141,4
+CUST-0215,Short tenure,-0.0079,5
+CUST-0216,Low product usage,0.087,1
+CUST-0216,Month-to-month contract,0.0618,2
+CUST-0216,Days since last login,0.0345,3
+CUST-0216,Recent support tickets,-0.0141,4
+CUST-0216,Short tenure,-0.0106,5
+CUST-0217,Month-to-month contract,-0.0582,1
+CUST-0217,Low product usage,-0.0276,2
+CUST-0217,Days since last login,-0.0238,3
+CUST-0217,Short tenure,0.0171,4
+CUST-0217,Recent support tickets,0.0109,5
+CUST-0218,Month-to-month contract,0.0618,1
+CUST-0218,Days since last login,0.0373,2
+CUST-0218,Low product usage,0.0345,3
+CUST-0218,Short tenure,0.0171,4
+CUST-0218,Recent support tickets,-0.0016,5
+CUST-0219,Month-to-month contract,-0.0582,1
+CUST-0219,Low product usage,0.0487,2
+CUST-0219,Days since last login,0.0318,3
+CUST-0219,Short tenure,-0.0273,4
+CUST-0219,Recent support tickets,0.0109,5
+CUST-0220,Month-to-month contract,-0.1082,1
+CUST-0220,Days since last login,-0.021,2
+CUST-0220,Low product usage,0.0167,3
+CUST-0220,Recent support tickets,-0.0141,4
+CUST-0220,Short tenure,0.006,5
+CUST-0221,Month-to-month contract,0.0618,1
+CUST-0221,Low product usage,0.0395,2
+CUST-0221,Short tenure,0.0116,3
+CUST-0221,Days since last login,-0.0044,4
+CUST-0221,Recent support tickets,-0.0016,5
+CUST-0222,Days since last login,-0.0682,1
+CUST-0222,Month-to-month contract,0.0618,2
+CUST-0222,Low product usage,-0.0593,3
+CUST-0222,Short tenure,0.0032,4
+CUST-0222,Recent support tickets,-0.0016,5
+CUST-0223,Month-to-month contract,0.0618,1
+CUST-0223,Low product usage,-0.0523,2
+CUST-0223,Days since last login,-0.0238,3
+CUST-0223,Short tenure,-0.0051,4
+CUST-0223,Recent support tickets,-0.0016,5
+CUST-0224,Month-to-month contract,-0.1082,1
+CUST-0224,Days since last login,0.0929,2
+CUST-0224,Low product usage,0.0764,3
+CUST-0224,Short tenure,-0.0301,4
+CUST-0224,Recent support tickets,-0.0141,5
+CUST-0225,Month-to-month contract,0.0618,1
+CUST-0225,Days since last login,0.0345,2
+CUST-0225,Short tenure,0.0116,3
+CUST-0225,Low product usage,0.0073,4
+CUST-0225,Recent support tickets,-0.0016,5
+CUST-0226,Month-to-month contract,0.0618,1
+CUST-0226,Low product usage,0.0314,2
+CUST-0226,Short tenure,-0.0245,3
+CUST-0226,Days since last login,-0.0238,4
+CUST-0226,Recent support tickets,-0.0141,5
+CUST-0227,Month-to-month contract,0.0618,1
+CUST-0227,Low product usage,-0.0363,2
+CUST-0227,Short tenure,0.0199,3
+CUST-0227,Recent support tickets,0.0109,4
+CUST-0227,Days since last login,0.0068,5
+CUST-0228,Month-to-month contract,0.0618,1
+CUST-0228,Low product usage,0.057,2
+CUST-0228,Days since last login,0.0568,3
+CUST-0228,Recent support tickets,0.036,4
+CUST-0228,Short tenure,0.0005,5
+CUST-0229,Low product usage,-0.0981,1
+CUST-0229,Days since last login,-0.0794,2
+CUST-0229,Month-to-month contract,0.0618,3
+CUST-0229,Short tenure,-0.0051,4
+CUST-0229,Recent support tickets,-0.0016,5
+CUST-0230,Month-to-month contract,0.0618,1
+CUST-0230,Low product usage,0.0334,2
+CUST-0230,Short tenure,0.0171,3
+CUST-0230,Days since last login,0.0123,4
+CUST-0230,Recent support tickets,-0.0016,5
+CUST-0231,Low product usage,0.0926,1
+CUST-0231,Days since last login,0.0818,2
+CUST-0231,Month-to-month contract,0.0618,3
+CUST-0231,Short tenure,0.0171,4
+CUST-0231,Recent support tickets,-0.0016,5
+CUST-0232,Month-to-month contract,0.0618,1
+CUST-0232,Days since last login,0.0262,2
+CUST-0232,Low product usage,0.0217,3
+CUST-0232,Recent support tickets,0.0109,4
+CUST-0232,Short tenure,0.006,5
+CUST-0233,Month-to-month contract,0.0618,1
+CUST-0233,Short tenure,-0.0329,2
+CUST-0233,Low product usage,0.0282,3
+CUST-0233,Days since last login,-0.0127,4
+CUST-0233,Recent support tickets,0.0109,5
+CUST-0234,Month-to-month contract,0.0618,1
+CUST-0234,Low product usage,0.053,2
+CUST-0234,Days since last login,0.0456,3
+CUST-0234,Recent support tickets,0.0109,4
+CUST-0234,Short tenure,-0.0023,5
+CUST-0235,Month-to-month contract,0.0618,1
+CUST-0235,Days since last login,-0.0599,2
+CUST-0235,Short tenure,-0.0273,3
+CUST-0235,Low product usage,-0.0188,4
+CUST-0235,Recent support tickets,-0.0016,5
+CUST-0236,Month-to-month contract,-0.0582,1
+CUST-0236,Low product usage,0.0506,2
+CUST-0236,Days since last login,0.0262,3
+CUST-0236,Short tenure,-0.0162,4
+CUST-0236,Recent support tickets,-0.0016,5
+CUST-0237,Low product usage,0.1006,1
+CUST-0237,Days since last login,0.0873,2
+CUST-0237,Month-to-month contract,0.0618,3
+CUST-0237,Recent support tickets,-0.0141,4
+CUST-0237,Short tenure,0.0032,5
+CUST-0238,Month-to-month contract,0.0618,1
+CUST-0238,Recent support tickets,-0.0141,2
+CUST-0238,Short tenure,-0.0134,3
+CUST-0238,Low product usage,0.0061,4
+CUST-0238,Days since last login,0.004,5
+CUST-0239,Low product usage,0.1263,1
+CUST-0239,Days since last login,0.0679,2
+CUST-0239,Month-to-month contract,0.0618,3
+CUST-0239,Short tenure,0.0199,4
+CUST-0239,Recent support tickets,-0.0141,5
+CUST-0240,Low product usage,0.0711,1
+CUST-0240,Days since last login,0.0651,2
+CUST-0240,Month-to-month contract,0.0618,3
+CUST-0240,Short tenure,0.0171,4
+CUST-0240,Recent support tickets,-0.0141,5
+CUST-0241,Month-to-month contract,0.0618,1
+CUST-0241,Days since last login,0.0429,2
+CUST-0241,Low product usage,0.0339,3
+CUST-0241,Short tenure,-0.0162,4
+CUST-0241,Recent support tickets,-0.0016,5
+CUST-0242,Month-to-month contract,0.0618,1
+CUST-0242,Days since last login,0.0484,2
+CUST-0242,Low product usage,0.0319,3
+CUST-0242,Recent support tickets,-0.0141,4
+CUST-0242,Short tenure,-0.0134,5
+CUST-0243,Low product usage,-0.1189,1
+CUST-0243,Month-to-month contract,-0.1082,2
+CUST-0243,Days since last login,-0.0571,3
+CUST-0243,Short tenure,0.0144,4
+CUST-0243,Recent support tickets,0.0109,5
+CUST-0244,Month-to-month contract,0.0618,1
+CUST-0244,Low product usage,-0.0168,2
+CUST-0244,Days since last login,0.0123,3
+CUST-0244,Recent support tickets,-0.0016,4
+CUST-0244,Short tenure,0.0005,5
+CUST-0245,Month-to-month contract,0.0618,1
+CUST-0245,Low product usage,-0.0267,2
+CUST-0245,Short tenure,-0.0023,3
+CUST-0245,Days since last login,-0.0016,4
+CUST-0245,Recent support tickets,-0.0016,5
+CUST-0246,Low product usage,0.0794,1
+CUST-0246,Month-to-month contract,0.0618,2
+CUST-0246,Days since last login,0.0568,3
+CUST-0246,Recent support tickets,0.0234,4
+CUST-0246,Short tenure,-0.019,5
+CUST-0247,Month-to-month contract,0.0618,1
+CUST-0247,Low product usage,0.0205,2
+CUST-0247,Days since last login,0.0151,3
+CUST-0247,Short tenure,-0.0023,4
+CUST-0247,Recent support tickets,-0.0016,5
+CUST-0248,Month-to-month contract,0.0618,1
+CUST-0248,Low product usage,-0.0252,2
+CUST-0248,Recent support tickets,0.0234,3
+CUST-0248,Days since last login,-0.021,4
+CUST-0248,Short tenure,0.006,5
+CUST-0249,Month-to-month contract,-0.0582,1
+CUST-0249,Low product usage,0.0399,2
+CUST-0249,Recent support tickets,-0.0141,3
+CUST-0249,Short tenure,0.0088,4
+CUST-0249,Days since last login,-0.0016,5
+CUST-0250,Low product usage,-0.0615,1
+CUST-0250,Days since last login,-0.0599,2
+CUST-0250,Month-to-month contract,-0.0582,3
+CUST-0250,Short tenure,0.006,4
+CUST-0250,Recent support tickets,-0.0016,5
+CUST-0251,Month-to-month contract,0.0618,1
+CUST-0251,Low product usage,0.0493,2
+CUST-0251,Days since last login,0.0234,3
+CUST-0251,Recent support tickets,-0.0141,4
+CUST-0251,Short tenure,-0.0051,5
+CUST-0252,Month-to-month contract,0.0618,1
+CUST-0252,Short tenure,-0.019,2
+CUST-0252,Recent support tickets,-0.0141,3
+CUST-0252,Days since last login,0.004,4
+CUST-0252,Low product usage,0.0012,5
+CUST-0253,Month-to-month contract,0.0618,1
+CUST-0253,Days since last login,0.0429,2
+CUST-0253,Low product usage,0.0169,3
+CUST-0253,Short tenure,0.0032,4
+CUST-0253,Recent support tickets,-0.0016,5
+CUST-0254,Month-to-month contract,0.0618,1
+CUST-0254,Low product usage,-0.0225,2
+CUST-0254,Days since last login,-0.0155,3
+CUST-0254,Recent support tickets,-0.0141,4
+CUST-0254,Short tenure,0.0116,5
+CUST-0255,Month-to-month contract,-0.0582,1
+CUST-0255,Days since last login,0.0345,2
+CUST-0255,Low product usage,0.0198,3
+CUST-0255,Short tenure,0.0144,4
+CUST-0255,Recent support tickets,-0.0141,5
+CUST-0256,Month-to-month contract,0.0618,1
+CUST-0256,Days since last login,0.0234,2
+CUST-0256,Recent support tickets,0.0109,3
+CUST-0256,Short tenure,-0.0106,4
+CUST-0256,Low product usage,0.0004,5
+CUST-0257,Month-to-month contract,0.0618,1
+CUST-0257,Short tenure,-0.0162,2
+CUST-0257,Recent support tickets,-0.0141,3
+CUST-0257,Days since last login,-0.0071,4
+CUST-0257,Low product usage,-0.0015,5
+CUST-0258,Month-to-month contract,-0.1082,1
+CUST-0258,Low product usage,0.0702,2
+CUST-0258,Days since last login,0.0568,3
+CUST-0258,Short tenure,0.0171,4
+CUST-0258,Recent support tickets,-0.0016,5
+CUST-0259,Month-to-month contract,0.0618,1
+CUST-0259,Recent support tickets,0.0234,2
+CUST-0259,Short tenure,0.0199,3
+CUST-0259,Low product usage,0.0062,4
+CUST-0259,Days since last login,-0.0016,5
+CUST-0260,Month-to-month contract,0.0618,1
+CUST-0260,Low product usage,-0.0264,2
+CUST-0260,Days since last login,0.0123,3
+CUST-0260,Short tenure,-0.0023,4
+CUST-0260,Recent support tickets,-0.0016,5
+CUST-0261,Month-to-month contract,-0.0582,1
+CUST-0261,Days since last login,0.0373,2
+CUST-0261,Low product usage,0.0363,3
+CUST-0261,Recent support tickets,0.036,4
+CUST-0261,Short tenure,0.0171,5
+CUST-0262,Month-to-month contract,0.0618,1
+CUST-0262,Days since last login,-0.021,2
+CUST-0262,Short tenure,-0.0162,3
+CUST-0262,Recent support tickets,0.0109,4
+CUST-0262,Low product usage,0.0087,5
+CUST-0263,Month-to-month contract,0.0618,1
+CUST-0263,Low product usage,-0.0557,2
+CUST-0263,Days since last login,-0.0321,3
+CUST-0263,Short tenure,0.0116,4
+CUST-0263,Recent support tickets,-0.0016,5
+CUST-0264,Days since last login,0.0651,1
+CUST-0264,Month-to-month contract,0.0618,2
+CUST-0264,Low product usage,0.044,3
+CUST-0264,Recent support tickets,0.036,4
+CUST-0264,Short tenure,0.0171,5
+CUST-0265,Month-to-month contract,-0.1082,1
+CUST-0265,Short tenure,-0.0245,2
+CUST-0265,Days since last login,-0.0044,3
+CUST-0265,Low product usage,0.0022,4
+CUST-0265,Recent support tickets,-0.0016,5
+CUST-0266,Month-to-month contract,0.0618,1
+CUST-0266,Low product usage,-0.0194,2
+CUST-0266,Short tenure,0.0144,3
+CUST-0266,Days since last login,-0.0044,4
+CUST-0266,Recent support tickets,-0.0016,5
+CUST-0267,Low product usage,-0.1029,1
+CUST-0267,Month-to-month contract,0.0618,2
+CUST-0267,Days since last login,-0.0544,3
+CUST-0267,Short tenure,0.0116,4
+CUST-0267,Recent support tickets,-0.0016,5
+CUST-0268,Low product usage,0.102,1
+CUST-0268,Month-to-month contract,0.0618,2
+CUST-0268,Days since last login,0.0401,3
+CUST-0268,Short tenure,0.0171,4
+CUST-0268,Recent support tickets,-0.0016,5
+CUST-0269,Month-to-month contract,0.0618,1
+CUST-0269,Short tenure,0.0171,2
+CUST-0269,Low product usage,-0.0088,3
+CUST-0269,Days since last login,0.004,4
+CUST-0269,Recent support tickets,-0.0016,5
+CUST-0270,Low product usage,0.131,1
+CUST-0270,Month-to-month contract,-0.0582,2
+CUST-0270,Days since last login,0.0512,3
+CUST-0270,Short tenure,0.0199,4
+CUST-0270,Recent support tickets,0.0109,5
+CUST-0271,Month-to-month contract,0.0618,1
+CUST-0271,Low product usage,0.0202,2
+CUST-0271,Short tenure,0.0199,3
+CUST-0271,Recent support tickets,0.0109,4
+CUST-0271,Days since last login,-0.0016,5
+CUST-0272,Low product usage,-0.0966,1
+CUST-0272,Month-to-month contract,-0.0582,2
+CUST-0272,Days since last login,-0.0377,3
+CUST-0272,Recent support tickets,0.0234,4
+CUST-0272,Short tenure,0.0144,5
+CUST-0273,Month-to-month contract,-0.0582,1
+CUST-0273,Short tenure,0.0199,2
+CUST-0273,Recent support tickets,0.0109,3
+CUST-0273,Days since last login,0.0095,4
+CUST-0273,Low product usage,0.006,5
+CUST-0274,Month-to-month contract,-0.0582,1
+CUST-0274,Low product usage,-0.0228,2
+CUST-0274,Days since last login,-0.021,3
+CUST-0274,Short tenure,-0.0023,4
+CUST-0274,Recent support tickets,-0.0016,5
+CUST-0275,Month-to-month contract,0.0618,1
+CUST-0275,Days since last login,0.0179,2
+CUST-0275,Low product usage,0.0156,3
+CUST-0275,Recent support tickets,-0.0141,4
+CUST-0275,Short tenure,-0.0079,5
+CUST-0276,Month-to-month contract,-0.1082,1
+CUST-0276,Low product usage,-0.0155,2
+CUST-0276,Days since last login,-0.0127,3
+CUST-0276,Short tenure,0.006,4
+CUST-0276,Recent support tickets,-0.0016,5
+CUST-0277,Month-to-month contract,-0.0582,1
+CUST-0277,Short tenure,0.0088,2
+CUST-0277,Days since last login,-0.0016,3
+CUST-0277,Recent support tickets,-0.0016,4
+CUST-0277,Low product usage,-0.0006,5
+CUST-0278,Month-to-month contract,0.0618,1
+CUST-0278,Days since last login,0.0318,2
+CUST-0278,Low product usage,0.0274,3
+CUST-0278,Short tenure,0.0032,4
+CUST-0278,Recent support tickets,-0.0016,5
+CUST-0279,Month-to-month contract,-0.0582,1
+CUST-0279,Short tenure,-0.0218,2
+CUST-0279,Days since last login,-0.0155,3
+CUST-0279,Recent support tickets,-0.0016,4
+CUST-0279,Low product usage,0.0014,5
+CUST-0280,Month-to-month contract,-0.1082,1
+CUST-0280,Low product usage,-0.0243,2
+CUST-0280,Short tenure,-0.019,3
+CUST-0280,Days since last login,-0.0155,4
+CUST-0280,Recent support tickets,-0.0141,5
+CUST-0281,Low product usage,0.0719,1
+CUST-0281,Month-to-month contract,0.0618,2
+CUST-0281,Days since last login,0.0373,3
+CUST-0281,Short tenure,0.0199,4
+CUST-0281,Recent support tickets,-0.0016,5
+CUST-0282,Month-to-month contract,-0.1082,1
+CUST-0282,Low product usage,0.0285,2
+CUST-0282,Days since last login,-0.0182,3
+CUST-0282,Short tenure,0.0144,4
+CUST-0282,Recent support tickets,-0.0141,5
+CUST-0283,Month-to-month contract,0.0618,1
+CUST-0283,Low product usage,0.0575,2
+CUST-0283,Days since last login,0.0151,3
+CUST-0283,Short tenure,0.0144,4
+CUST-0283,Recent support tickets,-0.0141,5
+CUST-0284,Month-to-month contract,-0.0582,1
+CUST-0284,Low product usage,-0.0344,2
+CUST-0284,Days since last login,0.0123,3
+CUST-0284,Short tenure,0.0116,4
+CUST-0284,Recent support tickets,-0.0016,5
+CUST-0285,Month-to-month contract,-0.1082,1
+CUST-0285,Low product usage,-0.0425,2
+CUST-0285,Days since last login,-0.0182,3
+CUST-0285,Recent support tickets,-0.0141,4
+CUST-0285,Short tenure,-0.0023,5
+CUST-0286,Month-to-month contract,0.0618,1
+CUST-0286,Days since last login,-0.046,2
+CUST-0286,Low product usage,-0.026,3
+CUST-0286,Recent support tickets,-0.0141,4
+CUST-0286,Short tenure,0.006,5
+CUST-0287,Month-to-month contract,-0.0582,1
+CUST-0287,Days since last login,-0.046,2
+CUST-0287,Short tenure,0.0199,3
+CUST-0287,Low product usage,-0.019,4
+CUST-0287,Recent support tickets,-0.0141,5
+CUST-0288,Month-to-month contract,0.0618,1
+CUST-0288,Low product usage,-0.0185,2
+CUST-0288,Days since last login,-0.0155,3
+CUST-0288,Short tenure,0.0088,4
+CUST-0288,Recent support tickets,-0.0016,5
+CUST-0289,Month-to-month contract,-0.0582,1
+CUST-0289,Low product usage,-0.0344,2
+CUST-0289,Days since last login,0.0123,3
+CUST-0289,Recent support tickets,-0.0016,4
+CUST-0289,Short tenure,0.0005,5
+CUST-0290,Month-to-month contract,-0.0582,1
+CUST-0290,Short tenure,0.0171,2
+CUST-0290,Low product usage,0.0157,3
+CUST-0290,Recent support tickets,-0.0141,4
+CUST-0290,Days since last login,0.004,5
+CUST-0291,Month-to-month contract,0.0618,1
+CUST-0291,Days since last login,0.0234,2
+CUST-0291,Short tenure,-0.0162,3
+CUST-0291,Low product usage,-0.0091,4
+CUST-0291,Recent support tickets,-0.0016,5
+CUST-0292,Month-to-month contract,0.0618,1
+CUST-0292,Low product usage,0.0595,2
+CUST-0292,Days since last login,0.0456,3
+CUST-0292,Short tenure,0.0199,4
+CUST-0292,Recent support tickets,-0.0141,5
+CUST-0293,Low product usage,-0.1259,1
+CUST-0293,Days since last login,-0.071,2
+CUST-0293,Month-to-month contract,0.0618,3
+CUST-0293,Short tenure,-0.0245,4
+CUST-0293,Recent support tickets,-0.0141,5
+CUST-0294,Month-to-month contract,0.0618,1
+CUST-0294,Low product usage,0.0554,2
+CUST-0294,Recent support tickets,0.036,3
+CUST-0294,Short tenure,0.0171,4
+CUST-0294,Days since last login,0.004,5
+CUST-0295,Month-to-month contract,0.0618,1
+CUST-0295,Days since last login,0.0345,2
+CUST-0295,Low product usage,0.0211,3
+CUST-0295,Short tenure,-0.019,4
+CUST-0295,Recent support tickets,-0.0016,5
+CUST-0296,Month-to-month contract,0.0618,1
+CUST-0296,Low product usage,-0.0367,2
+CUST-0296,Days since last login,-0.0321,3
+CUST-0296,Short tenure,-0.0245,4
+CUST-0296,Recent support tickets,-0.0016,5
+CUST-0297,Month-to-month contract,0.0618,1
+CUST-0297,Short tenure,-0.0356,2
+CUST-0297,Low product usage,-0.0271,3
+CUST-0297,Recent support tickets,-0.0016,4
+CUST-0297,Days since last login,0.0012,5
+CUST-0298,Month-to-month contract,0.0618,1
+CUST-0298,Low product usage,0.0599,2
+CUST-0298,Days since last login,0.0179,3
+CUST-0298,Recent support tickets,-0.0141,4
+CUST-0298,Short tenure,-0.0134,5
+CUST-0299,Low product usage,-0.0728,1
+CUST-0299,Month-to-month contract,-0.0582,2
+CUST-0299,Days since last login,-0.0432,3
+CUST-0299,Short tenure,-0.0134,4
+CUST-0299,Recent support tickets,0.0109,5
+CUST-0300,Month-to-month contract,-0.0582,1
+CUST-0300,Low product usage,-0.0089,2
+CUST-0300,Short tenure,-0.0051,3
+CUST-0300,Recent support tickets,-0.0016,4
+CUST-0300,Days since last login,0.0012,5
+CUST-0301,Month-to-month contract,-0.0582,1
+CUST-0301,Low product usage,0.0445,2
+CUST-0301,Days since last login,0.0234,3
+CUST-0301,Recent support tickets,0.0234,4
+CUST-0301,Short tenure,-0.0134,5
+CUST-0302,Month-to-month contract,0.0618,1
+CUST-0302,Low product usage,-0.0308,2
+CUST-0302,Short tenure,0.0171,3
+CUST-0302,Days since last login,-0.0127,4
+CUST-0302,Recent support tickets,0.0109,5
+CUST-0303,Month-to-month contract,-0.1082,1
+CUST-0303,Low product usage,-0.0467,2
+CUST-0303,Days since last login,-0.0377,3
+CUST-0303,Recent support tickets,-0.0141,4
+CUST-0303,Short tenure,0.0005,5
+CUST-0304,Month-to-month contract,-0.0582,1
+CUST-0304,Low product usage,0.0525,2
+CUST-0304,Days since last login,0.0179,3
+CUST-0304,Recent support tickets,-0.0141,4
+CUST-0304,Short tenure,0.0005,5
+CUST-0305,Low product usage,-0.1072,1
+CUST-0305,Month-to-month contract,0.0618,2
+CUST-0305,Days since last login,-0.0321,3
+CUST-0305,Short tenure,-0.019,4
+CUST-0305,Recent support tickets,-0.0016,5
+CUST-0306,Month-to-month contract,0.0618,1
+CUST-0306,Low product usage,-0.0485,2
+CUST-0306,Recent support tickets,0.0109,3
+CUST-0306,Days since last login,-0.0071,4
+CUST-0306,Short tenure,0.0032,5
+CUST-0307,Month-to-month contract,-0.0582,1
+CUST-0307,Days since last login,-0.0266,2
+CUST-0307,Recent support tickets,-0.0141,3
+CUST-0307,Low product usage,-0.0133,4
+CUST-0307,Short tenure,0.006,5
+CUST-0308,Low product usage,-0.0974,1
+CUST-0308,Month-to-month contract,0.0618,2
+CUST-0308,Days since last login,-0.0488,3
+CUST-0308,Short tenure,-0.0051,4
+CUST-0308,Recent support tickets,-0.0016,5
+CUST-0309,Month-to-month contract,0.0618,1
+CUST-0309,Days since last login,-0.0321,2
+CUST-0309,Low product usage,-0.0222,3
+CUST-0309,Short tenure,0.0116,4
+CUST-0309,Recent support tickets,0.0109,5
+CUST-0310,Month-to-month contract,-0.1082,1
+CUST-0310,Low product usage,0.0331,2
+CUST-0310,Short tenure,0.0171,3
+CUST-0310,Recent support tickets,0.0109,4
+CUST-0310,Days since last login,-0.0071,5
+CUST-0311,Month-to-month contract,0.0618,1
+CUST-0311,Days since last login,0.0345,2
+CUST-0311,Low product usage,0.0208,3
+CUST-0311,Recent support tickets,-0.0141,4
+CUST-0311,Short tenure,0.0032,5
+CUST-0312,Days since last login,-0.0682,1
+CUST-0312,Month-to-month contract,0.0618,2
+CUST-0312,Low product usage,-0.0444,3
+CUST-0312,Recent support tickets,0.0109,4
+CUST-0312,Short tenure,0.006,5
+CUST-0313,Month-to-month contract,-0.1082,1
+CUST-0313,Low product usage,-0.0389,2
+CUST-0313,Short tenure,0.0144,3
+CUST-0313,Days since last login,-0.0044,4
+CUST-0313,Recent support tickets,-0.0016,5
+CUST-0314,Month-to-month contract,-0.0582,1
+CUST-0314,Days since last login,-0.0155,2
+CUST-0314,Low product usage,-0.0146,3
+CUST-0314,Recent support tickets,-0.0141,4
+CUST-0314,Short tenure,0.0088,5
+CUST-0315,Month-to-month contract,0.0618,1
+CUST-0315,Low product usage,0.0276,2
+CUST-0315,Recent support tickets,-0.0141,3
+CUST-0315,Days since last login,0.0123,4
+CUST-0315,Short tenure,0.0088,5
+CUST-0316,Month-to-month contract,-0.1082,1
+CUST-0316,Low product usage,-0.0207,2
+CUST-0316,Recent support tickets,-0.0141,3
+CUST-0316,Short tenure,0.0088,4
+CUST-0316,Days since last login,-0.0044,5
+CUST-0317,Month-to-month contract,-0.1082,1
+CUST-0317,Low product usage,-0.0102,2
+CUST-0317,Short tenure,0.0088,3
+CUST-0317,Days since last login,0.0068,4
+CUST-0317,Recent support tickets,-0.0016,5
+CUST-0318,Month-to-month contract,0.0618,1
+CUST-0318,Low product usage,0.0561,2
+CUST-0318,Days since last login,0.0151,3
+CUST-0318,Short tenure,-0.0079,4
+CUST-0318,Recent support tickets,-0.0016,5
+CUST-0319,Low product usage,0.0634,1
+CUST-0319,Month-to-month contract,-0.0582,2
+CUST-0319,Days since last login,0.0568,3
+CUST-0319,Recent support tickets,-0.0141,4
+CUST-0319,Short tenure,0.0116,5
+CUST-0320,Month-to-month contract,0.0618,1
+CUST-0320,Low product usage,-0.0435,2
+CUST-0320,Short tenure,-0.0301,3
+CUST-0320,Days since last login,-0.0266,4
+CUST-0320,Recent support tickets,-0.0016,5
+CUST-0321,Low product usage,0.1227,1
+CUST-0321,Month-to-month contract,0.0618,2
+CUST-0321,Days since last login,0.0484,3
+CUST-0321,Short tenure,-0.0245,4
+CUST-0321,Recent support tickets,0.0234,5
+CUST-0322,Month-to-month contract,-0.0582,1
+CUST-0322,Low product usage,-0.0247,2
+CUST-0322,Days since last login,-0.021,3
+CUST-0322,Short tenure,0.0032,4
+CUST-0322,Recent support tickets,-0.0016,5
+CUST-0323,Month-to-month contract,0.0618,1
+CUST-0323,Days since last login,0.0373,2
+CUST-0323,Low product usage,0.0112,3
+CUST-0323,Recent support tickets,0.0109,4
+CUST-0323,Short tenure,0.0088,5
+CUST-0324,Low product usage,-0.0826,1
+CUST-0324,Month-to-month contract,-0.0582,2
+CUST-0324,Days since last login,-0.0155,3
+CUST-0324,Recent support tickets,-0.0141,4
+CUST-0324,Short tenure,0.0005,5
+CUST-0325,Month-to-month contract,-0.0582,1
+CUST-0325,Days since last login,0.0234,2
+CUST-0325,Short tenure,-0.019,3
+CUST-0325,Recent support tickets,-0.0141,4
+CUST-0325,Low product usage,0.012,5
+CUST-0326,Month-to-month contract,0.0618,1
+CUST-0326,Days since last login,-0.0571,2
+CUST-0326,Low product usage,-0.0485,3
+CUST-0326,Recent support tickets,-0.0141,4
+CUST-0326,Short tenure,-0.0051,5
+CUST-0327,Month-to-month contract,-0.0582,1
+CUST-0327,Recent support tickets,0.0234,2
+CUST-0327,Short tenure,-0.0162,3
+CUST-0327,Days since last login,0.0151,4
+CUST-0327,Low product usage,0.007,5
+CUST-0328,Month-to-month contract,0.0618,1
+CUST-0328,Low product usage,-0.0198,2
+CUST-0328,Days since last login,0.0068,3
+CUST-0328,Recent support tickets,-0.0016,4
+CUST-0328,Short tenure,0.0005,5
+CUST-0329,Month-to-month contract,-0.1082,1
+CUST-0329,Low product usage,-0.0526,2
+CUST-0329,Days since last login,-0.0182,3
+CUST-0329,Short tenure,-0.0051,4
+CUST-0329,Recent support tickets,-0.0016,5
+CUST-0330,Month-to-month contract,0.0618,1
+CUST-0330,Days since last login,0.0234,2
+CUST-0330,Recent support tickets,-0.0141,3
+CUST-0330,Short tenure,0.0116,4
+CUST-0330,Low product usage,0.0104,5
+CUST-0331,Low product usage,-0.0662,1
+CUST-0331,Month-to-month contract,-0.0582,2
+CUST-0331,Days since last login,-0.0349,3
+CUST-0331,Short tenure,-0.0106,4
+CUST-0331,Recent support tickets,-0.0016,5
+CUST-0332,Month-to-month contract,-0.0582,1
+CUST-0332,Low product usage,0.0383,2
+CUST-0332,Days since last login,0.0206,3
+CUST-0332,Short tenure,0.0144,4
+CUST-0332,Recent support tickets,-0.0016,5
+CUST-0333,Month-to-month contract,0.0618,1
+CUST-0333,Days since last login,-0.0321,2
+CUST-0333,Low product usage,-0.0293,3
+CUST-0333,Recent support tickets,-0.0141,4
+CUST-0333,Short tenure,-0.0079,5
+CUST-0334,Days since last login,-0.0794,1
+CUST-0334,Low product usage,-0.0623,2
+CUST-0334,Month-to-month contract,-0.0582,3
+CUST-0334,Recent support tickets,0.0234,4
+CUST-0334,Short tenure,-0.019,5
+CUST-0335,Month-to-month contract,-0.0582,1
+CUST-0335,Recent support tickets,0.036,2
+CUST-0335,Short tenure,0.0171,3
+CUST-0335,Days since last login,0.004,4
+CUST-0335,Low product usage,-0.003,5
+CUST-0336,Low product usage,-0.1145,1
+CUST-0336,Days since last login,-0.0682,2
+CUST-0336,Month-to-month contract,-0.0582,3
+CUST-0336,Recent support tickets,-0.0141,4
+CUST-0336,Short tenure,-0.0023,5
+CUST-0337,Low product usage,0.0717,1
+CUST-0337,Month-to-month contract,-0.0582,2
+CUST-0337,Days since last login,0.0568,3
+CUST-0337,Short tenure,0.0171,4
+CUST-0337,Recent support tickets,-0.0016,5
+CUST-0338,Month-to-month contract,-0.1082,1
+CUST-0338,Low product usage,0.0585,2
+CUST-0338,Recent support tickets,-0.0141,3
+CUST-0338,Short tenure,-0.0106,4
+CUST-0338,Days since last login,0.0068,5
+CUST-0339,Low product usage,0.0838,1
+CUST-0339,Days since last login,0.0679,2
+CUST-0339,Month-to-month contract,0.0618,3
+CUST-0339,Short tenure,0.0171,4
+CUST-0339,Recent support tickets,-0.0141,5
+CUST-0340,Month-to-month contract,0.0618,1
+CUST-0340,Low product usage,-0.0485,2
+CUST-0340,Short tenure,-0.0273,3
+CUST-0340,Days since last login,0.0151,4
+CUST-0340,Recent support tickets,-0.0016,5
+CUST-0341,Month-to-month contract,0.0618,1
+CUST-0341,Recent support tickets,0.0234,2
+CUST-0341,Short tenure,0.0171,3
+CUST-0341,Low product usage,0.0055,4
+CUST-0341,Days since last login,0.004,5
+CUST-0342,Month-to-month contract,-0.0582,1
+CUST-0342,Short tenure,-0.0301,2
+CUST-0342,Low product usage,-0.0192,3
+CUST-0342,Days since last login,-0.0155,4
+CUST-0342,Recent support tickets,-0.0016,5
+CUST-0343,Month-to-month contract,0.0618,1
+CUST-0343,Low product usage,0.0451,2
+CUST-0343,Days since last login,0.0345,3
+CUST-0343,Short tenure,-0.0134,4
+CUST-0343,Recent support tickets,-0.0016,5
+CUST-0344,Month-to-month contract,0.0618,1
+CUST-0344,Low product usage,-0.0541,2
+CUST-0344,Recent support tickets,-0.0141,3
+CUST-0344,Days since last login,0.0095,4
+CUST-0344,Short tenure,-0.0023,5
+CUST-0345,Month-to-month contract,0.0618,1
+CUST-0345,Low product usage,0.0504,2
+CUST-0345,Short tenure,-0.0134,3
+CUST-0345,Days since last login,0.0095,4
+CUST-0345,Recent support tickets,-0.0016,5
+CUST-0346,Month-to-month contract,-0.1082,1
+CUST-0346,Low product usage,-0.0747,2
+CUST-0346,Days since last login,-0.0432,3
+CUST-0346,Short tenure,-0.0134,4
+CUST-0346,Recent support tickets,0.0109,5
+CUST-0347,Low product usage,-0.1259,1
+CUST-0347,Days since last login,-0.0794,2
+CUST-0347,Month-to-month contract,0.0618,3
+CUST-0347,Short tenure,-0.0273,4
+CUST-0347,Recent support tickets,-0.0016,5
+CUST-0348,Month-to-month contract,-0.0582,1
+CUST-0348,Days since last login,-0.0349,2
+CUST-0348,Low product usage,-0.0331,3
+CUST-0348,Short tenure,0.0116,4
+CUST-0348,Recent support tickets,0.0109,5
+CUST-0349,Month-to-month contract,0.0618,1
+CUST-0349,Low product usage,-0.0445,2
+CUST-0349,Days since last login,-0.0294,3
+CUST-0349,Recent support tickets,-0.0141,4
+CUST-0349,Short tenure,-0.0023,5
+CUST-0350,Month-to-month contract,-0.1082,1
+CUST-0350,Days since last login,0.0651,2
+CUST-0350,Low product usage,0.0575,3
+CUST-0350,Recent support tickets,0.0234,4
+CUST-0350,Short tenure,0.0171,5
+CUST-0351,Days since last login,0.0901,1
+CUST-0351,Low product usage,0.0812,2
+CUST-0351,Month-to-month contract,0.0618,3
+CUST-0351,Short tenure,-0.0023,4
+CUST-0351,Recent support tickets,-0.0016,5
+CUST-0352,Month-to-month contract,0.0618,1
+CUST-0352,Days since last login,0.0206,2
+CUST-0352,Low product usage,0.0178,3
+CUST-0352,Short tenure,0.0144,4
+CUST-0352,Recent support tickets,0.0109,5
+CUST-0353,Month-to-month contract,-0.1082,1
+CUST-0353,Low product usage,0.0435,2
+CUST-0353,Days since last login,0.0179,3
+CUST-0353,Recent support tickets,-0.0141,4
+CUST-0353,Short tenure,0.0005,5
+CUST-0354,Month-to-month contract,-0.1082,1
+CUST-0354,Days since last login,0.0929,2
+CUST-0354,Low product usage,0.0621,3
+CUST-0354,Recent support tickets,-0.0141,4
+CUST-0354,Short tenure,-0.0023,5
+CUST-0355,Low product usage,-0.1043,1
+CUST-0355,Days since last login,-0.0766,2
+CUST-0355,Month-to-month contract,0.0618,3
+CUST-0355,Short tenure,0.0032,4
+CUST-0355,Recent support tickets,-0.0016,5
+CUST-0356,Month-to-month contract,0.0618,1
+CUST-0356,Days since last login,-0.0321,2
+CUST-0356,Low product usage,-0.0282,3
+CUST-0356,Recent support tickets,-0.0016,4
+CUST-0356,Short tenure,0.0005,5
+CUST-0357,Days since last login,-0.0627,1
+CUST-0357,Month-to-month contract,-0.0582,2
+CUST-0357,Low product usage,-0.0338,3
+CUST-0357,Recent support tickets,-0.0141,4
+CUST-0357,Short tenure,-0.0134,5
+CUST-0358,Month-to-month contract,-0.1082,1
+CUST-0358,Days since last login,0.0318,2
+CUST-0358,Recent support tickets,-0.0141,3
+CUST-0358,Short tenure,-0.0134,4
+CUST-0358,Low product usage,0.0024,5
+CUST-0359,Month-to-month contract,0.0618,1
+CUST-0359,Days since last login,0.0179,2
+CUST-0359,Recent support tickets,-0.0141,3
+CUST-0359,Low product usage,-0.0048,4
+CUST-0359,Short tenure,0.0032,5
+CUST-0360,Low product usage,-0.0645,1
+CUST-0360,Month-to-month contract,0.0618,2
+CUST-0360,Days since last login,0.0123,3
+CUST-0360,Recent support tickets,0.0109,4
+CUST-0360,Short tenure,-0.0023,5
+CUST-0361,Month-to-month contract,-0.0582,1
+CUST-0361,Days since last login,-0.0405,2
+CUST-0361,Short tenure,-0.0273,3
+CUST-0361,Low product usage,-0.0122,4
+CUST-0361,Recent support tickets,-0.0016,5
+CUST-0362,Month-to-month contract,-0.0582,1
+CUST-0362,Days since last login,0.0345,2
+CUST-0362,Short tenure,0.0171,3
+CUST-0362,Low product usage,0.0038,4
+CUST-0362,Recent support tickets,-0.0016,5
+CUST-0363,Month-to-month contract,-0.0582,1
+CUST-0363,Low product usage,0.0419,2
+CUST-0363,Days since last login,0.0262,3
+CUST-0363,Recent support tickets,0.0234,4
+CUST-0363,Short tenure,0.0171,5
+CUST-0364,Month-to-month contract,-0.0582,1
+CUST-0364,Low product usage,0.0496,2
+CUST-0364,Days since last login,0.0484,3
+CUST-0364,Short tenure,0.0171,4
+CUST-0364,Recent support tickets,-0.0016,5
+CUST-0365,Month-to-month contract,0.0618,1
+CUST-0365,Low product usage,0.06,2
+CUST-0365,Short tenure,-0.0051,3
+CUST-0365,Recent support tickets,-0.0016,4
+CUST-0365,Days since last login,0.0012,5
+CUST-0366,Month-to-month contract,-0.1082,1
+CUST-0366,Days since last login,0.0901,2
+CUST-0366,Low product usage,0.09,3
+CUST-0366,Short tenure,0.006,4
+CUST-0366,Recent support tickets,-0.0016,5
+CUST-0367,Month-to-month contract,-0.1082,1
+CUST-0367,Days since last login,0.0179,2
+CUST-0367,Short tenure,-0.0134,3
+CUST-0367,Recent support tickets,0.0109,4
+CUST-0367,Low product usage,-0.0001,5
+CUST-0368,Month-to-month contract,-0.0582,1
+CUST-0368,Low product usage,-0.0168,2
+CUST-0368,Days since last login,-0.0127,3
+CUST-0368,Recent support tickets,0.0109,4
+CUST-0368,Short tenure,-0.0051,5
+CUST-0369,Month-to-month contract,0.0618,1
+CUST-0369,Low product usage,0.0537,2
+CUST-0369,Days since last login,0.0484,3
+CUST-0369,Short tenure,0.0088,4
+CUST-0369,Recent support tickets,-0.0016,5
+CUST-0370,Month-to-month contract,0.0618,1
+CUST-0370,Days since last login,-0.0266,2
+CUST-0370,Short tenure,-0.0218,3
+CUST-0370,Low product usage,-0.0121,4
+CUST-0370,Recent support tickets,0.0109,5
+CUST-0371,Month-to-month contract,-0.0582,1
+CUST-0371,Days since last login,-0.0238,2
+CUST-0371,Low product usage,-0.0167,3
+CUST-0371,Short tenure,-0.0106,4
+CUST-0371,Recent support tickets,-0.0016,5
+CUST-0372,Low product usage,0.0993,1
+CUST-0372,Month-to-month contract,0.0618,2
+CUST-0372,Days since last login,0.0512,3
+CUST-0372,Recent support tickets,-0.0141,4
+CUST-0372,Short tenure,0.0116,5
+CUST-0373,Month-to-month contract,-0.1082,1
+CUST-0373,Low product usage,0.0342,2
+CUST-0373,Days since last login,-0.021,3
+CUST-0373,Recent support tickets,-0.0141,4
+CUST-0373,Short tenure,0.0088,5
+CUST-0374,Month-to-month contract,0.0618,1
+CUST-0374,Low product usage,-0.0352,2
+CUST-0374,Recent support tickets,-0.0141,3
+CUST-0374,Short tenure,0.0088,4
+CUST-0374,Days since last login,-0.0044,5
+CUST-0375,Month-to-month contract,-0.0582,1
+CUST-0375,Days since last login,0.0318,2
+CUST-0375,Short tenure,0.0171,3
+CUST-0375,Low product usage,0.0113,4
+CUST-0375,Recent support tickets,0.0109,5
+CUST-0376,Month-to-month contract,-0.1082,1
+CUST-0376,Low product usage,0.0922,2
+CUST-0376,Days since last login,0.0429,3
+CUST-0376,Short tenure,0.0171,4
+CUST-0376,Recent support tickets,0.0109,5
+CUST-0377,Month-to-month contract,0.0618,1
+CUST-0377,Short tenure,-0.0273,2
+CUST-0377,Low product usage,-0.0222,3
+CUST-0377,Days since last login,-0.0071,4
+CUST-0377,Recent support tickets,-0.0016,5
+CUST-0378,Low product usage,-0.0675,1
+CUST-0378,Month-to-month contract,0.0618,2
+CUST-0378,Days since last login,-0.0488,3
+CUST-0378,Short tenure,0.006,4
+CUST-0378,Recent support tickets,-0.0016,5
+CUST-0379,Month-to-month contract,-0.0582,1
+CUST-0379,Low product usage,-0.0547,2
+CUST-0379,Days since last login,-0.0294,3
+CUST-0379,Recent support tickets,-0.0141,4
+CUST-0379,Short tenure,0.006,5
+CUST-0380,Month-to-month contract,-0.0582,1
+CUST-0380,Recent support tickets,0.0485,2
+CUST-0380,Days since last login,-0.021,3
+CUST-0380,Short tenure,-0.0106,4
+CUST-0380,Low product usage,-0.0089,5
+CUST-0381,Month-to-month contract,0.0618,1
+CUST-0381,Days since last login,-0.0127,2
+CUST-0381,Recent support tickets,0.0109,3
+CUST-0381,Low product usage,0.0107,4
+CUST-0381,Short tenure,0.0005,5
+CUST-0382,Month-to-month contract,-0.0582,1
+CUST-0382,Days since last login,0.0345,2
+CUST-0382,Short tenure,-0.0273,3
+CUST-0382,Low product usage,0.0192,4
+CUST-0382,Recent support tickets,-0.0141,5
+CUST-0383,Month-to-month contract,-0.1082,1
+CUST-0383,Low product usage,-0.0384,2
+CUST-0383,Days since last login,-0.0266,3
+CUST-0383,Recent support tickets,-0.0141,4
+CUST-0383,Short tenure,-0.0134,5
+CUST-0384,Month-to-month contract,0.0618,1
+CUST-0384,Days since last login,0.029,2
+CUST-0384,Low product usage,-0.0241,3
+CUST-0384,Recent support tickets,0.0234,4
+CUST-0384,Short tenure,0.0032,5
+CUST-0385,Month-to-month contract,0.0618,1
+CUST-0385,Low product usage,-0.0469,2
+CUST-0385,Days since last login,-0.0294,3
+CUST-0385,Recent support tickets,-0.0141,4
+CUST-0385,Short tenure,0.0088,5
+CUST-0386,Month-to-month contract,0.0618,1
+CUST-0386,Short tenure,-0.0356,2
+CUST-0386,Days since last login,-0.0349,3
+CUST-0386,Low product usage,-0.0208,4
+CUST-0386,Recent support tickets,-0.0016,5
+CUST-0387,Month-to-month contract,0.0618,1
+CUST-0387,Low product usage,-0.0569,2
+CUST-0387,Recent support tickets,0.0485,3
+CUST-0387,Days since last login,-0.0099,4
+CUST-0387,Short tenure,-0.0079,5
+CUST-0388,Month-to-month contract,0.0618,1
+CUST-0388,Short tenure,-0.0301,2
+CUST-0388,Low product usage,-0.0188,3
+CUST-0388,Recent support tickets,-0.0141,4
+CUST-0388,Days since last login,0.0012,5
+CUST-0389,Month-to-month contract,0.0618,1
+CUST-0389,Short tenure,0.0171,2
+CUST-0389,Recent support tickets,-0.0141,3
+CUST-0389,Low product usage,-0.0096,4
+CUST-0389,Days since last login,0.0095,5
+CUST-0390,Low product usage,-0.0596,1
+CUST-0390,Month-to-month contract,-0.0582,2
+CUST-0390,Short tenure,-0.019,3
+CUST-0390,Days since last login,-0.0127,4
+CUST-0390,Recent support tickets,-0.0016,5
+CUST-0391,Month-to-month contract,0.0618,1
+CUST-0391,Low product usage,0.0284,2
+CUST-0391,Recent support tickets,-0.0141,3
+CUST-0391,Short tenure,-0.0051,4
+CUST-0391,Days since last login,0.004,5
+CUST-0392,Low product usage,0.1266,1
+CUST-0392,Month-to-month contract,-0.1082,2
+CUST-0392,Days since last login,0.0762,3
+CUST-0392,Recent support tickets,0.0234,4
+CUST-0392,Short tenure,0.0171,5
+CUST-0393,Low product usage,-0.0949,1
+CUST-0393,Days since last login,-0.0655,2
+CUST-0393,Month-to-month contract,0.0618,3
+CUST-0393,Recent support tickets,0.0109,4
+CUST-0393,Short tenure,-0.0023,5
+CUST-0394,Month-to-month contract,0.0618,1
+CUST-0394,Days since last login,-0.046,2
+CUST-0394,Low product usage,-0.0273,3
+CUST-0394,Short tenure,-0.0079,4
+CUST-0394,Recent support tickets,-0.0016,5
+CUST-0395,Low product usage,0.1216,1
+CUST-0395,Days since last login,0.0706,2
+CUST-0395,Month-to-month contract,-0.0582,3
+CUST-0395,Short tenure,0.0199,4
+CUST-0395,Recent support tickets,0.0109,5
+CUST-0396,Month-to-month contract,-0.1082,1
+CUST-0396,Days since last login,0.0429,2
+CUST-0396,Low product usage,0.0236,3
+CUST-0396,Recent support tickets,0.0109,4
+CUST-0396,Short tenure,0.0032,5
+CUST-0397,Month-to-month contract,0.0618,1
+CUST-0397,Low product usage,-0.0544,2
+CUST-0397,Days since last login,-0.0294,3
+CUST-0397,Short tenure,-0.0162,4
+CUST-0397,Recent support tickets,-0.0016,5
+CUST-0398,Month-to-month contract,0.0618,1
+CUST-0398,Days since last login,-0.0294,2
+CUST-0398,Short tenure,0.0116,3
+CUST-0398,Recent support tickets,-0.0016,4
+CUST-0398,Low product usage,0.0008,5
+CUST-0399,Month-to-month contract,0.0618,1
+CUST-0399,Days since last login,-0.0266,2
+CUST-0399,Recent support tickets,-0.0141,3
+CUST-0399,Low product usage,0.013,4
+CUST-0399,Short tenure,0.0032,5
+CUST-0400,Low product usage,-0.0874,1
+CUST-0400,Month-to-month contract,0.0618,2
+CUST-0400,Days since last login,-0.0182,3
+CUST-0400,Recent support tickets,-0.0141,4
+CUST-0400,Short tenure,0.006,5
+CUST-0401,Month-to-month contract,0.0618,1
+CUST-0401,Low product usage,0.0411,2
+CUST-0401,Days since last login,0.0234,3
+CUST-0401,Recent support tickets,-0.0141,4
+CUST-0401,Short tenure,0.0116,5
+CUST-0402,Month-to-month contract,0.0618,1
+CUST-0402,Low product usage,0.028,2
+CUST-0402,Short tenure,-0.0245,3
+CUST-0402,Recent support tickets,-0.0141,4
+CUST-0402,Days since last login,0.0012,5
+CUST-0403,Month-to-month contract,0.0618,1
+CUST-0403,Low product usage,-0.025,2
+CUST-0403,Days since last login,-0.0238,3
+CUST-0403,Short tenure,-0.0134,4
+CUST-0403,Recent support tickets,-0.0016,5
+CUST-0404,Month-to-month contract,0.0618,1
+CUST-0404,Days since last login,-0.0266,2
+CUST-0404,Short tenure,0.0171,3
+CUST-0404,Low product usage,0.0111,4
+CUST-0404,Recent support tickets,-0.0016,5
+CUST-0405,Month-to-month contract,-0.1082,1
+CUST-0405,Short tenure,-0.0412,2
+CUST-0405,Low product usage,-0.0399,3
+CUST-0405,Recent support tickets,-0.0141,4
+CUST-0405,Days since last login,0.0068,5
+CUST-0406,Low product usage,-0.0617,1
+CUST-0406,Month-to-month contract,-0.0582,2
+CUST-0406,Days since last login,-0.0488,3
+CUST-0406,Short tenure,-0.0218,4
+CUST-0406,Recent support tickets,0.0109,5
+CUST-0407,Month-to-month contract,0.0618,1
+CUST-0407,Low product usage,-0.0243,2
+CUST-0407,Days since last login,0.0151,3
+CUST-0407,Short tenure,0.0116,4
+CUST-0407,Recent support tickets,-0.0016,5
+CUST-0408,Month-to-month contract,0.0618,1
+CUST-0408,Low product usage,-0.0396,2
+CUST-0408,Days since last login,-0.0238,3
+CUST-0408,Short tenure,-0.0162,4
+CUST-0408,Recent support tickets,-0.0141,5
+CUST-0409,Month-to-month contract,0.0618,1
+CUST-0409,Days since last login,0.0595,2
+CUST-0409,Low product usage,0.0452,3
+CUST-0409,Recent support tickets,0.0234,4
+CUST-0409,Short tenure,0.0171,5
+CUST-0410,Month-to-month contract,0.0618,1
+CUST-0410,Short tenure,-0.0412,2
+CUST-0410,Low product usage,-0.0172,3
+CUST-0410,Days since last login,-0.0071,4
+CUST-0410,Recent support tickets,-0.0016,5
+CUST-0411,Month-to-month contract,-0.0582,1
+CUST-0411,Low product usage,-0.0195,2
+CUST-0411,Recent support tickets,-0.0141,3
+CUST-0411,Days since last login,0.0068,4
+CUST-0411,Short tenure,-0.0051,5
+CUST-0412,Month-to-month contract,-0.1082,1
+CUST-0412,Low product usage,-0.0252,2
+CUST-0412,Recent support tickets,-0.0141,3
+CUST-0412,Short tenure,-0.0051,4
+CUST-0412,Days since last login,-0.0016,5
+CUST-0413,Month-to-month contract,-0.1082,1
+CUST-0413,Short tenure,0.0171,2
+CUST-0413,Low product usage,-0.0089,3
+CUST-0413,Days since last login,0.0068,4
+CUST-0413,Recent support tickets,-0.0016,5
+CUST-0414,Month-to-month contract,-0.1082,1
+CUST-0414,Low product usage,-0.043,2
+CUST-0414,Recent support tickets,0.0234,3
+CUST-0414,Short tenure,-0.0218,4
+CUST-0414,Days since last login,-0.021,5
+CUST-0415,Month-to-month contract,-0.1082,1
+CUST-0415,Low product usage,0.0293,2
+CUST-0415,Short tenure,0.0199,3
+CUST-0415,Days since last login,0.0123,4
+CUST-0415,Recent support tickets,-0.0016,5
+CUST-0416,Month-to-month contract,-0.1082,1
+CUST-0416,Days since last login,0.0595,2
+CUST-0416,Low product usage,0.0286,3
+CUST-0416,Recent support tickets,-0.0141,4
+CUST-0416,Short tenure,0.0116,5
+CUST-0417,Month-to-month contract,0.0618,1
+CUST-0417,Low product usage,0.0281,2
+CUST-0417,Short tenure,0.0171,3
+CUST-0417,Recent support tickets,0.0109,4
+CUST-0417,Days since last login,-0.0044,5
+CUST-0418,Month-to-month contract,0.0618,1
+CUST-0418,Recent support tickets,-0.0141,2
+CUST-0418,Short tenure,-0.0134,3
+CUST-0418,Low product usage,-0.0124,4
+CUST-0418,Days since last login,-0.0099,5
+CUST-0419,Month-to-month contract,0.0618,1
+CUST-0419,Low product usage,-0.024,2
+CUST-0419,Days since last login,-0.0155,3
+CUST-0419,Short tenure,0.0144,4
+CUST-0419,Recent support tickets,-0.0141,5
+CUST-0420,Low product usage,-0.1259,1
+CUST-0420,Days since last login,-0.071,2
+CUST-0420,Month-to-month contract,-0.0582,3
+CUST-0420,Short tenure,-0.0245,4
+CUST-0420,Recent support tickets,-0.0141,5
+CUST-0421,Month-to-month contract,0.0618,1
+CUST-0421,Recent support tickets,-0.0141,2
+CUST-0421,Low product usage,0.0136,3
+CUST-0421,Short tenure,-0.0051,4
+CUST-0421,Days since last login,-0.0016,5
+CUST-0422,Month-to-month contract,-0.0582,1
+CUST-0422,Recent support tickets,0.036,2
+CUST-0422,Short tenure,0.0199,3
+CUST-0422,Days since last login,0.0123,4
+CUST-0422,Low product usage,0.0095,5
+CUST-0423,Month-to-month contract,-0.0582,1
+CUST-0423,Low product usage,-0.0245,2
+CUST-0423,Recent support tickets,0.0234,3
+CUST-0423,Days since last login,-0.021,4
+CUST-0423,Short tenure,0.0199,5
+CUST-0424,Month-to-month contract,0.0618,1
+CUST-0424,Low product usage,0.0265,2
+CUST-0424,Short tenure,0.0199,3
+CUST-0424,Days since last login,-0.0182,4
+CUST-0424,Recent support tickets,-0.0016,5
+CUST-0425,Low product usage,-0.1259,1
+CUST-0425,Days since last login,-0.0794,2
+CUST-0425,Month-to-month contract,0.0618,3
+CUST-0425,Recent support tickets,0.0234,4
+CUST-0425,Short tenure,-0.0023,5
+CUST-0426,Month-to-month contract,0.0618,1
+CUST-0426,Days since last login,-0.021,2
+CUST-0426,Short tenure,-0.0134,3
+CUST-0426,Recent support tickets,0.0109,4
+CUST-0426,Low product usage,0.006,5
+CUST-0427,Month-to-month contract,0.0618,1
+CUST-0427,Days since last login,-0.0599,2
+CUST-0427,Low product usage,-0.0309,3
+CUST-0427,Short tenure,0.0144,4
+CUST-0427,Recent support tickets,-0.0016,5
+CUST-0428,Month-to-month contract,-0.1082,1
+CUST-0428,Low product usage,0.0281,2
+CUST-0428,Days since last login,0.0206,3
+CUST-0428,Short tenure,-0.019,4
+CUST-0428,Recent support tickets,-0.0141,5
+CUST-0429,Month-to-month contract,-0.0582,1
+CUST-0429,Low product usage,0.0501,2
+CUST-0429,Days since last login,0.0429,3
+CUST-0429,Short tenure,0.0199,4
+CUST-0429,Recent support tickets,0.0109,5
+CUST-0430,Month-to-month contract,-0.0582,1
+CUST-0430,Low product usage,-0.0269,2
+CUST-0430,Short tenure,-0.0134,3
+CUST-0430,Days since last login,-0.0071,4
+CUST-0430,Recent support tickets,-0.0016,5
+CUST-0431,Month-to-month contract,0.0618,1
+CUST-0431,Low product usage,-0.0583,2
+CUST-0431,Short tenure,-0.0273,3
+CUST-0431,Days since last login,-0.0266,4
+CUST-0431,Recent support tickets,-0.0141,5
+CUST-0432,Days since last login,-0.0627,1
+CUST-0432,Month-to-month contract,0.0618,2
+CUST-0432,Low product usage,-0.0306,3
+CUST-0432,Recent support tickets,-0.0141,4
+CUST-0432,Short tenure,-0.0134,5
+CUST-0433,Low product usage,-0.08,1
+CUST-0433,Days since last login,-0.0794,2
+CUST-0433,Month-to-month contract,0.0618,3
+CUST-0433,Recent support tickets,0.0109,4
+CUST-0433,Short tenure,-0.0079,5
+CUST-0434,Month-to-month contract,-0.0582,1
+CUST-0434,Days since last login,0.0373,2
+CUST-0434,Short tenure,-0.0162,3
+CUST-0434,Recent support tickets,-0.0141,4
+CUST-0434,Low product usage,-0.0089,5
+CUST-0435,Month-to-month contract,-0.0582,1
+CUST-0435,Low product usage,0.0491,2
+CUST-0435,Short tenure,0.0199,3
+CUST-0435,Days since last login,0.0068,4
+CUST-0435,Recent support tickets,-0.0016,5
+CUST-0436,Low product usage,-0.1259,1
+CUST-0436,Days since last login,-0.0682,2
+CUST-0436,Month-to-month contract,0.0618,3
+CUST-0436,Short tenure,0.0144,4
+CUST-0436,Recent support tickets,0.0109,5
+CUST-0437,Month-to-month contract,-0.1082,1
+CUST-0437,Short tenure,0.0171,2
+CUST-0437,Low product usage,0.0109,3
+CUST-0437,Recent support tickets,0.0109,4
+CUST-0437,Days since last login,-0.0099,5
+CUST-0438,Month-to-month contract,0.0618,1
+CUST-0438,Low product usage,0.0239,2
+CUST-0438,Days since last login,0.0151,3
+CUST-0438,Recent support tickets,-0.0141,4
+CUST-0438,Short tenure,0.0032,5
+CUST-0439,Month-to-month contract,-0.1082,1
+CUST-0439,Recent support tickets,0.0485,2
+CUST-0439,Low product usage,0.0226,3
+CUST-0439,Short tenure,-0.0106,4
+CUST-0439,Days since last login,-0.0016,5
+CUST-0440,Month-to-month contract,0.0618,1
+CUST-0440,Low product usage,0.0356,2
+CUST-0440,Days since last login,0.0345,3
+CUST-0440,Short tenure,-0.0051,4
+CUST-0440,Recent support tickets,-0.0016,5
+CUST-0441,Low product usage,-0.063,1
+CUST-0441,Month-to-month contract,0.0618,2
+CUST-0441,Days since last login,-0.0377,3
+CUST-0441,Short tenure,-0.019,4
+CUST-0441,Recent support tickets,-0.0141,5
+CUST-0442,Month-to-month contract,-0.0582,1
+CUST-0442,Low product usage,0.0508,2
+CUST-0442,Days since last login,0.0206,3
+CUST-0442,Short tenure,0.0171,4
+CUST-0442,Recent support tickets,-0.0141,5
+CUST-0443,Month-to-month contract,0.0618,1
+CUST-0443,Days since last login,-0.0377,2
+CUST-0443,Low product usage,-0.0206,3
+CUST-0443,Recent support tickets,-0.0141,4
+CUST-0443,Short tenure,-0.0106,5
+CUST-0444,Month-to-month contract,0.0618,1
+CUST-0444,Short tenure,0.0144,2
+CUST-0444,Recent support tickets,-0.0141,3
+CUST-0444,Low product usage,-0.0105,4
+CUST-0444,Days since last login,-0.0016,5
+CUST-0445,Month-to-month contract,0.0618,1
+CUST-0445,Days since last login,-0.0599,2
+CUST-0445,Low product usage,-0.0523,3
+CUST-0445,Short tenure,0.0116,4
+CUST-0445,Recent support tickets,0.0109,5
+CUST-0446,Month-to-month contract,0.0618,1
+CUST-0446,Low product usage,0.0306,2
+CUST-0446,Days since last login,0.029,3
+CUST-0446,Recent support tickets,-0.0141,4
+CUST-0446,Short tenure,-0.0079,5
+CUST-0447,Days since last login,0.0845,1
+CUST-0447,Month-to-month contract,-0.0582,2
+CUST-0447,Low product usage,0.0426,3
+CUST-0447,Short tenure,-0.0356,4
+CUST-0447,Recent support tickets,-0.0016,5
+CUST-0448,Month-to-month contract,-0.1082,1
+CUST-0448,Low product usage,-0.0256,2
+CUST-0448,Recent support tickets,-0.0141,3
+CUST-0448,Days since last login,0.0123,4
+CUST-0448,Short tenure,-0.0023,5
+CUST-0449,Month-to-month contract,-0.1082,1
+CUST-0449,Short tenure,0.0199,2
+CUST-0449,Days since last login,0.0151,3
+CUST-0449,Recent support tickets,-0.0016,4
+CUST-0449,Low product usage,0.0001,5
+CUST-0450,Month-to-month contract,0.0618,1
+CUST-0450,Low product usage,-0.0313,2
+CUST-0450,Days since last login,-0.0238,3
+CUST-0450,Recent support tickets,-0.0141,4
+CUST-0450,Short tenure,-0.0023,5
+CUST-0451,Low product usage,0.0741,1
+CUST-0451,Month-to-month contract,0.0618,2
+CUST-0451,Recent support tickets,0.0234,3
+CUST-0451,Short tenure,0.0199,4
+CUST-0451,Days since last login,0.004,5
+CUST-0452,Days since last login,-0.0627,1
+CUST-0452,Month-to-month contract,0.0618,2
+CUST-0452,Low product usage,-0.0494,3
+CUST-0452,Short tenure,-0.0218,4
+CUST-0452,Recent support tickets,0.0109,5
+CUST-0453,Month-to-month contract,0.0618,1
+CUST-0453,Days since last login,0.0429,2
+CUST-0453,Low product usage,0.0252,3
+CUST-0453,Short tenure,-0.0079,4
+CUST-0453,Recent support tickets,-0.0016,5
+CUST-0454,Month-to-month contract,0.0618,1
+CUST-0454,Short tenure,0.0144,2
+CUST-0454,Low product usage,0.0135,3
+CUST-0454,Days since last login,-0.0099,4
+CUST-0454,Recent support tickets,-0.0016,5
+CUST-0455,Month-to-month contract,-0.1082,1
+CUST-0455,Low product usage,0.0812,2
+CUST-0455,Days since last login,0.0345,3
+CUST-0455,Short tenure,0.0171,4
+CUST-0455,Recent support tickets,-0.0016,5
+CUST-0456,Month-to-month contract,-0.1082,1
+CUST-0456,Low product usage,-0.0822,2
+CUST-0456,Days since last login,-0.0571,3
+CUST-0456,Short tenure,0.0144,4
+CUST-0456,Recent support tickets,-0.0141,5
+CUST-0457,Month-to-month contract,-0.0582,1
+CUST-0457,Days since last login,-0.0544,2
+CUST-0457,Low product usage,-0.0471,3
+CUST-0457,Short tenure,-0.0356,4
+CUST-0457,Recent support tickets,-0.0141,5
+CUST-0458,Month-to-month contract,0.0618,1
+CUST-0458,Days since last login,-0.0571,2
+CUST-0458,Low product usage,-0.0456,3
+CUST-0458,Short tenure,0.0032,4
+CUST-0458,Recent support tickets,-0.0016,5
+CUST-0459,Low product usage,-0.0793,1
+CUST-0459,Month-to-month contract,0.0618,2
+CUST-0459,Days since last login,-0.0516,3
+CUST-0459,Recent support tickets,-0.0141,4
+CUST-0459,Short tenure,-0.0134,5
+CUST-0460,Low product usage,-0.1259,1
+CUST-0460,Days since last login,-0.0794,2
+CUST-0460,Month-to-month contract,0.0618,3
+CUST-0460,Recent support tickets,-0.0141,4
+CUST-0460,Short tenure,-0.0051,5
+CUST-0461,Low product usage,0.0759,1
+CUST-0461,Month-to-month contract,0.0618,2
+CUST-0461,Days since last login,0.0318,3
+CUST-0461,Recent support tickets,0.0234,4
+CUST-0461,Short tenure,-0.0023,5
+CUST-0462,Low product usage,0.0704,1
+CUST-0462,Month-to-month contract,0.0618,2
+CUST-0462,Days since last login,0.0262,3
+CUST-0462,Short tenure,0.0171,4
+CUST-0462,Recent support tickets,-0.0141,5
+CUST-0463,Month-to-month contract,0.0618,1
+CUST-0463,Short tenure,-0.0273,2
+CUST-0463,Days since last login,0.0234,3
+CUST-0463,Low product usage,0.0185,4
+CUST-0463,Recent support tickets,-0.0016,5
+CUST-0464,Month-to-month contract,0.0618,1
+CUST-0464,Low product usage,0.0308,2
+CUST-0464,Days since last login,0.0123,3
+CUST-0464,Short tenure,0.0116,4
+CUST-0464,Recent support tickets,0.0109,5
+CUST-0465,Month-to-month contract,-0.1082,1
+CUST-0465,Low product usage,0.0427,2
+CUST-0465,Days since last login,0.0234,3
+CUST-0465,Recent support tickets,0.0109,4
+CUST-0465,Short tenure,-0.0023,5
+CUST-0466,Month-to-month contract,0.0618,1
+CUST-0466,Days since last login,0.0123,2
+CUST-0466,Short tenure,-0.0079,3
+CUST-0466,Low product usage,0.0019,4
+CUST-0466,Recent support tickets,-0.0016,5
+CUST-0467,Month-to-month contract,-0.1082,1
+CUST-0467,Low product usage,0.05,2
+CUST-0467,Days since last login,0.029,3
+CUST-0467,Short tenure,-0.0051,4
+CUST-0467,Recent support tickets,-0.0016,5
+CUST-0468,Month-to-month contract,0.0618,1
+CUST-0468,Low product usage,-0.0315,2
+CUST-0468,Short tenure,-0.0273,3
+CUST-0468,Days since last login,-0.0266,4
+CUST-0468,Recent support tickets,-0.0141,5
+CUST-0469,Month-to-month contract,-0.0582,1
+CUST-0469,Days since last login,0.029,2
+CUST-0469,Low product usage,0.0289,3
+CUST-0469,Short tenure,0.0171,4
+CUST-0469,Recent support tickets,-0.0016,5
+CUST-0470,Month-to-month contract,0.0618,1
+CUST-0470,Low product usage,-0.0391,2
+CUST-0470,Recent support tickets,-0.0141,3
+CUST-0470,Days since last login,-0.0099,4
+CUST-0470,Short tenure,0.0032,5
+CUST-0471,Month-to-month contract,0.0618,1
+CUST-0471,Low product usage,-0.0405,2
+CUST-0471,Days since last login,-0.0294,3
+CUST-0471,Short tenure,0.006,4
+CUST-0471,Recent support tickets,-0.0016,5
+CUST-0472,Month-to-month contract,0.0618,1
+CUST-0472,Low product usage,-0.0455,2
+CUST-0472,Days since last login,-0.0266,3
+CUST-0472,Short tenure,0.0032,4
+CUST-0472,Recent support tickets,-0.0016,5
+CUST-0473,Month-to-month contract,0.0618,1
+CUST-0473,Low product usage,0.0512,2
+CUST-0473,Short tenure,0.0171,3
+CUST-0473,Days since last login,0.0151,4
+CUST-0473,Recent support tickets,-0.0016,5
+CUST-0474,Month-to-month contract,-0.1082,1
+CUST-0474,Low product usage,-0.0797,2
+CUST-0474,Days since last login,-0.071,3
+CUST-0474,Short tenure,0.0171,4
+CUST-0474,Recent support tickets,0.0109,5
+CUST-0475,Month-to-month contract,0.0618,1
+CUST-0475,Low product usage,-0.0262,2
+CUST-0475,Short tenure,0.0116,3
+CUST-0475,Recent support tickets,0.0109,4
+CUST-0475,Days since last login,-0.0016,5
+CUST-0476,Low product usage,0.0839,1
+CUST-0476,Days since last login,0.0623,2
+CUST-0476,Month-to-month contract,-0.0582,3
+CUST-0476,Recent support tickets,0.0234,4
+CUST-0476,Short tenure,0.0116,5
+CUST-0477,Month-to-month contract,0.0618,1
+CUST-0477,Low product usage,0.0388,2
+CUST-0477,Days since last login,0.0345,3
+CUST-0477,Short tenure,0.006,4
+CUST-0477,Recent support tickets,-0.0016,5
+CUST-0478,Low product usage,0.0775,1
+CUST-0478,Month-to-month contract,0.0618,2
+CUST-0478,Days since last login,0.054,3
+CUST-0478,Recent support tickets,-0.0141,4
+CUST-0478,Short tenure,-0.0023,5
+CUST-0479,Month-to-month contract,0.0618,1
+CUST-0479,Low product usage,-0.0148,2
+CUST-0479,Days since last login,-0.0099,3
+CUST-0479,Short tenure,-0.0051,4
+CUST-0479,Recent support tickets,-0.0016,5
+CUST-0480,Month-to-month contract,0.0618,1
+CUST-0480,Recent support tickets,-0.0141,2
+CUST-0480,Days since last login,0.0095,3
+CUST-0480,Low product usage,-0.0075,4
+CUST-0480,Short tenure,0.006,5
+CUST-0481,Month-to-month contract,-0.1082,1
+CUST-0481,Days since last login,0.0262,2
+CUST-0481,Recent support tickets,-0.0141,3
+CUST-0481,Low product usage,0.0107,4
+CUST-0481,Short tenure,0.006,5
+CUST-0482,Low product usage,-0.1194,1
+CUST-0482,Month-to-month contract,-0.0582,2
+CUST-0482,Days since last login,-0.0571,3
+CUST-0482,Short tenure,0.0144,4
+CUST-0482,Recent support tickets,-0.0141,5
+CUST-0483,Month-to-month contract,-0.0582,1
+CUST-0483,Low product usage,-0.0427,2
+CUST-0483,Days since last login,-0.0294,3
+CUST-0483,Recent support tickets,0.0109,4
+CUST-0483,Short tenure,-0.0023,5
+CUST-0484,Month-to-month contract,0.0618,1
+CUST-0484,Low product usage,-0.052,2
+CUST-0484,Recent support tickets,-0.0141,3
+CUST-0484,Short tenure,0.0088,4
+CUST-0484,Days since last login,-0.0044,5
+CUST-0485,Low product usage,0.0805,1
+CUST-0485,Month-to-month contract,0.0618,2
+CUST-0485,Days since last login,0.0568,3
+CUST-0485,Short tenure,0.0199,4
+CUST-0485,Recent support tickets,-0.0016,5
+CUST-0486,Month-to-month contract,-0.1082,1
+CUST-0486,Low product usage,0.0386,2
+CUST-0486,Days since last login,0.0373,3
+CUST-0486,Recent support tickets,0.0109,4
+CUST-0486,Short tenure,0.006,5
+CUST-0487,Month-to-month contract,0.0618,1
+CUST-0487,Low product usage,-0.0158,2
+CUST-0487,Recent support tickets,0.0109,3
+CUST-0487,Days since last login,-0.0044,4
+CUST-0487,Short tenure,0.0032,5
+CUST-0488,Month-to-month contract,0.0618,1
+CUST-0488,Low product usage,-0.023,2
+CUST-0488,Short tenure,0.0144,3
+CUST-0488,Days since last login,-0.0099,4
+CUST-0488,Recent support tickets,-0.0016,5
+CUST-0489,Low product usage,0.0836,1
+CUST-0489,Month-to-month contract,0.0618,2
+CUST-0489,Days since last login,0.0345,3
+CUST-0489,Recent support tickets,-0.0141,4
+CUST-0489,Short tenure,-0.0023,5
+CUST-0490,Month-to-month contract,-0.0582,1
+CUST-0490,Days since last login,0.0123,2
+CUST-0490,Low product usage,-0.0044,3
+CUST-0490,Recent support tickets,-0.0016,4
+CUST-0490,Short tenure,0.0005,5
+CUST-0491,Month-to-month contract,-0.0582,1
+CUST-0491,Days since last login,0.054,2
+CUST-0491,Low product usage,-0.0146,3
+CUST-0491,Recent support tickets,-0.0141,4
+CUST-0491,Short tenure,-0.0079,5
+CUST-0492,Month-to-month contract,-0.0582,1
+CUST-0492,Recent support tickets,0.0109,2
+CUST-0492,Days since last login,-0.0099,3
+CUST-0492,Short tenure,-0.0051,4
+CUST-0492,Low product usage,-0.0026,5
+CUST-0493,Month-to-month contract,-0.0582,1
+CUST-0493,Low product usage,0.0288,2
+CUST-0493,Days since last login,0.0179,3
+CUST-0493,Recent support tickets,-0.0141,4
+CUST-0493,Short tenure,-0.0051,5
+CUST-0494,Month-to-month contract,0.0618,1
+CUST-0494,Low product usage,0.0145,2
+CUST-0494,Recent support tickets,-0.0141,3
+CUST-0494,Short tenure,0.0088,4
+CUST-0494,Days since last login,-0.0016,5
+CUST-0495,Month-to-month contract,-0.1082,1
+CUST-0495,Days since last login,-0.0155,2
+CUST-0495,Short tenure,-0.0134,3
+CUST-0495,Low product usage,-0.0046,4
+CUST-0495,Recent support tickets,-0.0016,5
+CUST-0496,Month-to-month contract,0.0618,1
+CUST-0496,Recent support tickets,0.0234,2
+CUST-0496,Days since last login,0.0206,3
+CUST-0496,Low product usage,-0.0186,4
+CUST-0496,Short tenure,0.0005,5
+CUST-0497,Month-to-month contract,-0.0582,1
+CUST-0497,Days since last login,-0.046,2
+CUST-0497,Low product usage,-0.0456,3
+CUST-0497,Recent support tickets,-0.0141,4
+CUST-0497,Short tenure,0.006,5
+CUST-0498,Low product usage,-0.0706,1
+CUST-0498,Month-to-month contract,0.0618,2
+CUST-0498,Days since last login,-0.0571,3
+CUST-0498,Recent support tickets,-0.0141,4
+CUST-0498,Short tenure,-0.0051,5
+CUST-0499,Month-to-month contract,-0.1082,1
+CUST-0499,Days since last login,-0.0349,2
+CUST-0499,Short tenure,0.0088,3
+CUST-0499,Low product usage,0.0016,4
+CUST-0499,Recent support tickets,-0.0016,5
+CUST-0500,Month-to-month contract,0.0618,1
+CUST-0500,Recent support tickets,-0.0141,2
+CUST-0500,Low product usage,0.0101,3
+CUST-0500,Days since last login,-0.0099,4
+CUST-0500,Short tenure,0.0005,5

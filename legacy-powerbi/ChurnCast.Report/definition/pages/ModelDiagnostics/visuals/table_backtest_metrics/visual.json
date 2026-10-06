@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "table_backtest_metrics",
+  "position": {
+    "x": 24,
+    "y": 188,
+    "z": 0,
+    "width": 460,
+    "height": 360,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BacktestMetrics"
+                    }
+                  },
+                  "Property": "metric_name"
+                }
+              },
+              "queryRef": "BacktestMetrics.metric_name",
+              "nativeQueryRef": "metric_name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BacktestMetrics"
+                    }
+                  },
+                  "Property": "metric_display"
+                }
+              },
+              "queryRef": "BacktestMetrics.metric_display",
+              "nativeQueryRef": "metric_display"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BacktestMetrics"
+                    }
+                  },
+                  "Property": "metric_type"
+                }
+              },
+              "queryRef": "BacktestMetrics.metric_type",
+              "nativeQueryRef": "metric_type"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

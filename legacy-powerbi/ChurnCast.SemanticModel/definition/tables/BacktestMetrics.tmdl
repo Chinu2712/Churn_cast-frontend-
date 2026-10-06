@@ -1,0 +1,46 @@
+/// Holdout accuracy metrics (MAPE, RMSE, AUC, Precision, Recall) for Model Diagnostics.
+table BacktestMetrics
+	lineageTag: 938b79e5-7cf1-4d53-8801-b094ce5c2ba4
+
+	column metric_name
+		dataType: string
+		lineageTag: 759da617-ef38-475b-b64b-99ae35932984
+		summarizeBy: none
+		sourceColumn: metric_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column metric_value
+		dataType: double
+		formatString: 0.000
+		lineageTag: f1ce2630-0684-4a72-a370-0f52ae748bf1
+		summarizeBy: none
+		sourceColumn: metric_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column metric_type
+		dataType: string
+		lineageTag: c90f1acc-56fa-4645-963c-d5e0a2c7549d
+		summarizeBy: none
+		sourceColumn: metric_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column metric_display
+		dataType: string
+		lineageTag: e25b4db7-4a50-4f11-9a2e-b5dd21e2a822
+		summarizeBy: none
+		sourceColumn: metric_display
+
+		annotation SummarizationSetBy = Automatic
+
+	partition BacktestMetrics = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolderPath & "backtest_metrics.csv"), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"metric_name", type text}, {"metric_value", type number}, {"metric_type", type text}, {"metric_display", type text}})
+				in
+				    #"Changed Type"

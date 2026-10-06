@@ -1,0 +1,2 @@
+last_trained_date,next_scheduled_retrain,holdout_start,holdout_end,sample_size,holdout_mape,holdout_auc
+2026-08-31,2026-09-01,2026-06-01,2026-08-31,500,0.37,0.665

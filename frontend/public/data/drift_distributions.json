@@ -1,0 +1,450 @@
+[
+  {
+    "feature_name": "usage_score",
+    "period": "Baseline",
+    "bucket_label": "9-21",
+    "bucket_order": 0,
+    "proportion": 0.0
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Baseline",
+    "bucket_label": "21-32",
+    "bucket_order": 1,
+    "proportion": 0.0049
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Baseline",
+    "bucket_label": "32-43",
+    "bucket_order": 2,
+    "proportion": 0.0494
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Baseline",
+    "bucket_label": "43-55",
+    "bucket_order": 3,
+    "proportion": 0.1481
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Baseline",
+    "bucket_label": "55-66",
+    "bucket_order": 4,
+    "proportion": 0.2568
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Baseline",
+    "bucket_label": "66-77",
+    "bucket_order": 5,
+    "proportion": 0.3062
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Baseline",
+    "bucket_label": "77-89",
+    "bucket_order": 6,
+    "proportion": 0.1654
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Baseline",
+    "bucket_label": "89-100",
+    "bucket_order": 7,
+    "proportion": 0.0691
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Recent",
+    "bucket_label": "9-21",
+    "bucket_order": 0,
+    "proportion": 0.0211
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Recent",
+    "bucket_label": "21-32",
+    "bucket_order": 1,
+    "proportion": 0.0632
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Recent",
+    "bucket_label": "32-43",
+    "bucket_order": 2,
+    "proportion": 0.1474
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Recent",
+    "bucket_label": "43-55",
+    "bucket_order": 3,
+    "proportion": 0.3053
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Recent",
+    "bucket_label": "55-66",
+    "bucket_order": 4,
+    "proportion": 0.2947
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Recent",
+    "bucket_label": "66-77",
+    "bucket_order": 5,
+    "proportion": 0.1474
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Recent",
+    "bucket_label": "77-89",
+    "bucket_order": 6,
+    "proportion": 0.0211
+  },
+  {
+    "feature_name": "usage_score",
+    "period": "Recent",
+    "bucket_label": "89-100",
+    "bucket_order": 7,
+    "proportion": 0.0
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Baseline",
+    "bucket_label": "0-1",
+    "bucket_order": 0,
+    "proportion": 0.3778
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Baseline",
+    "bucket_label": "1-2",
+    "bucket_order": 1,
+    "proportion": 0.3901
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Baseline",
+    "bucket_label": "2-2",
+    "bucket_order": 2,
+    "proportion": 0.1605
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Baseline",
+    "bucket_label": "2-3",
+    "bucket_order": 3,
+    "proportion": 0.0
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Baseline",
+    "bucket_label": "3-4",
+    "bucket_order": 4,
+    "proportion": 0.0568
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Baseline",
+    "bucket_label": "4-4",
+    "bucket_order": 5,
+    "proportion": 0.0049
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Baseline",
+    "bucket_label": "4-5",
+    "bucket_order": 6,
+    "proportion": 0.0099
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Baseline",
+    "bucket_label": "5-6",
+    "bucket_order": 7,
+    "proportion": 0.0
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Recent",
+    "bucket_label": "0-1",
+    "bucket_order": 0,
+    "proportion": 0.1263
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Recent",
+    "bucket_label": "1-2",
+    "bucket_order": 1,
+    "proportion": 0.3263
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Recent",
+    "bucket_label": "2-2",
+    "bucket_order": 2,
+    "proportion": 0.2632
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Recent",
+    "bucket_label": "2-3",
+    "bucket_order": 3,
+    "proportion": 0.0
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Recent",
+    "bucket_label": "3-4",
+    "bucket_order": 4,
+    "proportion": 0.1474
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Recent",
+    "bucket_label": "4-4",
+    "bucket_order": 5,
+    "proportion": 0.1263
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Recent",
+    "bucket_label": "4-5",
+    "bucket_order": 6,
+    "proportion": 0.0
+  },
+  {
+    "feature_name": "support_tickets_90d",
+    "period": "Recent",
+    "bucket_label": "5-6",
+    "bucket_order": 7,
+    "proportion": 0.0105
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Baseline",
+    "bucket_label": "15-27",
+    "bucket_order": 0,
+    "proportion": 0.3926
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Baseline",
+    "bucket_label": "27-38",
+    "bucket_order": 1,
+    "proportion": 0.0
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Baseline",
+    "bucket_label": "38-49",
+    "bucket_order": 2,
+    "proportion": 0.2617
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Baseline",
+    "bucket_label": "49-61",
+    "bucket_order": 3,
+    "proportion": 0.1358
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Baseline",
+    "bucket_label": "61-72",
+    "bucket_order": 4,
+    "proportion": 0.0
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Baseline",
+    "bucket_label": "72-83",
+    "bucket_order": 5,
+    "proportion": 0.0049
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Baseline",
+    "bucket_label": "83-95",
+    "bucket_order": 6,
+    "proportion": 0.0741
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Baseline",
+    "bucket_label": "95-106",
+    "bucket_order": 7,
+    "proportion": 0.1309
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Recent",
+    "bucket_label": "15-27",
+    "bucket_order": 0,
+    "proportion": 0.3789
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Recent",
+    "bucket_label": "27-38",
+    "bucket_order": 1,
+    "proportion": 0.0
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Recent",
+    "bucket_label": "38-49",
+    "bucket_order": 2,
+    "proportion": 0.2842
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Recent",
+    "bucket_label": "49-61",
+    "bucket_order": 3,
+    "proportion": 0.0737
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Recent",
+    "bucket_label": "61-72",
+    "bucket_order": 4,
+    "proportion": 0.0
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Recent",
+    "bucket_label": "72-83",
+    "bucket_order": 5,
+    "proportion": 0.0316
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Recent",
+    "bucket_label": "83-95",
+    "bucket_order": 6,
+    "proportion": 0.1158
+  },
+  {
+    "feature_name": "monthly_revenue",
+    "period": "Recent",
+    "bucket_label": "95-106",
+    "bucket_order": 7,
+    "proportion": 0.1158
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Baseline",
+    "bucket_label": "0-8",
+    "bucket_order": 0,
+    "proportion": 0.1259
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Baseline",
+    "bucket_label": "8-17",
+    "bucket_order": 1,
+    "proportion": 0.0963
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Baseline",
+    "bucket_label": "17-25",
+    "bucket_order": 2,
+    "proportion": 0.2543
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Baseline",
+    "bucket_label": "25-34",
+    "bucket_order": 3,
+    "proportion": 0.2
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Baseline",
+    "bucket_label": "34-42",
+    "bucket_order": 4,
+    "proportion": 0.2
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Baseline",
+    "bucket_label": "42-50",
+    "bucket_order": 5,
+    "proportion": 0.0864
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Baseline",
+    "bucket_label": "50-59",
+    "bucket_order": 6,
+    "proportion": 0.0173
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Baseline",
+    "bucket_label": "59-67",
+    "bucket_order": 7,
+    "proportion": 0.0198
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Recent",
+    "bucket_label": "0-8",
+    "bucket_order": 0,
+    "proportion": 0.0105
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Recent",
+    "bucket_label": "8-17",
+    "bucket_order": 1,
+    "proportion": 0.0211
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Recent",
+    "bucket_label": "17-25",
+    "bucket_order": 2,
+    "proportion": 0.1579
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Recent",
+    "bucket_label": "25-34",
+    "bucket_order": 3,
+    "proportion": 0.2632
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Recent",
+    "bucket_label": "34-42",
+    "bucket_order": 4,
+    "proportion": 0.1684
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Recent",
+    "bucket_label": "42-50",
+    "bucket_order": 5,
+    "proportion": 0.2211
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Recent",
+    "bucket_label": "50-59",
+    "bucket_order": 6,
+    "proportion": 0.1263
+  },
+  {
+    "feature_name": "days_since_active",
+    "period": "Recent",
+    "bucket_label": "59-67",
+    "bucket_order": 7,
+    "proportion": 0.0316
+  }
+]

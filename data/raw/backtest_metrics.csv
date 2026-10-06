@@ -1,0 +1,7 @@
+metric_name,metric_value,metric_type,metric_display
+Revenue MAPE,0.37,Revenue,0.4%
+Revenue RMSE,101.51,Revenue,$102
+Churn AUC,0.665,Churn,0.66
+Churn Precision,0.611,Churn,61%
+Churn Recall,0.429,Churn,43%
+Precision @ Top 10,1.0,Churn,100%

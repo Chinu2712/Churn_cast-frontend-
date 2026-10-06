@@ -1,0 +1,8 @@
+feature_name,correlation_with_label,leakage_flag,note
+retention_call_flag,0.747,1,"This is logged by the support team *after* they decide an account looks shaky, so it's downstream of the very thing we're trying to predict. Drop it from training, or only use it if it was recorded before the churn outcome was known."
+usage_score,-0.233,0,No strong correlation with the outcome; looks safe to keep.
+days_since_active,0.208,0,No strong correlation with the outcome; looks safe to keep.
+tenure_months,-0.135,0,No strong correlation with the outcome; looks safe to keep.
+support_tickets_90d,0.116,0,No strong correlation with the outcome; looks safe to keep.
+contract_flexibility,0.11,0,No strong correlation with the outcome; looks safe to keep.
+monthly_revenue,0.056,0,No strong correlation with the outcome; looks safe to keep.

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "card_simulated_churn_probability",
+  "position": {
+    "x": 1220,
+    "y": 580,
+    "z": 0,
+    "width": 330,
+    "height": 138,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Simulated Churn Probability"
+                }
+              },
+              "queryRef": "_Measures.Simulated Churn Probability",
+              "nativeQueryRef": "Simulated Churn Probability",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "last_trained_date": "2026-08-31",
+    "next_scheduled_retrain": "2026-09-01",
+    "holdout_start": "2026-06-01",
+    "holdout_end": "2026-08-31",
+    "sample_size": 500,
+    "holdout_mape": 0.37,
+    "holdout_auc": 0.665
+  }
+]

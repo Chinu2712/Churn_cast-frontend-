@@ -1,0 +1,7 @@
+/// Folder holding the CSVs produced by data/generate_sample_data.py.
+/// Change this if you move the project -- every table reads from here.
+expression DataFolderPath = "C:\Users\Shaurya Salke\OneDrive\Desktop\VS\front_36\data\raw\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 9b6c0db4-f416-40c5-8f8d-4ff98e9baa51
+	queryGroup: Parameters
+
+	annotation PBI_ResultType = Text

@@ -1,0 +1,56 @@
+/// Baseline-vs-recent histograms behind the drift small multiples.
+table DriftDistributions
+	lineageTag: a95bef05-1fe8-4643-a481-e264cdf157c5
+
+	column feature_name
+		dataType: string
+		lineageTag: 4f40a00d-91e3-4022-a2f9-fb0744c7ee56
+		summarizeBy: none
+		sourceColumn: feature_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column period
+		dataType: string
+		lineageTag: 23a3f477-d77e-4790-b436-c51375218b1c
+		summarizeBy: none
+		sourceColumn: period
+
+		annotation SummarizationSetBy = Automatic
+
+	column bucket_label
+		dataType: string
+		lineageTag: bc7b9102-6db8-4623-9624-d1b6c4397952
+		summarizeBy: none
+		sourceColumn: bucket_label
+		sortByColumn: bucket_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column bucket_order
+		dataType: int64
+		isHidden
+		lineageTag: cb97154d-b1b7-4524-8740-a0edbb1ba4d5
+		summarizeBy: none
+		sourceColumn: bucket_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column proportion
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 4df8891f-72b2-4b9f-ac18-f6fc9a56da58
+		summarizeBy: none
+		sourceColumn: proportion
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DriftDistributions = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolderPath & "drift_distributions.csv"), [Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"feature_name", type text}, {"period", type text}, {"bucket_label", type text}, {"bucket_order", Int64.Type}, {"proportion", type number}})
+				in
+				    #"Changed Type"

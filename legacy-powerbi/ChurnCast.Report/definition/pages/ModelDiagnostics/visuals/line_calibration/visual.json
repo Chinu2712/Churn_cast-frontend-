@@ -1,0 +1,71 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "line_calibration",
+  "position": {
+    "x": 500,
+    "y": 188,
+    "z": 0,
+    "width": 460,
+    "height": 360,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calibration"
+                    }
+                  },
+                  "Property": "bucket_label"
+                }
+              },
+              "queryRef": "Calibration.bucket_label",
+              "nativeQueryRef": "bucket_label",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calibration"
+                    }
+                  },
+                  "Property": "predicted_avg"
+                }
+              },
+              "queryRef": "Calibration.predicted_avg",
+              "nativeQueryRef": "predicted_avg"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calibration"
+                    }
+                  },
+                  "Property": "actual_rate"
+                }
+              },
+              "queryRef": "Calibration.actual_rate",
+              "nativeQueryRef": "actual_rate"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

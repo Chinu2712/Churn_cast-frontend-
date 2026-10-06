@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "line_revenue_history",
+  "position": {
+    "x": 24,
+    "y": 198,
+    "z": 0,
+    "width": 700,
+    "height": 400,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RevenueHistory"
+                    }
+                  },
+                  "Property": "month"
+                }
+              },
+              "queryRef": "RevenueHistory.month",
+              "nativeQueryRef": "month",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RevenueHistory"
+                    }
+                  },
+                  "Property": "revenue"
+                }
+              },
+              "queryRef": "RevenueHistory.revenue",
+              "nativeQueryRef": "revenue"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

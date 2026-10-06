@@ -1,0 +1,5 @@
+feature_name,ks_statistic,drift_flag,baseline_mean,recent_mean
+usage_score,0.398,1,66.78,52.37
+support_tickets_90d,0.315,1,0.95,1.86
+monthly_revenue,0.059,0,46.26,48.48
+days_since_active,0.34,1,26.63,36.82

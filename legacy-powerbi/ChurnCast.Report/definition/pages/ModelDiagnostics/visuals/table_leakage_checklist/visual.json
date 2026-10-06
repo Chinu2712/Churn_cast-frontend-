@@ -1,0 +1,80 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "table_leakage_checklist",
+  "position": {
+    "x": 730,
+    "y": 564,
+    "z": 0,
+    "width": 1166,
+    "height": 300,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LeakageChecklist"
+                    }
+                  },
+                  "Property": "feature_name"
+                }
+              },
+              "queryRef": "LeakageChecklist.feature_name",
+              "nativeQueryRef": "feature_name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LeakageChecklist"
+                    }
+                  },
+                  "Property": "correlation_with_label"
+                }
+              },
+              "queryRef": "LeakageChecklist.correlation_with_label",
+              "nativeQueryRef": "correlation_with_label"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LeakageChecklist"
+                    }
+                  },
+                  "Property": "leakage_flag"
+                }
+              },
+              "queryRef": "LeakageChecklist.leakage_flag",
+              "nativeQueryRef": "leakage_flag"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LeakageChecklist"
+                    }
+                  },
+                  "Property": "note"
+                }
+              },
+              "queryRef": "LeakageChecklist.note",
+              "nativeQueryRef": "note"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

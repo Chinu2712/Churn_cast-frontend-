@@ -1,0 +1,429 @@
+openapi: 3.0.3
+info:
+  title: ChurnCast Backend API
+  version: "1.0"
+  description: >
+    REST contract for the future ChurnCast backend (Java / Spring Boot,
+    predictions powered by WEKA). The frontend (see
+    frontend/src/data/apiConfig.js, apiClient.js, useDataset.js) already
+    calls every route below once VITE_API_BASE_URL is set; until then it
+    reads the equivalent static JSON files in frontend/public/data/, whose
+    shape is identical to the GET response schemas here.
+
+    Implementing this contract (any stack, but Java + Spring Boot + WEKA is
+    the intended target) is a drop-in backend: no frontend changes are
+    required beyond setting the one environment variable.
+servers:
+  - url: http://localhost:8080/api/v1
+    description: Local development
+
+tags:
+  - name: datasets
+    description: Read-only tables that already drive every chart/table in the dashboard.
+  - name: predictions
+    description: On-demand WEKA predictions (churn what-if, next-month revenue forecast).
+  - name: model
+    description: Model metadata, diagnostics, and retraining.
+
+paths:
+  /customers:
+    get:
+      tags: [datasets]
+      summary: Per-customer churn risk table (drives ChurnDonut, customer tables, Overview alerts).
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/CustomerList" }
+
+  /revenue/monthly:
+    get:
+      tags: [datasets]
+      summary: Monthly actual + forecast revenue series (drives ForecastChart on the Overview page).
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/MonthlyRevenueList" }
+
+  /revenue/history:
+    get:
+      tags: [datasets]
+      summary: Per-customer monthly revenue history (drives Customer Detail revenue chart and sparklines).
+      parameters:
+        - name: customer_id
+          in: query
+          required: false
+          schema: { type: string }
+          description: Optional filter; omit to fetch the full history table.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/RevenueHistoryList" }
+
+  /cohorts/retention:
+    get:
+      tags: [datasets]
+      summary: Signup-cohort retention curves (drives the Overview cohort heatmap).
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/CohortRetentionList" }
+
+  /explainability/feature-contributions:
+    get:
+      tags: [datasets]
+      summary: Per-customer top feature contributions (drives FeatureBarChart explainability panels).
+      parameters:
+        - name: customer_id
+          in: query
+          required: false
+          schema: { type: string }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/FeatureContributionList" }
+
+  /model/meta:
+    get:
+      tags: [model]
+      summary: Current model training metadata (last trained date, holdout window, sample size).
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ModelMetaList" }
+
+  /model/backtest-metrics:
+    get:
+      tags: [model]
+      summary: Holdout accuracy metrics (Revenue MAPE/RMSE, Churn AUC, ...) shown on Model Diagnostics.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/BacktestMetricList" }
+
+  /model/calibration:
+    get:
+      tags: [model]
+      summary: Predicted-vs-actual churn rate per probability decile (drives CalibrationChart).
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/CalibrationBucketList" }
+
+  /model/drift-metrics:
+    get:
+      tags: [model]
+      summary: Per-feature drift flags (KS statistic, baseline vs. recent mean).
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/DriftMetricList" }
+
+  /model/drift-distributions:
+    get:
+      tags: [model]
+      summary: Baseline vs. recent histogram buckets per feature (drives DriftSmallMultiples).
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/DriftDistributionList" }
+
+  /model/leakage-checklist:
+    get:
+      tags: [model]
+      summary: Feature/label correlation + leakage flags shown in the Data Leakage Checklist table.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/LeakageChecklistList" }
+
+  /predictions/churn:
+    post:
+      tags: [predictions]
+      summary: >
+        Re-score one customer's churn probability with the WEKA classifier
+        under a hypothetical usage drop. Powers the "What-If: Usage Drop
+        Simulation" panel on the Customer Risk Explorer page
+        (frontend/src/data/usePrediction.js).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/ChurnPredictionRequest" }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ChurnPredictionResponse" }
+        "404":
+          description: customer_id not found
+
+  /predictions/revenue-forecast:
+    post:
+      tags: [predictions]
+      summary: >
+        Request an updated next-month (or multi-month) revenue forecast from
+        the WEKA regression model. Powers the "Refresh WEKA forecast" action
+        on the Overview page's ForecastChart (frontend/src/data/useRevenueForecast.js).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/RevenueForecastRequest" }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/RevenueForecastResponse" }
+
+  /model/retrain:
+    post:
+      tags: [model]
+      summary: >
+        Kick off an asynchronous retraining job for both the churn classifier
+        and the revenue regressor. Powers the "Retrain Model" button on
+        Model Diagnostics.
+      responses:
+        "202":
+          description: Retrain job accepted
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/RetrainResponse" }
+
+components:
+  schemas:
+    Customer:
+      type: object
+      required: [customer_id, customer_name, churn_probability]
+      properties:
+        customer_id: { type: string, example: CUST-0001 }
+        customer_name: { type: string, example: Miguel Martins }
+        signup_date: { type: string, format: date }
+        last_active_date: { type: string, format: date }
+        contract_type: { type: string, example: One year }
+        plan: { type: string, example: Basic }
+        region: { type: string, example: West }
+        tenure_months: { type: integer, example: 13 }
+        monthly_revenue: { type: number, format: double, example: 16.51 }
+        usage_score: { type: number, format: double, example: 71.9 }
+        support_tickets_90d: { type: integer, example: 1 }
+        days_since_active: { type: integer, example: 24 }
+        churn_probability:
+          type: number
+          format: double
+          example: 0.269
+          description: WEKA classifier output, 0-1.
+        churn_flag_thresholded: { type: integer, enum: [0, 1] }
+        predicted_revenue_loss: { type: number, format: double, example: 4.44 }
+        did_churn_last_month: { type: integer, enum: [0, 1] }
+        retention_call_flag: { type: integer, enum: [0, 1] }
+    CustomerList:
+      type: array
+      items: { $ref: "#/components/schemas/Customer" }
+
+    MonthlyRevenueRow:
+      type: object
+      required: [month]
+      properties:
+        month: { type: string, format: date, example: "2025-09-01" }
+        actual_revenue: { type: number, format: double, nullable: true }
+        forecast_revenue:
+          type: number
+          format: double
+          nullable: true
+          description: WEKA regression point forecast for this month.
+        forecast_low: { type: number, format: double, nullable: true, description: Lower bound of the prediction interval. }
+        forecast_high: { type: number, format: double, nullable: true, description: Upper bound of the prediction interval. }
+        is_forecast_month: { type: integer, enum: [0, 1] }
+        mape_trend: { type: number, format: double, nullable: true }
+    MonthlyRevenueList:
+      type: array
+      items: { $ref: "#/components/schemas/MonthlyRevenueRow" }
+
+    RevenueHistoryRow:
+      type: object
+      properties:
+        customer_id: { type: string }
+        month: { type: string, format: date }
+        revenue: { type: number, format: double }
+    RevenueHistoryList:
+      type: array
+      items: { $ref: "#/components/schemas/RevenueHistoryRow" }
+
+    CohortRetentionRow:
+      type: object
+      properties:
+        signup_month: { type: string, example: "2025-06" }
+        cohort_order: { type: integer }
+        months_since_signup: { type: integer }
+        retention_rate: { type: number, format: double, example: 100.0 }
+        is_forecast: { type: integer, enum: [0, 1] }
+    CohortRetentionList:
+      type: array
+      items: { $ref: "#/components/schemas/CohortRetentionRow" }
+
+    FeatureContributionRow:
+      type: object
+      properties:
+        customer_id: { type: string }
+        feature_name: { type: string, example: Month-to-month contract }
+        contribution: { type: number, format: double, example: -0.0582 }
+        rank: { type: integer, example: 1 }
+    FeatureContributionList:
+      type: array
+      items: { $ref: "#/components/schemas/FeatureContributionRow" }
+
+    ModelMeta:
+      type: object
+      properties:
+        last_trained_date: { type: string, format: date }
+        next_scheduled_retrain: { type: string, format: date }
+        holdout_start: { type: string, format: date }
+        holdout_end: { type: string, format: date }
+        sample_size: { type: integer }
+        holdout_mape: { type: number, format: double }
+        holdout_auc: { type: number, format: double }
+    ModelMetaList:
+      type: array
+      items: { $ref: "#/components/schemas/ModelMeta" }
+      description: Always length 1 today; kept as an array for forward compatibility (model versions/history).
+
+    BacktestMetric:
+      type: object
+      properties:
+        metric_name: { type: string, example: Revenue MAPE }
+        metric_value: { type: number, format: double, example: 0.37 }
+        metric_type: { type: string, enum: [Revenue, Churn] }
+        metric_display: { type: string, example: "0.4%" }
+    BacktestMetricList:
+      type: array
+      items: { $ref: "#/components/schemas/BacktestMetric" }
+
+    CalibrationBucket:
+      type: object
+      properties:
+        bucket_label: { type: string, example: "0-10%" }
+        predicted_avg: { type: number, format: double }
+        actual_rate: { type: number, format: double }
+        customer_count: { type: integer }
+        bucket_order: { type: integer }
+    CalibrationBucketList:
+      type: array
+      items: { $ref: "#/components/schemas/CalibrationBucket" }
+
+    DriftMetric:
+      type: object
+      properties:
+        feature_name: { type: string }
+        ks_statistic: { type: number, format: double }
+        drift_flag: { type: integer, enum: [0, 1] }
+        baseline_mean: { type: number, format: double }
+        recent_mean: { type: number, format: double }
+    DriftMetricList:
+      type: array
+      items: { $ref: "#/components/schemas/DriftMetric" }
+
+    DriftDistributionRow:
+      type: object
+      properties:
+        feature_name: { type: string }
+        period: { type: string, enum: [Baseline, Recent] }
+        bucket_label: { type: string }
+        bucket_order: { type: integer }
+        proportion: { type: number, format: double }
+    DriftDistributionList:
+      type: array
+      items: { $ref: "#/components/schemas/DriftDistributionRow" }
+
+    LeakageChecklistRow:
+      type: object
+      properties:
+        feature_name: { type: string }
+        correlation_with_label: { type: number, format: double }
+        leakage_flag: { type: integer, enum: [0, 1] }
+        note: { type: string }
+    LeakageChecklistList:
+      type: array
+      items: { $ref: "#/components/schemas/LeakageChecklistRow" }
+
+    ChurnPredictionRequest:
+      type: object
+      required: [customer_id]
+      properties:
+        customer_id: { type: string, example: CUST-0001 }
+        usage_drop_percent:
+          type: number
+          format: double
+          example: 25
+          description: Hypothetical additional usage drop (0-100) from the Explorer slider.
+    ChurnPredictionResponse:
+      type: object
+      required: [customer_id, churn_probability]
+      properties:
+        customer_id: { type: string }
+        churn_probability:
+          type: number
+          format: double
+          description: Re-scored churn probability (0-1) from the WEKA classifier for this scenario.
+        predicted_revenue_impact:
+          type: number
+          format: double
+          description: monthly_revenue * (new probability - original probability); negative = revenue at greater risk.
+        model_version: { type: string, example: "rf-v3" }
+
+    RevenueForecastRequest:
+      type: object
+      properties:
+        horizon_months:
+          type: integer
+          default: 1
+          minimum: 1
+          maximum: 12
+          description: How many future months to forecast.
+    RevenueForecastResponse:
+      type: object
+      properties:
+        generated_at: { type: string, format: date-time }
+        model_version: { type: string, example: "regressor-v2" }
+        forecasts:
+          type: array
+          description: >
+            One row per forecasted month, merged by `month` into the
+            Overview page's ForecastChart data
+            (frontend/src/data/useRevenueForecast.js). Same shape as
+            MonthlyRevenueRow so it can be merged directly.
+          items: { $ref: "#/components/schemas/MonthlyRevenueRow" }
+
+    RetrainResponse:
+      type: object
+      properties:
+        job_id: { type: string, example: "retrain-2026-09-01-01" }
+        status: { type: string, enum: [queued, running, completed, failed], example: queued }
+        status_url:
+          type: string
+          description: >
+            Optional URL a production UI would poll for job completion
+            before refetching /model/meta, /model/backtest-metrics, etc.

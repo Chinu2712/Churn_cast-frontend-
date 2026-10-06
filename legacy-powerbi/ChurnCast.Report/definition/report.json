@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.0.0/schema.json",
+  "themeCollection": {
+    "customTheme": {
+      "name": "ChurnCast-Light.json",
+      "type": "RegisteredResources",
+      "reportVersionAtImport": {
+        "visual": "2.0.0",
+        "report": "2.0.0",
+        "page": "2.0.0"
+      }
+    }
+  },
+  "filterConfig": {
+    "filters": []
+  },
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "useEnhancedTooltips": true,
+    "defaultDrillFilterOtherVisuals": true
+  },
+  "resourcePackages": [
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "ChurnCast-Light.json",
+          "path": "ChurnCast-Light.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "ChurnCast-Dark.json",
+          "path": "ChurnCast-Dark.json",
+          "type": "CustomTheme"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+/// 12 months of per-customer revenue, used for the sparkline in Customer Risk Explorer.
+table RevenueHistory
+	lineageTag: d0d5869c-fd25-4666-b55a-8f0c2fabb5b2
+
+	column customer_id
+		dataType: string
+		lineageTag: c3e41c8a-3077-44c3-b10c-937dac589f8a
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column month
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: d355140d-6af3-49e7-94aa-d10774ebb1f3
+		summarizeBy: none
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column revenue
+		dataType: double
+		formatString: $#,##0.00
+		lineageTag: b97bae76-e327-44ce-95e9-5e6cc62ea66c
+		summarizeBy: sum
+		sourceColumn: revenue
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RevenueHistory = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolderPath & "revenue_history.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"customer_id", type text}, {"month", type date}, {"revenue", type number}})
+				in
+				    #"Changed Type"
